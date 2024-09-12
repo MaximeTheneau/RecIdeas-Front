@@ -7,6 +7,7 @@ import type {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import fetcher from '../../utils/fetcher';
+import LocaleSwitcher from "@/components /locale-switcher";
 
 type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -19,6 +20,8 @@ export default function GspPage(props: GspPageProps) {
   }
   return (
     <div>
+
+      
     </div>
   );
 }
@@ -28,13 +31,12 @@ export default function GspPage(props: GspPageProps) {
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context;
-
   if (!params?.slug) {
     return {
       notFound: true, 
     };
   }
-  const post = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}api/posts/${params.slug}`);
+  const post = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
   return {
     props: {
       post,
@@ -45,12 +47,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   
   const paths: { params: { slug: string, lang: string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/posts&category=Page`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
   const posts = await res.json();
 
   posts.forEach((post: any) => {
     paths.push({
-      params: { lang: post.locale, slug: post.slug },
+      params: { lang: post.locale, slug: post.slug }
     });
   });
 
