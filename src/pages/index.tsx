@@ -1,4 +1,3 @@
-import LocaleSwitcher from "@/components /locale-switcher";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -13,7 +12,6 @@ export default function IndexPage() {
       <p>Default locale: {defaultLocale}</p>
       <p>Configured locales: {JSON.stringify(locales)}</p>
 
-      <LocaleSwitcher />
 
       <Link href="/gsp">To getStaticProps page</Link>
       <br />
