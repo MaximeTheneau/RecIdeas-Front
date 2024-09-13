@@ -1,34 +1,27 @@
-/* eslint-disable quote-props */
+import type {
+  GetStaticProps,
+  GetStaticPaths,
+  InferGetStaticPropsType,
+  GetStaticPropsContext,
+} from "next";
 import Head from 'next/head';
+import Link from "next/link";
+import { useRouter } from "next/router";
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
-import { useRouter } from 'next/router';
 
-export async function getStaticPaths() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
-  const posts = await res.json();
-  const paths = posts.translation.map((post) => ({ params: { lang: post.locale } }));
-  return { paths, fallback: false };
-}
+type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
-export async function getStaticProps() {
-  
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
-  return {
-    props: {
-      pageData,
-    },
-  };
-}
-
-export default function Home({ pageData }) {
+export default function GspPage(props: GspPageProps) {
   const router = useRouter();
-  const { query } = router;
+  const { defaultLocale, isFallback, query } = router;
 
-  // const page = pageData.post
+  const page = props.translation ? props.pageData.translation.find(translation => translation.locale === query.lang ) : props.pageData.post
 
-  const page = pageData ? pageData.translation.find(translation => translation.locale === query.lang ) : pageData.post
-  console.log(router)
+  if (isFallback) {
+    return "Loading...";
+  }
+
   return (
     <>
       <Head>
@@ -85,5 +78,40 @@ export default function Home({ pageData }) {
         {/* <Comments posts={page} /> */}
       </section>
     </>
-  );
+  )}
+
+
+
+
+export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
+  const { params } = context;
+  if (!params?.slug) {
+    return {
+      notFound: true, 
+    };
+  }
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
+  return {
+    props: {
+      pageData,
+    },
+  };
+};
+export const getStaticPaths: GetStaticPaths = async () => {
+  
+  const paths: { params: { slug: string, locale: string } }[] = [];
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
+  const posts = await res.json();
+
+  posts.forEach((post: any) => {
+    paths.push({
+      params: { locale: post.locale, slug: post.slug }, 
+    });
+  });
+
+  return {
+    paths,
+    fallback: false, 
+  };
 }

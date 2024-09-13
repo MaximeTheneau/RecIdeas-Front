@@ -1,0 +1,47 @@
+
+/*--Colors--*/
+$color-primary: #B461A8;
+
+
+$color-secondary: #605ba7;
+$color-secondary-light: #e8f0f8;
+$color-secondary-opacity: #fe693869;
+$color-white: #fff;
+$color-white-opacity: rgba(255, 255, 255, 0.87);
+
+
+$color-blue: #20d2ff;
+$color-grey: rgb(126, 126, 126);
+$color-error: #e22121;
+$color-confirmation: #21e2a1;
+$color-glass: rgba(255,255,255,0.1);
+
+/*--Fonts--*/
+$font-color: #17181d;
+$font-color-opacity: #0b0c0e3d;
+
+
+$font-primary: 'fontGeneral', sans-serif;
+$font-secondary: 'fontTitle', sans-serif;
+$font-size: 1rem;
+$font-size-small: 0.8rem;
+$font-size-large: 10vw;
+$font-size-large-x2: 20vw;
+$font-size-medium: 4vw;
+$font-size-bold: 900;
+
+$size-cursor-large: 106px;
+
+/*--Borders--*/
+$border-radius: 0.2rem;
+
+/*--Margins--*/
+$width-responsive: 98%;
+$width-desktop: 94%;
+
+$paddin-card: 0.2rem;
+
+/*--Shadow--*/
+$text-shadow-white: 0 4px 30px rgba(255, 255, 255, 0.493);
+$text-shadow-black: 0 4px 30px rgba(0, 0, 0, 0.18);
+$box-shadow: 0 2px 10px rgba(212, 211, 211, 0.459);

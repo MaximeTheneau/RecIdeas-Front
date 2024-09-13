@@ -1,26 +1,34 @@
-import type {
-  GetStaticProps,
-  GetStaticPaths,
-  InferGetStaticPropsType,
-  GetStaticPropsContext,
-} from "next";
+'use client';/* eslint-disable quote-props */
 import Head from 'next/head';
-import Link from "next/link";
-import { useRouter } from "next/router";
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
+import { useRouter } from 'next/router';
+import {useTranslations} from 'next-intl';
 
-type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
+export async function getStaticPaths() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
+  const posts = await res.json();
+  const paths = posts.translation.map((post) => ({ params: { locale: post.locale } }, { params: { locale: post.locale } }));
+  return { paths, fallback: false };
+}
 
-export default function GspPage(props: GspPageProps) {
-  const router = useRouter();
-  const { defaultLocale, isFallback, query } = router;
+export async function getStaticProps({ params }) {
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
+  const page = pageData.translation ? pageData.translation.find(translation => translation.locale === params.locale ) : pageData.post;
 
-  const page = props.translation ? props.pageData.translation.find(translation => translation.locale === query.lang ) : props.pageData.post
+  return {
+    props: {
+      page,
+      messages: (await import(`../../../messages/${params.locale}.json`))
+        .default
+    },
+  };
+}
 
-  if (isFallback) {
-    return "Loading...";
-  }
+export default function Page({ page }) {
+
+  const t = useTranslations('HomePage');
+
   return (
     <>
       <Head>
@@ -55,6 +63,7 @@ export default function GspPage(props: GspPageProps) {
           fetchPriority="high"
         />
       </Head>
+      <p className='text-white'>{t('title')}</p>
       <section>
         <figure>
           <ImageLoader
@@ -71,46 +80,12 @@ export default function GspPage(props: GspPageProps) {
           </figcaption>
           )}
         </figure>
+
         <h1>{page.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
 
         {/* <Comments posts={page} /> */}
       </section>
     </>
-  )}
-
-
-
-
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
-  const { params } = context;
-  if (!params?.slug) {
-    return {
-      notFound: true, 
-    };
-  }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
-  return {
-    props: {
-      pageData,
-    },
-  };
-};
-export const getStaticPaths: GetStaticPaths = async () => {
-  
-  const paths: { params: { slug: string, lang: string } }[] = [];
-
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
-  const posts = await res.json();
-
-  posts.forEach((post: any) => {
-    paths.push({
-      params: { lang: post.locale, slug: post.slug }
-    });
-  });
-
-  return {
-    paths,
-    fallback: false, 
-  };
+  );
 }
