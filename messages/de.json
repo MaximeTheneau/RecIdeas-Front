@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "deuthc"
+  "recype": {
+    "btn-plat": "Klicken Sie für 15 köstliche Gerichte!",
+    "btn-entree": "Klicken Sie für 15 köstliche Vorspeisen!",
+    "btn-dessert": "Klicken Sie für 15 köstliche Desserts!"
   }
 }

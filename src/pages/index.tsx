@@ -1,21 +1,19 @@
-'use client'
-import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { useRouter } from "next/router";
+'use client';
+
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function home() {
   const t = useTranslations('HomePage');
 
   return (
-  <>
-    
     <div>
-    <p>{t('title')}</p>
 
-      <h1>Index page</h1>
+      <h1>RecIdeas</h1>
       <p className="text-xl font-semibold text-white">
-      
-      <span className="ml-2 inline-block">→</span>
+
+        <span className="ml-2 inline-block">→</span>
       </p>
 
       <Link href="/gsp">To getStaticProps page</Link>
@@ -25,6 +23,5 @@ export default function home() {
       <br />
 
     </div>
-  </>
   );
 }

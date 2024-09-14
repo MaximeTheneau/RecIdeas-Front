@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "rrereello world!"
+  "recype": {
+    "btn-plat": "Cliquez pour 15 plats savoureux !",
+    "btn-entree": "Cliquez pour 15 entrée savoureuses !",
+    "btn-dessert":"Cliquez pour 15 dessert savoureux !"
   }
 }

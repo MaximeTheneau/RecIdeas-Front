@@ -3,23 +3,27 @@ import type {
   GetStaticPaths,
   InferGetStaticPropsType,
   GetStaticPropsContext,
-} from "next";
+} from 'next';
 import Head from 'next/head';
-import Link from "next/link";
-import { useRouter } from "next/router";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Button, Tabs } from 'flowbite-react';
+import { MdFlatware } from 'react-icons/md';
+import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
+import FormRecype from '../../components /formRecype/FormRecype';
 
 type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
-export default function GspPage(props: GspPageProps) {
+export default function Page(props: GspPageProps) {
   const router = useRouter();
   const { defaultLocale, isFallback, query } = router;
 
-  const page = props.translation ? props.pageData.translation.find(translation => translation.locale === query.lang ) : props.pageData.post
+  const page = props.translation ? props.pageData.translation.find((translation: { locale: string | string[] | undefined; }) => translation.locale === query.lang) : props.pageData.post;
 
   if (isFallback) {
-    return "Loading...";
+    return 'Loading...';
   }
 
   return (
@@ -73,32 +77,32 @@ export default function GspPage(props: GspPageProps) {
           )}
         </figure>
         <h1>{page.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: page.contents }} />
 
+        <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <FormRecype />
         {/* <Comments posts={page} /> */}
       </section>
     </>
-  )}
-
-
-
+  );
+}
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context;
   if (!params?.slug) {
     return {
-      notFound: true, 
+      notFound: true,
     };
   }
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
+
   return {
     props: {
       pageData,
+      messages: (await import(`../../../messages/${params.locale}.json`)).default,
     },
   };
 };
 export const getStaticPaths: GetStaticPaths = async () => {
-  
   const paths: { params: { slug: string, locale: string } }[] = [];
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
@@ -106,12 +110,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   posts.forEach((post: any) => {
     paths.push({
-      params: { locale: post.locale, slug: post.slug }, 
+      params: { locale: post.locale, slug: post.slug },
     });
   });
 
   return {
     paths,
-    fallback: false, 
+    fallback: false,
   };
-}
+};

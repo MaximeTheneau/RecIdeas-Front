@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "sesss!"
+  "recype": {
+    "btn-plat": "Click for 15 delicious dishes!",
+    "btn-entree": "Click for 15 delicious starters!",
+    "btn-dessert":"Click for 15 delicious desserts!"
   }
 }

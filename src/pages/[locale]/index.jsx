@@ -20,12 +20,12 @@ export async function getStaticProps({ params }) {
     props: {
       page,
       messages: (await import(`../../../messages/${params.locale}.json`))
-        .default
+              .default
     },
   };
 }
 
-export default function Page({ page }) {
+export default function IndexPage({ page }) {
 
   const t = useTranslations('HomePage');
 

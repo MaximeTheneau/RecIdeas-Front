@@ -1,5 +1,7 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "recype": {
+    "btn-plat": "¡Haz clic para 15 platos sabrosos!",
+    "btn-entree": "¡Haz clic para 15 entrantes entrada!",
+    "btn-dessert":"¡Haz clic para 15 postres postre!"
   }
 }

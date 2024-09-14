@@ -1,3 +1,34 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"];
+  "extends": ["next/core-web-vitals", "airbnb"],
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
+   "react/jsx-props-no-spreading": ["error", {
+    "html": "ignore" ,
+    "custom": "ignore" ,
+    "explicitSpread": "ignore" ,
+    "exceptions": ["_app"]
+}],
+  "react/no-danger": "off",
+   "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", "ts", "tsx"] }],
+    "react/no-unknown-property": "off",
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/__tests__/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
