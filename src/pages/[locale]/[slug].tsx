@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
 import FormRecype from '../../components /formRecype/FormRecype';
+import Comments from '../../components /comments/Comments';
 
 type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -81,7 +82,7 @@ export default function Page(props: GspPageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <FormRecype locale={query.locale} />
-        {/* <Comments posts={page} /> */}
+        <Comments posts={page} />
       </section>
     </>
   );
