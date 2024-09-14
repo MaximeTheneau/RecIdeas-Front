@@ -3,13 +3,14 @@ import { Button, Spinner } from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
-import FormMiddleware from '../../middleware/FormMiddleware';
+import Middleware from '../../middleware/Middleware';
 
-export default function FormRecype() {
+export default function FormRecype({ locale }) {
   const t = useTranslations('recype');
   const [state, setState] = useState({
     form: {
       type: '',
+      locale,
     },
     timer: 0,
     message: '',
@@ -33,8 +34,7 @@ export default function FormRecype() {
     setState({
       ...state,
       form: {
-        type: '',
-        image: '',
+        ...state.form,
       },
       message: response,
       timer: 30,
@@ -50,66 +50,67 @@ export default function FormRecype() {
     });
   };
 
-  const handleSubmit = async (event = null) => {
-    console.log(state);
-    if (event) {
-      event.preventDefault();
-    }
-    setState({ ...state, message: '' });
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-    if (state.timer > 0) {
-      setState({ ...state, error: `Veuillez attendre ${state.timer} secondes avant de soumettre à nouveau.` });
-      return;
-    }
-    const req = state.form;
+    // setState({ ...state, message: '' });
 
-    setState({
-      ...state,
-      loading: true,
-      message: '',
-      timer: 5,
-    });
-    FormMiddleware(req, 'pest-identification', handleResponse200, handleResponseError);
+    // if (state.timer > 0) {
+    //   setState({ ...state, error: `Veuillez attendre ${state.timer} secondes avant de soumettre à nouveau.` });
+    //   return;
+    // }
+    // setState({
+    //   ...state,
+    //   loading: true,
+    //   message: '',
+    //   timer: 5,
+    // });
+    Middleware(state.form, 'recype', handleResponse200, handleResponseError);
   };
-
-  function handleInputChange(value) {
+  function handleClick(value) {
     setState({
       ...state,
-      form: { type: value },
+      message: '',
+      form: {
+        ...state.form,
+        type: value,
+      },
     });
     console.log(state);
-    handleSubmit();
   }
-
   return (
     <div>
-
       <div className="flex flex-col sm:flex-row justify-around items-center">
+
+        <form onSubmit={handleSubmit}>
+          <Button
+            type="submit"
+            onClick={() => handleClick('plat')}
+            id="plat"
+            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+          >
+            <MdFlatware className="w-4" />
+            {t('btn-plat')}
+          </Button>
+        </form>
+
         <Button
-          onClick={() => handleInputChange('plats')}
-          className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
-        >
-          <MdFlatware className="w-4" />
-          {t('btn-plat')}
-        </Button>
-        <Button
-          onClick={() => handleInputChange('entrée')}
+          onClick={(e) => handleSubmit(e, 'entrée')}
           className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
         >
           <LuSalad className="w-4" />
           {t('btn-entree')}
         </Button>
         <Button
-          onClick={() => handleInputChange('dessert')}
+          onClick={(e) => handleSubmit(e, 'dessert')}
           className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
         >
           <LuCakeSlice className="w-4" />
           {t('btn-dessert')}
         </Button>
       </div>
-
       {/* <button type="submit" className="button">Envoyer</button> */}
-      {state.message && <p>{state.message}</p>}
+      {state.message && <p dangerouslySetInnerHTML={{ __html: state.message }} />}
       {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" />
       )}

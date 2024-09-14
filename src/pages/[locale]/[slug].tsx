@@ -5,11 +5,7 @@ import type {
   GetStaticPropsContext,
 } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Button, Tabs } from 'flowbite-react';
-import { MdFlatware } from 'react-icons/md';
-import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
 import FormRecype from '../../components /formRecype/FormRecype';
@@ -18,14 +14,19 @@ type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function Page(props: GspPageProps) {
   const router = useRouter();
-  const { defaultLocale, isFallback, query } = router;
+  const { isFallback, query } = router;
+  console.log(Array.isArray(props.pageData.translation));
 
-  const page = props.translation ? props.pageData.translation.find((translation: { locale: string | string[] | undefined; }) => translation.locale === query.lang) : props.pageData.post;
+  const translations = Array.isArray(props.pageData.translation)
+    ? props.pageData.translation
+    : [props.pageData.translation];
 
+  const page = translations.find(
+    (translation: { locale: string | string[] | undefined }) => translation.locale === query.locale,
+  ) || props.pageData.post;
   if (isFallback) {
     return 'Loading...';
   }
-
   return (
     <>
       <Head>
@@ -79,7 +80,7 @@ export default function Page(props: GspPageProps) {
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        <FormRecype />
+        <FormRecype locale={query.locale} />
         {/* <Comments posts={page} /> */}
       </section>
     </>

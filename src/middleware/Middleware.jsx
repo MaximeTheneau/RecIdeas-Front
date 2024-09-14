@@ -6,10 +6,13 @@ export default function middleware(req, apiPath, handleResponse200, handleRespon
   fetch(`${process.env.NEXT_PUBLIC_API_URL}${apiPath}`, requestOptions)
     .then((response) => {
       if (response.ok) {
-        return handleResponse200();
+        response.json().then((data) => {
+          handleResponse200(data.message);
+        });
+      } else {
+        response.json().then((data) => {
+          handleResponseError(data.erreur);
+        });
       }
-      throw new Error('Une erreur est survenue');
-    }).catch((error) => {
-      handleResponseError(error.message);
     });
 }
