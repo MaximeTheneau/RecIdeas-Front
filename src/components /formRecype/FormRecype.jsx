@@ -37,7 +37,7 @@ export default function FormRecype({ locale }) {
         ...state.form,
       },
       message: response,
-      timer: 30,
+      timer: 10,
       error: '',
       loading: false,
     });
@@ -53,36 +53,34 @@ export default function FormRecype({ locale }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // setState({ ...state, message: '' });
+    if (state.timer > 0) {
+      setState({ ...state, error: `Veuillez attendre ${state.timer} secondes avant de soumettre à nouveau.` });
+      return;
+    }
+    setState({
+      ...state,
+      loading: true,
+      timer: 5,
+      message: '',
+    });
 
-    // if (state.timer > 0) {
-    //   setState({ ...state, error: `Veuillez attendre ${state.timer} secondes avant de soumettre à nouveau.` });
-    //   return;
-    // }
-    // setState({
-    //   ...state,
-    //   loading: true,
-    //   message: '',
-    //   timer: 5,
-    // });
     Middleware(state.form, 'recype', handleResponse200, handleResponseError);
   };
   function handleClick(value) {
     setState({
       ...state,
-      message: '',
       form: {
         ...state.form,
         type: value,
       },
+      error: '',
     });
     console.log(state);
   }
   return (
     <div>
-      <div className="flex flex-col sm:flex-row justify-around items-center">
-
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
+        <div className="flex flex-col sm:flex-row justify-around items-center">
           <Button
             type="submit"
             onClick={() => handleClick('plat')}
@@ -92,23 +90,26 @@ export default function FormRecype({ locale }) {
             <MdFlatware className="w-4" />
             {t('btn-plat')}
           </Button>
-        </form>
 
-        <Button
-          onClick={(e) => handleSubmit(e, 'entrée')}
-          className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
-        >
-          <LuSalad className="w-4" />
-          {t('btn-entree')}
-        </Button>
-        <Button
-          onClick={(e) => handleSubmit(e, 'dessert')}
-          className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
-        >
-          <LuCakeSlice className="w-4" />
-          {t('btn-dessert')}
-        </Button>
-      </div>
+          <Button
+            type="submit"
+            onClick={() => handleClick('entrée')}
+            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+          >
+            <LuSalad className="w-4" />
+            {t('btn-entree')}
+          </Button>
+          <Button
+            type="submit"
+            onClick={() => handleClick('dessert')}
+            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+          >
+            <LuCakeSlice className="w-4" />
+            {t('btn-dessert')}
+          </Button>
+        </div>
+      </form>
+
       {/* <button type="submit" className="button">Envoyer</button> */}
       {state.message && <p dangerouslySetInnerHTML={{ __html: state.message }} />}
       {state.loading && (
