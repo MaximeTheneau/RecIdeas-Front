@@ -3,5 +3,10 @@
     "btn-plat": "Cliquez pour 15 plats savoureux !",
     "btn-entree": "Cliquez pour 15 entrée savoureuses !",
     "btn-dessert":"Cliquez pour 15 dessert savoureux !"
-  }
+  },
+  "link": {
+    "15-recype": "15 Idées de Recettes",
+    "15-recype-link": "/fr/15-Idees-de-Recettes"
+    }
+  
 }

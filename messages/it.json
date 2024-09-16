@@ -3,5 +3,9 @@
     "btn-plat": "Clicca per 15 piatti deliziosi!",
     "btn-entree": "Clicca per 15 antipasti deliziosi!",
     "btn-dessert":"Clicca per 15 dessert deliziosi!"
-  }
+  },
+  "link": {
+    "15-recype": "15 idee per ricette",
+    "15-recype-link": "/it/15-idee-per-ricette"
+    }
 }

@@ -3,5 +3,9 @@
     "btn-plat": "¡Haz clic para 15 platos sabrosos!",
     "btn-entree": "¡Haz clic para 15 entrantes entrada!",
     "btn-dessert":"¡Haz clic para 15 postres postre!"
-  }
+  },   
+  "link": {
+    "15-recype": "15 ideas de recetas",
+    "15-recype-link": "/es/15-ideas-de-recetas"
+    }
 }

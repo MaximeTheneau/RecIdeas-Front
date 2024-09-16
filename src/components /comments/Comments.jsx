@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import {
   Button, Label, Textarea, TextInput,
 } from 'flowbite-react';
@@ -92,7 +91,7 @@ export default function Comments({ posts }) {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}comments`, {
       method: 'POST',
       credentials: 'include',
-      body: state.form,
+      body: JSON.stringify(state.form),
     }).then(async (response) => {
       if (response.ok) {
         const data = await response.json();
