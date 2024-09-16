@@ -1,9 +1,11 @@
-'use client';/* eslint-disable quote-props */
+'use client';
+
+/* eslint-disable quote-props */
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
-import { useRouter } from 'next/router';
-import {useTranslations} from 'next-intl';
 
 export async function getStaticPaths() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
@@ -14,19 +16,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
-  const page = pageData.translation ? pageData.translation.find(translation => translation.locale === params.locale ) : pageData.post;
+  const page = pageData.translation ? pageData.translation.find((translation) => translation.locale === params.locale) : pageData.post;
 
   return {
     props: {
       page,
       messages: (await import(`../../../messages/${params.locale}.json`))
-              .default
+        .default,
     },
   };
 }
 
 export default function IndexPage({ page }) {
-
   const t = useTranslations('HomePage');
 
   return (
@@ -51,7 +52,7 @@ export default function IndexPage({ page }) {
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.slug}`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
           key="canonical"
         />
         {/* Image Preload */}
@@ -63,7 +64,7 @@ export default function IndexPage({ page }) {
           fetchPriority="high"
         />
       </Head>
-      <p className='text-white'>{t('title')}</p>
+      <p className="text-white">{t('title')}</p>
       <section>
         <figure>
           <ImageLoader
@@ -83,8 +84,6 @@ export default function IndexPage({ page }) {
 
         <h1>{page.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-
-        {/* <Comments posts={page} /> */}
       </section>
     </>
   );

@@ -50,7 +50,7 @@ export default function Page(props: GspPageProps) {
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.slug}`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
           key="canonical"
         />
         {/* Image Preload */}
