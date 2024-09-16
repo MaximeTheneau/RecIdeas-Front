@@ -24,7 +24,6 @@ export default function Page({ pageData }: PageProps) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
 
-  const { post } = pageData;
   const translations = Array.isArray(pageData.translation)
     ? pageData.translation
     : [pageData.translation];
@@ -34,7 +33,7 @@ export default function Page({ pageData }: PageProps) {
       { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
   );
   const page = {
-    ...post,
+    ...pageData,
     ...translation,
   };
   return (
@@ -115,7 +114,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/homeAll`);
   const posts = await res.json();
 
   posts.translation.forEach((post: any) => {

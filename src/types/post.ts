@@ -44,4 +44,5 @@ export interface Post {
     imgHeight: number;
     srcset: string | null;
     locale: string;
+    translation: Translation | Translation[];
   }

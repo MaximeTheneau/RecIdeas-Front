@@ -1,5 +1,5 @@
 import {
-  Button, Label, Textarea, TextInput,
+  Button, Label, Spinner, Textarea, TextInput,
 } from 'flowbite-react';
 import { useState } from 'react';
 
@@ -149,9 +149,6 @@ export default function Comments({ posts }) {
               <p className="">{comment.comment}</p>
               {comment.replies?.length > 0 && (
               <ul className="">
-                <li className="">
-                  <h4>Réponses :</h4>
-                </li>
                   {comment.replies?.map((response) => (
                     <li className="" key={response.id}>
                       <p className="">
@@ -162,8 +159,6 @@ export default function Comments({ posts }) {
                         </svg>
                       </p>
                       <p className="">
-                        le
-                        {' '}
                         <time dateTime={response.createdAt}>
                           {formattedDate(response.createdAt)}
                         </time>
@@ -231,10 +226,7 @@ export default function Comments({ posts }) {
             })}
           />
           {state.responses.isLoading ? (
-            <p>
-              Envoie en     cours...
-              {' '}
-            </p>
+            <Spinner />
           ) : (
             <p className="error">
               {state.responses.message && (
