@@ -6,10 +6,9 @@ import type {
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Post, Translation } from '@/types/post';
-import fetcher from '../../utils/fetcher';
-import ImageLoader from '../../components /image/ImageLoader';
-import Comments from '../../components /comments/Comments';
-import FormRecype from '../../components /formRecype/FormRecype';
+import fetcher from '../utils/fetcher';
+import ImageLoader from '../components /image/ImageLoader';
+import Comments from '../components /comments/Comments';
 
 interface PageProps {
   pageData: {
@@ -60,7 +59,7 @@ export default function Page({ pageData }: PageProps) {
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`}
           key="canonical"
         />
         {/* Image Preload */}
@@ -91,7 +90,6 @@ export default function Page({ pageData }: PageProps) {
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        <FormRecype locale={query.locale} />
         <Comments posts={page} />
       </section>
     </>
@@ -100,27 +98,27 @@ export default function Page({ pageData }: PageProps) {
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
   const { params } = context;
-  if (!params?.slug) {
+  if (!params?.locale) {
     return {
       notFound: true,
     };
   }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}home`);
 
   return {
     props: {
       pageData,
-      messages: (await import(`../../../messages/${params.locale}.json`)).default,
+      messages: (await import(`../../messages/${params.locale}.json`)).default,
     },
   };
 };
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
   const posts = await res.json();
 
-  posts.forEach((post: any) => {
+  posts.translation.forEach((post: any) => {
     paths.push({
       params: { locale: post.locale, slug: post.slug },
     });
