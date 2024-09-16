@@ -33,7 +33,7 @@ export default function Page({ pageData }: PageProps) {
       { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
   );
   const page = {
-    ...pageData,
+    ...pageData.post,
     ...translation,
   };
   return (

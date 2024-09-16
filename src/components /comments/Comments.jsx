@@ -176,8 +176,8 @@ export default function Comments({ posts }) {
 
       <form className="flex max-w-md flex-col gap-4 mr-auto ml-auto mt-4 mb-4" onSubmit={(e) => handleSubmit(e)}>
         <div>
-          <Label htmlFor="user">Pseudo</Label>
           <TextInput
+            placeholder="Pseudo"
             type="text"
             id="user"
             name="user"
@@ -189,14 +189,13 @@ export default function Comments({ posts }) {
                 user: e.target.value,
               },
             })}
+            className="mb-4"
           />
-          <Label htmlFor="email">
-            E-mail
-          </Label>
           <TextInput
             type="email"
             id="email"
             name="email"
+            placeholder="email@exemple.com"
             value={state.form.email}
             onChange={(e) => setState({
               ...state,
@@ -206,14 +205,15 @@ export default function Comments({ posts }) {
               },
             })}
             onBlur={(e) => handleBlur(e)}
+            className="mb-4"
           />
           {state.responses.messageComment && (
           <p className="error">
             {state.responses.messageComment}
           </p>
           )}
-          <Label htmlFor="comment">Comment</Label>
           <Textarea
+            placeholder="Comment"
             id="comment"
             name="comment"
             value={state.form.comment}

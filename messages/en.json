@@ -2,7 +2,8 @@
   "recype": {
     "btn-plat": "Click for 15 delicious dishes!",
     "btn-entree": "Click for 15 delicious starters!",
-    "btn-dessert":"Click for 15 delicious desserts!"
+    "btn-dessert":"Click for 15 delicious desserts!",
+    "placeholder-french":  "French, quick, eggs, vegetables, etc..."
   },
   "link": {
     "15-recype": "15 Recipe Ideas",

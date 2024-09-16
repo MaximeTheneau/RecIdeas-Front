@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Button, Spinner } from 'flowbite-react';
+import {
+  Button, Label, Spinner, TextInput,
+} from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
@@ -11,6 +13,7 @@ export default function FormRecype({ locale }) {
     form: {
       type: '',
       locale,
+      supplement: '',
     },
     timer: 0,
     message: '',
@@ -75,11 +78,26 @@ export default function FormRecype({ locale }) {
       },
       error: '',
     });
-    console.log(state);
   }
   return (
     <div>
       <form onSubmit={handleSubmit}>
+        <TextInput
+          placeholder={t('placeholder-french')}
+          type="text"
+          id="supplement"
+          name="supplement"
+          value={state.form.supplement}
+          onChange={(e) => setState({
+            ...state,
+            form: {
+              ...state.form,
+              supplement: e.target.value,
+            },
+          })}
+          className="m-4"
+        />
+
         <div className="flex flex-col sm:flex-row justify-around items-center">
           <Button
             type="submit"
