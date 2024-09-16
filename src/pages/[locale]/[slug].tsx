@@ -26,18 +26,25 @@ export default function Page({ pageData }: PageProps) {
   // }
 
   const { post } = pageData;
-  const translations = Array.isArray(pageData.translation)
-    ? pageData.translation
-    : [pageData.translation];
+  let page;
 
-  const translation = translations.find(
-    (translationFind:
+  if (query.locale !== 'fr') {
+    const translations = Array.isArray(pageData.translation)
+      ? pageData.translation
+      : [pageData.translation];
+
+    const translation = translations.find(
+      (translationFind:
       { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
-  );
-  const page = {
-    ...post,
-    ...translation,
-  };
+    );
+    page = {
+      ...post,
+      ...translation,
+    };
+  } else {
+    page = post;
+  }
+
   return (
     <>
       <Head>

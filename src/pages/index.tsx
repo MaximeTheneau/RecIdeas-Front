@@ -1,31 +1,26 @@
-import { useRouter } from 'next/router';
 import type {
   GetStaticProps,
-  GetStaticPaths,
-  InferGetStaticPropsType,
-  GetStaticPropsContext,
 } from 'next';
 import Head from 'next/head';
-import fetcher from '@/utils/fetcher';
-import Comments from '@/components /comments/Comments';
-import ImageLoader from '@/components /image/ImageLoader';
+import { Post } from '@/types/post';
+import fetcher from '../utils/fetcher';
+import ImageLoader from '../components /image/ImageLoader';
+import Comments from '../components /comments/Comments';
 
-type GspPageProps = InferGetStaticPropsType<typeof getStaticProps>;
+interface PageProps {
+  pageData: {
+    post: Post;
+  };
+}
+export default function Page({ pageData }: PageProps) {
+  // if (isFallback) {
+  //   return <div>Loading...</div>; // Affichez un indicateur de chargement
+  // }
 
-export default function IndexPage(props: GspPageProps) {
-  const router = useRouter();
-  const { isFallback, query } = router;
-
-  const translations = Array.isArray(props.pageData.translation)
-    ? props.pageData.translation
-    : [props.pageData.translation];
-
-  const page = translations.find(
-    (translation: { locale: string | string[] | undefined }) => translation.locale === query.locale,
-  ) || props.pageData.post;
-  if (isFallback) {
-    return 'Loading...';
-  }
+  const { post } = pageData;
+  const page = {
+    ...post,
+  };
   return (
     <>
       <Head>
@@ -34,12 +29,12 @@ export default function IndexPage(props: GspPageProps) {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={page.heading} />
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_URL}/${page.slug}`} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
         <meta property="og:description" content={page.metaDescription} />
-        <meta property="og:site_name" content="Une Taupe Chez Vous" />
+        <meta property="og:site_name" content="RecIdeas" />
         <meta property="og:image" content={`${page.imgPost}?format=jpeg`} />
-        <meta property="og:image:width" content={page.imgWidth} />
-        <meta property="og:image:height" content={page.imgHeight} />
+        <meta property="og:image:width" content={`${page.imgWidth}`} />
+        <meta property="og:image:height" content={`${page.imgHeight}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={page.heading} />
         <meta name="twitter:description" content={page.metaDescription} />
@@ -48,14 +43,14 @@ export default function IndexPage(props: GspPageProps) {
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`}
           key="canonical"
         />
         {/* Image Preload */}
         <link
           rel="preload"
           as="image"
-          imageSrcSet={page.srcset}
+          imageSrcSet={page.srcset || ''}
           imageSizes="100w"
           fetchPriority="high"
         />
@@ -87,6 +82,7 @@ export default function IndexPage(props: GspPageProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
+
   return {
     props: {
       pageData,
