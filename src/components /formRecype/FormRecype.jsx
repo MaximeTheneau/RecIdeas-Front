@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
-  Button, Label, Spinner, TextInput,
+  Button, Spinner, TextInput,
 } from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
