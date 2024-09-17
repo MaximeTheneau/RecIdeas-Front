@@ -1,5 +1,5 @@
 import {
-  Button, Label, Spinner, Textarea, TextInput,
+  Button, Spinner, Textarea, TextInput,
 } from 'flowbite-react';
 import { useState } from 'react';
 
