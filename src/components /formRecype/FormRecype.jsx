@@ -101,7 +101,7 @@ export default function FormRecype({ locale }) {
         <div className="flex flex-col sm:flex-row justify-around items-center">
           <Button
             type="submit"
-            onClick={() => handleClick('plat')}
+            onClick={() => handleClick('dish')}
             id="dish"
             className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
           >
