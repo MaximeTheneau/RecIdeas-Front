@@ -102,7 +102,7 @@ export default function FormRecype({ locale }) {
           <Button
             type="submit"
             onClick={() => handleClick('plat')}
-            id="plat"
+            id="dish"
             className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
           >
             <MdFlatware className="w-4" />
@@ -111,7 +111,7 @@ export default function FormRecype({ locale }) {
 
           <Button
             type="submit"
-            onClick={() => handleClick('entrée')}
+            onClick={() => handleClick('entrance')}
             className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
           >
             <LuSalad className="w-4" />
