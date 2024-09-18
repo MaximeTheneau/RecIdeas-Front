@@ -80,7 +80,7 @@ export default function FormRecype({ locale }) {
     });
   }
   return (
-    <div className="bg-primary">
+    <div className="bg-primary p-4 rounded">
       <form onSubmit={handleSubmit}>
         <TextInput
           placeholder={t('placeholder-french')}
@@ -98,31 +98,31 @@ export default function FormRecype({ locale }) {
           className="m-4"
         />
 
-        <div className="flex flex-col sm:flex-row justify-around items-center">
+        <div className="flex flex-col sm:flex-row justify-around items-center m-4">
           <Button
             type="submit"
             onClick={() => handleClick('dish')}
             id="dish"
-            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
+            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1 "
           >
-            <MdFlatware className="w-4" />
+            <MdFlatware className="w-8" />
             {t('btn-plat')}
           </Button>
 
           <Button
             type="submit"
             onClick={() => handleClick('entrance')}
-            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
+            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
-            <LuSalad className="w-4" />
+            <LuSalad className="w-8" />
             {t('btn-entree')}
           </Button>
           <Button
             type="submit"
             onClick={() => handleClick('dessert')}
-            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
+            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
-            <LuCakeSlice className="w-4" />
+            <LuCakeSlice className="w-8" />
             {t('btn-dessert')}
           </Button>
         </div>

@@ -8,9 +8,10 @@ import { useRouter } from 'next/router';
 import { Post, Translation } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import fetcher from '../../utils/fetcher';
-import ImageLoader from '../../components /image/ImageLoader';
+// import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
 import FormRecype from '../../components /formRecype/FormRecype';
+import BreadcrumbJsonLd from '../../components /jsonLd/BreadcrumbJsonLd';
 
 interface PageProps {
   pageData: {
@@ -45,7 +46,7 @@ export default function Page({ pageData }: PageProps) {
   } else {
     page = post;
   }
-
+  const urlPost = `${process.env.NEXT_PUBLIC_URL}${post.url}`;
   return (
     <>
       <Head>
@@ -79,9 +80,10 @@ export default function Page({ pageData }: PageProps) {
           imageSizes="100w"
           fetchPriority="high"
         />
+        <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
       <section>
-        <figure>
+        {/* <figure>
           <ImageLoader
             src={page.imgPost}
             alt={page.altImg || page.title}
@@ -95,7 +97,7 @@ export default function Page({ pageData }: PageProps) {
             {page.altImg}
           </figcaption>
           )}
-        </figure>
+        </figure> */}
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />

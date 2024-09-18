@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
-const flowbite = require("flowbite-react/tailwind");
+import type { Config } from 'tailwindcss';
+
+const flowbite = require('flowbite-react/tailwind');
 
 const config: Config = {
   content: [
@@ -9,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#B461A8',
-        secondaryLight: '#B461A801',
+        primary: '#fa8305',
+        secondaryLight: '#FB9C37',
         secondary: '#B461A7',
         white: '#ffffff',
         whiteOpacity: 'rgba(255, 255, 255, 0.5)',
@@ -18,7 +19,7 @@ const config: Config = {
       },
     },
   },
-  
+
   plugins: [
     flowbite.plugin(),
   ],

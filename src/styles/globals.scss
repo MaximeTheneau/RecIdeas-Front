@@ -7,6 +7,7 @@
 
 body{
   font-family: var(--font-body);
+  font-size: 1rem;
   
 }
 
@@ -14,12 +15,21 @@ h1{
   font-family: var(--font-heading);
   font-size: 3rem;
 }
+h2,
+h3,
+h4{
+  font-size: 2rem;
+}
+
+i{
+}
+
 :focus{
 box-shadow: none !important;
 }
 
 button:hover{
-  background-color: #b461a88f  !important;
+  background-color: #FB9C37  !important;
 }
 ol {
   list-style-position: inside;
@@ -32,3 +42,5 @@ ol {
     margin: 1rem auto;
   }
 }
+
+

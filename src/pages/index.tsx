@@ -3,6 +3,7 @@ import type {
 } from 'next';
 import Head from 'next/head';
 import { Post } from '@/types/post';
+import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -55,6 +56,7 @@ export default function Page({ pageData }: PageProps) {
           imageSizes="100w"
           fetchPriority="high"
         />
+        <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       </Head>
       <section>
         <figure>
