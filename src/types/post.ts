@@ -21,6 +21,20 @@ export interface Translation {
     url: string;
     locale: string;
   }
+export interface ParagraphPost {
+    id: number;
+    subtitle: string;
+    paragraph: string;
+    imgPostParagh: string | null;
+    altImg: string | null;
+    slug: string;
+    link: string | null;
+    linkSubtitle: string | null;
+    imgWidth: number | null;
+    imgHeight: number | null;
+    imgPost: string | null;
+    srcset: string | null;
+}
 
 export interface Post {
     id: number;
@@ -45,4 +59,5 @@ export interface Post {
     srcset: string | null;
     locale: string;
     translation: Translation | Translation[];
+    paragraphPosts: ParagraphPost[] | ParagraphPost[];
   }

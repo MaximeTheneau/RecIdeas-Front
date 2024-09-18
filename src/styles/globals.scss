@@ -21,3 +21,14 @@ box-shadow: none !important;
 button:hover{
   background-color: #b461a88f  !important;
 }
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  margin: 1rem  ;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  & li{
+    margin: 1rem auto;
+  }
+}

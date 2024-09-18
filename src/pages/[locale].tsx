@@ -6,6 +6,7 @@ import type {
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Post, Translation } from '@/types/post';
+import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -24,18 +25,33 @@ export default function Page({ pageData }: PageProps) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
 
-  const translations = Array.isArray(pageData.translation)
-    ? pageData.translation
-    : [pageData.translation];
+  // const translations = Array.isArray(pageData.translation)
+  //   ? pageData.translation
+  //   : [pageData.translation];
 
-  const translation = translations.find(
+  // const translation = translations.find(
+  //   (translationFind:
+  //     { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
+  // );
+  // const page = {
+  //   ...pageData.post,
+  //   ...translation,
+  // };
+  const { post, translation } = pageData;
+
+  const translations = Array.isArray(translation)
+    ? translation
+    : [translation];
+
+  const translationFilter = translations.find(
     (translationFind:
       { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
   );
   const page = {
-    ...pageData.post,
-    ...translation,
+    ...post,
+    ...translationFilter,
   };
+
   return (
     <>
       <Head>
@@ -89,6 +105,50 @@ export default function Page({ pageData }: PageProps) {
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <TableOfContents post={page} />
+        {page.paragraphPosts.map((paragraphArticle : any) => (
+          <div key={paragraphArticle.id}>
+            {paragraphArticle.subtitle && (
+              <h2 id={paragraphArticle.slug}>
+                {paragraphArticle.subtitle}
+              </h2>
+            )}
+            {paragraphArticle.paragraph && (
+              <div key={paragraphArticle.id}>
+                {/* {paragraphArticle.imgPostParagh && (
+                <figure className={styles.page__contents__paragraph__figure}>
+                  <ImageLoader
+                    src={paragraphArticle.imgPost}
+                    alt={paragraphArticle.altImg}
+                    width={paragraphArticle.imgWidth}
+                    height={paragraphArticle.imgHeight}
+                    srcset={paragraphArticle.srcset}
+                  />
+                  {paragraphArticle.subtitle !== paragraphArticle.altImgParagh && (
+                  <figcaption className="caption">
+                    {paragraphArticle.altImg}
+                  </figcaption>
+                  )}
+                </figure>
+                )} */}
+                <div
+                  dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
+                />
+                {/* {paragraphArticle.link && (
+                  <div className={styles.page__contents__paragraph__links}>
+                    <span className={styles.page__contents__paragraph__links__link}>
+                      → A lire aussi :
+                      <Link href={paragraphArticle.link}>
+                        {' '}
+                        {paragraphArticle.linkSubtitle}
+                      </Link>
+                    </span>
+                  </div>
+                )} */}
+              </div>
+            )}
+          </div>
+        ))}
         <Comments posts={page} />
       </section>
     </>
@@ -102,7 +162,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       notFound: true,
     };
   }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}home`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/dehome`);
 
   return {
     props: {

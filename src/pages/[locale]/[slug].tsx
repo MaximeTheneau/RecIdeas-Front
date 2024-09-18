@@ -6,6 +6,7 @@ import type {
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { Post, Translation } from '@/types/post';
+import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import fetcher from '../../utils/fetcher';
 import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -99,6 +100,51 @@ export default function Page({ pageData }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <FormRecype locale={query.locale} />
+
+        <TableOfContents post={page} />
+        {page.paragraphPosts.map((paragraphArticle : any) => (
+          <div key={paragraphArticle.id}>
+            {paragraphArticle.subtitle && (
+              <h2 id={paragraphArticle.slug}>
+                {paragraphArticle.subtitle}
+              </h2>
+            )}
+            {paragraphArticle.paragraph && (
+              <div key={paragraphArticle.id}>
+                {/* {paragraphArticle.imgPostParagh && (
+                <figure className={styles.page__contents__paragraph__figure}>
+                  <ImageLoader
+                    src={paragraphArticle.imgPost}
+                    alt={paragraphArticle.altImg}
+                    width={paragraphArticle.imgWidth}
+                    height={paragraphArticle.imgHeight}
+                    srcset={paragraphArticle.srcset}
+                  />
+                  {paragraphArticle.subtitle !== paragraphArticle.altImgParagh && (
+                  <figcaption className="caption">
+                    {paragraphArticle.altImg}
+                  </figcaption>
+                  )}
+                </figure>
+                )} */}
+                <div
+                  dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
+                />
+                {/* {paragraphArticle.link && (
+                  <div className={styles.page__contents__paragraph__links}>
+                    <span className={styles.page__contents__paragraph__links__link}>
+                      → A lire aussi :
+                      <Link href={paragraphArticle.link}>
+                        {' '}
+                        {paragraphArticle.linkSubtitle}
+                      </Link>
+                    </span>
+                  </div>
+                )} */}
+              </div>
+            )}
+          </div>
+        ))}
         <Comments posts={page} />
       </section>
     </>

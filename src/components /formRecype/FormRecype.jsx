@@ -11,7 +11,7 @@ export default function FormRecype({ locale }) {
   const t = useTranslations('recype');
   const [state, setState] = useState({
     form: {
-      type: '',
+      type: 'dish',
       locale,
       supplement: '',
     },
@@ -80,7 +80,7 @@ export default function FormRecype({ locale }) {
     });
   }
   return (
-    <div>
+    <div className="bg-primary">
       <form onSubmit={handleSubmit}>
         <TextInput
           placeholder={t('placeholder-french')}
@@ -103,7 +103,7 @@ export default function FormRecype({ locale }) {
             type="submit"
             onClick={() => handleClick('dish')}
             id="dish"
-            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
             <MdFlatware className="w-4" />
             {t('btn-plat')}
@@ -112,7 +112,7 @@ export default function FormRecype({ locale }) {
           <Button
             type="submit"
             onClick={() => handleClick('entrance')}
-            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
             <LuSalad className="w-4" />
             {t('btn-entree')}
@@ -120,7 +120,7 @@ export default function FormRecype({ locale }) {
           <Button
             type="submit"
             onClick={() => handleClick('dessert')}
-            className="bg-secondary hover:bg-secondaryLight w-1/3 sm:w-1/4 m-1"
+            className="bg-secondary hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
             <LuCakeSlice className="w-4" />
             {t('btn-dessert')}
@@ -128,12 +128,13 @@ export default function FormRecype({ locale }) {
         </div>
       </form>
 
-      {/* <button type="submit" className="button">Envoyer</button> */}
-      {state.message && <p dangerouslySetInnerHTML={{ __html: state.message }} />}
+      {state.error && <p className="">{state.error}</p>}
+
+      {state.message
+      && <p dangerouslySetInnerHTML={{ __html: state.message }} className="flex justify-center" />}
       {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" />
       )}
-      {state.error && <p className="">{state.error}</p>}
     </div>
   );
 }
