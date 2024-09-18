@@ -9,5 +9,12 @@
   "link": {
     "15-recype": "15 idee per ricette",
     "15-recype-link": "/it/15-idee-per-ricette"
-    }
+    },
+    "cookies": {
+      "preference-accept": "Invia preferenze",
+      "preference": "Personalizzare",
+      "accept": "Accettare",
+      "refuse": "Rifiutare",
+      "text-cookies": "Accetta l'uso dei cookie per aiutarci a migliorare il nostro sito web. La scelta è tua!"
+  }
 }

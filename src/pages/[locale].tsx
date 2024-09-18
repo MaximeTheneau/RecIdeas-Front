@@ -52,7 +52,6 @@ export default function Page({ pageData }: PageProps) {
     ...post,
     ...translationFilter,
   };
-
   return (
     <>
       <Head>
@@ -164,7 +163,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       notFound: true,
     };
   }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/dehome`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}home`);
 
   return {
     props: {

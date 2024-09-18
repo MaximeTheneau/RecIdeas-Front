@@ -8,5 +8,12 @@
   "link": {
     "15-recype": "15 Rezeptideen",
     "15-recype-link": "/de/15-rezept-ideen"
+    },
+    "cookies": {
+      "preference-accept": "Präferenzen einreichen",
+      "preference": "Personalisieren",
+      "accept": "Akzeptieren",
+      "refuse": "Ablehnen",
+      "text-cookies": "Akzeptieren Sie die Verwendung von Cookies, um uns zu helfen, unsere Website zu verbessern. Die Wahl liegt bei Ihnen!"
     }
 }

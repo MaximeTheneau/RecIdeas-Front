@@ -5,6 +5,9 @@ import { Rubik, Exo } from 'next/font/google';
 import Layout from '@/components /layout';
 import { AppProps } from 'next/app';
 import { ParsedUrlQuery } from 'querystring';
+import Head from 'next/head';
+import CookiesModal from '../components /modal/cookies/Cookies';
+import { CookiesProvider } from '../context/CookiesContext';
 
 const roboto = Rubik({
   weight: '400',
@@ -23,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
     return query.locale || 'fr';
   }
+
   return (
     <>
       <style jsx global>
@@ -33,14 +37,25 @@ export default function App({ Component, pageProps }: AppProps) {
       }
     `}
       </style>
+      <Head>
+        <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GOOGLE_WEBMASTER_ID} />
+        <meta name="yandex-verification" content={process.env.NEXT_PUBLIC_YANDEX_WEBMASTER_ID} />
+        <meta name="ahrefs-site-verification" content="80e1e4c68c5760798a0c167d6db84e79e9b343301fd1eb054f1da5fc8529e778" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="google-adsense-account" content="ca-pub-9194552698690511" />
+        <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+      </Head>
       <NextIntlClientProvider
         locale={getLocale(router.query)}
         timeZone="Europe/Vienna"
         messages={pageProps.messages}
       >
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <CookiesProvider>
+          <CookiesModal />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </CookiesProvider>
       </NextIntlClientProvider>
     </>
   );
