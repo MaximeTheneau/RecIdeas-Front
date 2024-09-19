@@ -8,7 +8,7 @@
   },
   "link": {
     "15-recype": "15 Recipe Ideas",
-    "15-recype-link": "/en/15-recipe-ideas"
+    "15-recype-link": "/en/15-Recipe-Ideas"
     },
     "cookies": {
       "preference-accept": "Submit preferences",
@@ -19,6 +19,6 @@
   },
   "footer":{
     "mention-legal": "Legal Mentions",
-    "mention-legal-link":"/en\/legal-mentions"
+    "mention-legal-link":"/en/Legal-Notices"
   }
 }

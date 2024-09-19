@@ -134,14 +134,14 @@ export default function FormRecype({ locale, recypeDefault }) {
         </div>
       </form>
       <div>
-
+        {state.loading && (
+        <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
+        )}
         {state.error && <p className="mt-4 text-xl">{state.error}</p>}
         {state.message
           ? <p dangerouslySetInnerHTML={{ __html: state.message }} className="ml-8" />
           : <p dangerouslySetInnerHTML={{ __html: recypeDefault }} className="ml-8" />}
-        {state.loading && (
-        <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
-        )}
+
       </div>
     </div>
   );
