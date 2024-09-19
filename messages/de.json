@@ -3,7 +3,8 @@
     "btn-plat": "Klicken Sie für 15 köstliche Gerichte!",
     "btn-entree": "Klicken Sie für 15 köstliche Vorspeisen!",
     "btn-dessert": "Klicken Sie für 15 köstliche Desserts!",
-    "placeholder-french":  "Französisch, schnell, Eier, Gemüse, usw..."
+    "placeholder-french":  "Französisch, schnell, Eier, Gemüse, usw...",
+    "label": "Zutaten oder Stichwörter"
   },
   "link": {
     "15-recype": "15 Rezeptideen",

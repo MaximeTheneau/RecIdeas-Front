@@ -17,7 +17,13 @@ export default function Navbar() {
         </ul>
       </div>
       <div>
-        <Dropdown dismissOnClick={false} label={<TbMessageLanguage />} color="light" className="p-1 hover:bg-gray-200 hover:text-black bg-gray-200 active:bg-violet-700 focus:outline-none">
+        <Dropdown
+          aria-label="lang"
+          dismissOnClick={false}
+          label={<TbMessageLanguage />}
+          color="light"
+          className="p-1 hover:bg-gray-200 hover:text-black bg-gray-200 active:bg-violet-700 focus:outline-none"
+        >
           <Dropdown.Item as={Link} href="/">Fr</Dropdown.Item>
           <Dropdown.Item as={Link} href="/en">En</Dropdown.Item>
           <Dropdown.Item as={Link} href="/de">De</Dropdown.Item>

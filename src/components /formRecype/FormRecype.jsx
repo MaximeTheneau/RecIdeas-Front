@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
-  Button, Spinner, TextInput,
+  Button, Label, Spinner, TextInput,
 } from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
@@ -82,6 +82,11 @@ export default function FormRecype({ locale }) {
   return (
     <div className="bg-primary p-4 rounded">
       <form onSubmit={handleSubmit}>
+        <Label htmlFor="supplement" className="text-xl">
+          {t('label')}
+          {' '}
+          :
+        </Label>
         <TextInput
           placeholder={t('placeholder-french')}
           type="text"
@@ -95,6 +100,7 @@ export default function FormRecype({ locale }) {
               supplement: e.target.value,
             },
           })}
+          maxLength={150}
           className="m-4"
         />
 
