@@ -128,7 +128,7 @@ export default function Page({ pageData }: PageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/home`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/fr/home`);
 
   return {
     props: {

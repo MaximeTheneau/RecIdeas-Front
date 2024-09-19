@@ -163,7 +163,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       notFound: true,
     };
   }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}home`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}/${params.locale}home`);
 
   return {
     props: {

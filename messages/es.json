@@ -16,5 +16,9 @@
       "accept": "Aceptar",
       "refuse": "Rechazar",
       "text-cookies": "Acepta el uso de cookies para ayudarnos a mejorar nuestro sitio web. ¡La decisión es tuya!"
+  },
+  "footer":{
+    "mention-legal": "Avisos Legales",
+    "mention-legal-link":"/es/mentions-legales"
   }
-  }
+}

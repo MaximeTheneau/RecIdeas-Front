@@ -7,7 +7,7 @@ import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
 import Middleware from '../../middleware/Middleware';
 
-export default function FormRecype({ locale }) {
+export default function FormRecype({ locale, recypeDefault }) {
   const t = useTranslations('recype');
   const [state, setState] = useState({
     form: {
@@ -80,8 +80,8 @@ export default function FormRecype({ locale }) {
     });
   }
   return (
-    <div className="bg-primary p-4 rounded">
-      <form onSubmit={handleSubmit}>
+    <div>
+      <form onSubmit={handleSubmit} className="bg-primary p-4 rounded">
         <Label htmlFor="supplement" className="text-xl">
           {t('label')}
           {' '}
@@ -133,14 +133,16 @@ export default function FormRecype({ locale }) {
           </Button>
         </div>
       </form>
+      <div>
 
-      {state.error && <p className="">{state.error}</p>}
-
-      {state.message
-      && <p dangerouslySetInnerHTML={{ __html: state.message }} className="flex justify-center" />}
-      {state.loading && (
-        <Spinner aria-label="Recype loading" size="lg" />
-      )}
+        {state.error && <p className="mt-4 text-xl">{state.error}</p>}
+        {state.message
+          ? <p dangerouslySetInnerHTML={{ __html: state.message }} className="ml-8" />
+          : <p dangerouslySetInnerHTML={{ __html: recypeDefault }} className="ml-8" />}
+        {state.loading && (
+        <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
+        )}
+      </div>
     </div>
   );
 }

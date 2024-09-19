@@ -4,8 +4,7 @@ import type {
   GetStaticPropsContext,
 } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { Post, Translation } from '@/types/post';
+import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
@@ -14,39 +13,16 @@ import FormRecype from '../../components /formRecype/FormRecype';
 import BreadcrumbJsonLd from '../../components /jsonLd/BreadcrumbJsonLd';
 
 interface PageProps {
-  pageData: {
-    post: Post;
-    translation: Translation | Translation[];
-  };
+    page: Post;
+    isRecypePage: boolean;
+    recypeDefault: string ;
 }
-export default function Page({ pageData }: PageProps) {
-  const router = useRouter();
-  const { query } = router;
-
+export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
-
-  const { post } = pageData;
-  let page;
-
-  if (query.locale !== 'fr') {
-    const translations = Array.isArray(pageData.translation)
-      ? pageData.translation
-      : [pageData.translation];
-
-    const translation = translations.find(
-      (translationFind:
-      { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
-    );
-    page = {
-      ...post,
-      ...translation,
-    };
-  } else {
-    page = post;
-  }
-  const urlPost = `${process.env.NEXT_PUBLIC_URL}${post.url}`;
+  console.log(recypeDefault);
+  const urlPost = `${process.env.NEXT_PUBLIC_URL}${page.url}`;
   return (
     <>
       <Head>
@@ -101,9 +77,9 @@ export default function Page({ pageData }: PageProps) {
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        <FormRecype locale={query.locale} />
-
+        {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
+
         {page.paragraphPosts.map((paragraphArticle : any) => (
           <div key={paragraphArticle.id}>
             {paragraphArticle.subtitle && (
@@ -147,7 +123,7 @@ export default function Page({ pageData }: PageProps) {
             )}
           </div>
         ))}
-        <Comments posts={page} />
+        {isRecypePage && <Comments posts={page} />}
       </section>
     </>
   );
@@ -160,12 +136,34 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       notFound: true,
     };
   }
-  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.slug}`);
+  const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}/${params.slug}`);
+  const recype = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeaze12aazxsd`);
 
+  const { post } = pageData;
+  let page;
+  if (params.locale !== 'fr') {
+    const translations = Array.isArray(pageData.translation)
+      ? pageData.translation
+      : [pageData.translation];
+
+    const translation = translations.find(
+      (translationFind:
+      { locale: string | string[] | undefined }) => translationFind.locale === params.locale,
+    );
+    page = {
+      ...post,
+      ...translation,
+    };
+  } else {
+    page = post;
+  }
+  const isRecypePage = page.slug.startsWith('15');
   return {
     props: {
-      pageData,
+      page,
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
+      isRecypePage,
+      recypeDefault: recype.contents,
     },
   };
 };
