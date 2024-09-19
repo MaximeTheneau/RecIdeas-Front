@@ -5,6 +5,8 @@ const flowbite = require('flowbite-react/tailwind');
 const config: Config = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
+    './src/**/**/*.{js,ts,jsx,tsx}',
+    './src/**/**/**/*.{js,ts,jsx,tsx}',
     flowbite.content(),
   ],
   theme: {

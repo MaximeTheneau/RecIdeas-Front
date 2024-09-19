@@ -20,5 +20,8 @@
     "footer":{
       "mention-legal": "Mentions légales",
       "mention-legal-link":"/fr/mentions-legales"
+    },
+    "comment": {
+      "title": "Commentaire"
     }
 }

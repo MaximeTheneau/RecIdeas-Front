@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="ahrefs-site-verification" content="80e1e4c68c5760798a0c167d6db84e79e9b343301fd1eb054f1da5fc8529e778" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="ca-pub-9194552698690511" />
-        <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <NextIntlClientProvider
         locale={getLocale(router.query)}

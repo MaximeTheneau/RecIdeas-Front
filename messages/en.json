@@ -20,5 +20,8 @@
   "footer":{
     "mention-legal": "Legal Mentions",
     "mention-legal-link":"/en/Legal-Notices"
+  },
+  "comment": {
+    "title": "Comment"
   }
 }

@@ -4,6 +4,9 @@ import type {
 import Head from 'next/head';
 import { Post } from '@/types/post';
 import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
+import { Button } from 'flowbite-react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -18,6 +21,7 @@ export default function Page({ pageData }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
+  const t = useTranslations('link');
 
   const { post } = pageData;
   const page = {
@@ -68,15 +72,17 @@ export default function Page({ pageData }: PageProps) {
             srcset={page.srcset}
             priority
           />
-          {page.title !== page.altImg && (
-          <figcaption className="caption">
-            {page.altImg}
-          </figcaption>
-          )}
         </figure>
         <h1>{page.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <div className="flex flex-col items-center my-4">
+          <Button className="font-black bg-primary ">
+            <Link href={t('15-recype-link')}>
+              {t('15-recype')}
+            </Link>
+          </Button>
+        </div>
         <TableOfContents post={page} />
         {page.paragraphPosts.map((paragraphArticle : any) => (
           <div key={paragraphArticle.id}>

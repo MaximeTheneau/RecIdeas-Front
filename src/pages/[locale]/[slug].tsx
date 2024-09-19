@@ -21,7 +21,6 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
-  console.log(recypeDefault);
   const urlPost = `${process.env.NEXT_PUBLIC_URL}${page.url}`;
   return (
     <>

@@ -1,9 +1,12 @@
 import {
   Button, Spinner, Textarea, TextInput,
 } from 'flowbite-react';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 export default function Comments({ posts }) {
+  const t = useTranslations('comment');
+
   const [state, setState] = useState({
     responses: {
       error: false,
@@ -129,7 +132,7 @@ export default function Comments({ posts }) {
         <h3>
           {posts.comments?.length}
           {' '}
-          Commentaires
+          {t('title')}
         </h3>
         <ul className="">
           {posts.comments?.map((comment) => (
@@ -175,6 +178,7 @@ export default function Comments({ posts }) {
       )}
 
       <form className="flex max-w-md flex-col gap-4 mr-auto ml-auto mt-4 mb-4" onSubmit={(e) => handleSubmit(e)}>
+        <h2>{t('title')}</h2>
         <div>
           <TextInput
             placeholder="Pseudo"
