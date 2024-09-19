@@ -13,7 +13,7 @@ const generateSitemap = async () => {
     const sitemapXml = pages
       .map((page) => `<url>
           <loc>${urlFront}${page.url}</loc>
-          <lastmod>${page.updatedAt ? page.updatedAt : new Date().toISOString()}}</lastmod>
+          <lastmod>${page.updatedAt ? page.updatedAt : new Date().toISOString()}</lastmod>
         </url>`)
       .join('');
 
