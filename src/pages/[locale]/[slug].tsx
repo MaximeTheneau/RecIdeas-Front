@@ -59,7 +59,7 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
         <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
       <section>
-        <div className="flex">
+        <div className="flex items-end">
           <figure className="w-1/3">
             <ImageLoader
               src={page.imgPost}

@@ -1,0 +1,21 @@
+name: Build Next.js Application
+
+on:
+  repository_dispatch:
+    types: [trigger-nextjs-build]
+
+jobs:
+  build:
+    name: Build Next.js Application
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        script: |
+          cd /var/www/html/RecIdeas-Front
+          pnpm run build

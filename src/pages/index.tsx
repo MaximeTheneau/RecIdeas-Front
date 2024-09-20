@@ -63,17 +63,19 @@ export default function Page({ pageData }: PageProps) {
         <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       </Head>
       <section>
-        <figure>
-          <ImageLoader
-            src={page.imgPost}
-            alt={page.altImg || page.title}
-            width={page.imgWidth}
-            height={page.imgHeight}
-            srcset={page.srcset}
-            priority
-          />
-        </figure>
-        <h1>{page.title}</h1>
+        <div className="flex items-end">
+          <figure className="w-1/3">
+            <ImageLoader
+              src={page.imgPost}
+              alt={page.altImg || page.title}
+              width={page.imgWidth}
+              height={page.imgHeight}
+              srcset={page.srcset}
+              priority
+            />
+          </figure>
+          <h1 className="w-2/3">{page.title}</h1>
+        </div>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
