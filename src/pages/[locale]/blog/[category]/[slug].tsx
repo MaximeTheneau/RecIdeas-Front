@@ -7,18 +7,17 @@ import Head from 'next/head';
 import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import ImageLoader from '@/components /image/ImageLoader';
-import fetcher from '../../utils/fetcher';
+import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
-import Comments from '../../components /comments/Comments';
-import FormRecype from '../../components /formRecype/FormRecype';
-import BreadcrumbJsonLd from '../../components /jsonLd/BreadcrumbJsonLd';
+import Comments from '../../../../components /comments/Comments';
+import FormRecype from '../../../../components /formRecype/FormRecype';
+import BreadcrumbJsonLd from '../../../../components /jsonLd/BreadcrumbJsonLd';
 
 interface PageProps {
     page: Post;
-    isRecypePage: boolean;
-    recypeDefault: string ;
+
 }
-export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
+export default function Page({ page }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
@@ -73,7 +72,6 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
           <h1 className="w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
 
         {page.paragraphPosts.map((paragraphArticle : any) => (
@@ -119,7 +117,7 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
             )}
           </div>
         ))}
-        {isRecypePage && <Comments posts={page} />}
+        <Comments posts={page} />
       </section>
     </>
   );
@@ -133,7 +131,6 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     };
   }
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}/${params.slug}`);
-  const recype = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeaze12aazxsd`);
 
   const { post } = pageData;
   let page;
@@ -153,25 +150,22 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   } else {
     page = post;
   }
-  const isRecypePage = page.slug.startsWith('15');
   return {
     props: {
       page,
-      messages: (await import(`../../../messages/${params.locale}.json`)).default,
-      isRecypePage,
-      recypeDefault: recype.contents,
+      messages: (await import(`../../../../../messages/${params.locale}.json`)).default,
     },
   };
 };
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths: { params: { slug: string, locale: string } }[] = [];
+  const paths: { params: { slug: string, locale: string, category : string } }[] = [];
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/all`);
   const posts = await res.json();
 
   posts.forEach((post: any) => {
     paths.push({
-      params: { locale: post.locale, slug: post.slug },
+      params: { locale: post.locale, slug: post.slug, category: post.category.name },
     });
   });
 
