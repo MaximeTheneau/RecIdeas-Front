@@ -20,3 +20,4 @@ jobs:
           cd /var/www/html/RecIdeas-Front
           git stash
           git pull
+          pnpm run build
