@@ -4,7 +4,7 @@ const fs = require('fs');
 const RSS_NAMESPACE = 'http://www.w3.org/2005/Atom';
 const SITE_URL = 'https://recideas.com';
 const FEED_URL = `${SITE_URL}/rss.xml`;
-const API_URL = 'https://back.recideas.com/api/posts&category=Articles';
+const API_URL = 'https://back.recideas.com/api/posts/all';
 
 const fetchPostsFromApi = async () => {
   try {

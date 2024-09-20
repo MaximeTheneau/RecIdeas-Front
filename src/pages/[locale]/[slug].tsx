@@ -6,6 +6,7 @@ import type {
 import Head from 'next/head';
 import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
+import ImageLoader from '@/components /image/ImageLoader';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -58,23 +59,19 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
         <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
       <section>
-        {/* <figure>
-          <ImageLoader
-            src={page.imgPost}
-            alt={page.altImg || page.title}
-            width={page.imgWidth}
-            height={page.imgHeight}
-            srcset={page.srcset}
-            priority
-          />
-          {page.title !== page.altImg && (
-          <figcaption className="caption">
-            {page.altImg}
-          </figcaption>
-          )}
-        </figure> */}
-        <h1>{page.title}</h1>
-
+        <div className="flex">
+          <figure className="w-1/3">
+            <ImageLoader
+              src={page.imgPost}
+              alt={page.altImg || page.title}
+              width={page.imgWidth}
+              height={page.imgHeight}
+              srcset={page.srcset}
+              priority
+            />
+          </figure>
+          <h1 className="w-2/3">{page.title}</h1>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
