@@ -5,12 +5,10 @@ import type {
 } from 'next';
 import Head from 'next/head';
 import { Post } from '@/types/post';
-import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import ImageLoader from '@/components /image/ImageLoader';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../../../components /comments/Comments';
-import FormRecype from '../../../../components /formRecype/FormRecype';
 import BreadcrumbJsonLd from '../../../../components /jsonLd/BreadcrumbJsonLd';
 
 interface PageProps {
@@ -58,8 +56,9 @@ export default function Page({ page }: PageProps) {
         <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
       <section>
-        <div className="flex items-end">
-          <figure className="w-1/3">
+        <div className="flex flex-col sm:flex-row  sm:items-end">
+          <h1 className="w-full sm:w-2/3">{page.title}</h1>
+          <figure className="w-full sm:w-1/3">
             <ImageLoader
               src={page.imgPost}
               alt={page.altImg || page.title}
@@ -69,54 +68,8 @@ export default function Page({ page }: PageProps) {
               priority
             />
           </figure>
-          <h1 className="w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        <TableOfContents post={page} />
-
-        {page.paragraphPosts.map((paragraphArticle : any) => (
-          <div key={paragraphArticle.id}>
-            {paragraphArticle.subtitle && (
-              <h2 id={paragraphArticle.slug}>
-                {paragraphArticle.subtitle}
-              </h2>
-            )}
-            {paragraphArticle.paragraph && (
-              <div key={paragraphArticle.id}>
-                {/* {paragraphArticle.imgPostParagh && (
-                <figure className={styles.page__contents__paragraph__figure}>
-                  <ImageLoader
-                    src={paragraphArticle.imgPost}
-                    alt={paragraphArticle.altImg}
-                    width={paragraphArticle.imgWidth}
-                    height={paragraphArticle.imgHeight}
-                    srcset={paragraphArticle.srcset}
-                  />
-                  {paragraphArticle.subtitle !== paragraphArticle.altImgParagh && (
-                  <figcaption className="caption">
-                    {paragraphArticle.altImg}
-                  </figcaption>
-                  )}
-                </figure>
-                )} */}
-                <div
-                  dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
-                />
-                {/* {paragraphArticle.link && (
-                  <div className={styles.page__contents__paragraph__links}>
-                    <span className={styles.page__contents__paragraph__links__link}>
-                      → A lire aussi :
-                      <Link href={paragraphArticle.link}>
-                        {' '}
-                        {paragraphArticle.linkSubtitle}
-                      </Link>
-                    </span>
-                  </div>
-                )} */}
-              </div>
-            )}
-          </div>
-        ))}
         <Comments posts={page} />
       </section>
     </>
@@ -160,12 +113,12 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string, category : string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/all`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category/blog`);
   const posts = await res.json();
 
   posts.forEach((post: any) => {
     paths.push({
-      params: { locale: post.locale, slug: post.slug, category: post.category.name },
+      params: { locale: post.locale, slug: post.slug, category: post.category.slug },
     });
   });
 
