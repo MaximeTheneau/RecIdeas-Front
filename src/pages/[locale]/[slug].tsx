@@ -41,7 +41,7 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
         <meta name="twitter:title" content={page.heading} />
         <meta name="twitter:description" content={page.metaDescription} />
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
-        <meta property="twitter:creator" content="@UneTaupe_" />
+        <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"

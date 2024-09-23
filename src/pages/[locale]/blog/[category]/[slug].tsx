@@ -6,10 +6,10 @@ import type {
 import Head from 'next/head';
 import { Post } from '@/types/post';
 import ImageLoader from '@/components /image/ImageLoader';
+import Comments from '@/components /comments/Comments';
+import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
-import Comments from '../../../../components /comments/Comments';
-import BreadcrumbJsonLd from '../../../../components /jsonLd/BreadcrumbJsonLd';
 
 interface PageProps {
     page: Post;
@@ -38,7 +38,7 @@ export default function Page({ page }: PageProps) {
         <meta name="twitter:title" content={page.heading} />
         <meta name="twitter:description" content={page.metaDescription} />
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
-        <meta property="twitter:creator" content="@UneTaupe_" />
+        <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link
           rel="canonical"
