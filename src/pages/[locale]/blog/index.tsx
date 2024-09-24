@@ -35,16 +35,21 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     (translationFind:
       { locale: string | string[] | undefined }) => translationFind.locale === locale,
   );
+  const translationFr = pageData.filter(
+    (translationFind:
+      { locale: string | string[] | undefined }) => translationFind.locale === 'fr',
+  );
   return {
     props: {
       articles: translation,
+      translationFr,
       messages: (await import(`../../../../messages/${locale}.json`)).default,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const locales = ['en', 'de', 'fr', 'it', 'de'];
+  const locales = ['en', 'de', 'fr', 'it', 'de', 'es'];
   const paths = locales.map((locale) => ({
     params: { locale },
   }));

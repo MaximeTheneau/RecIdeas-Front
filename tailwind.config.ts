@@ -18,6 +18,7 @@ const config: Config = {
         white: '#ffffff',
         whiteOpacity: 'rgba(255, 255, 255, 0.5)',
         black: '#B461A8',
+        link: '#3774b9',
       },
     },
   },

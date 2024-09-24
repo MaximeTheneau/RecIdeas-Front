@@ -4,21 +4,22 @@ import { Card } from 'flowbite-react';
 
 export default function CardLink({ card }) {
   return (
-    <li>
-      <Card className="max-w-sm w-330 h-330">
+    <li className="py-4 max-w-80 min-h-80 hover:text-primary">
+      <Card>
         <Link
           href={`/${card.url}`}
           rel="preload"
         >
           <img
-            src={`${card.imgPost}?width=330&height=330`}
-            alt={card.altImg || card.title}
-            width={330}
-            height={330}
+            src={`${card.imgPost || card.post.imgPost}?width=330&height=330`}
+            alt={card.altImg || card.post.imgPost}
+            width={320}
+            height={320}
             loading="lazy"
             decoding="async"
+            className="w-full"
           />
-          <p>{card.title}</p>
+          <p className="font-bold py-4">{card.title}</p>
         </Link>
       </Card>
     </li>

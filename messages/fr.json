@@ -4,7 +4,9 @@
     "btn-entree": "Cliquez pour 15 entrée savoureuses !",
     "btn-dessert":"Cliquez pour 15 dessert savoureux !",
     "placeholder-french":  "Français, rapide, oeufs, légumes, etc...",
-    "label": "Ingrédients ou mots-clés"
+    "label": "Ingrédients ou mots-clés",
+    "link-daily-recype": "Recette du jour de saison :"
+
   },
   "link": {
     "15-recype": "15 Idées de Recettes",

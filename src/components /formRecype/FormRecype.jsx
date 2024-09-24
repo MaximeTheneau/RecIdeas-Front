@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import {
-  Button, Label, Spinner, TextInput,
+  Button, Card, Label, Spinner, TextInput,
 } from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
@@ -80,8 +80,8 @@ export default function FormRecype({ locale, recypeDefault }) {
     });
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="bg-primary p-4 rounded">
+    <Card>
+      <form onSubmit={handleSubmit} className=" p-4 rounded">
         <Label htmlFor="supplement" className="text-xl">
           {t('label')}
           {' '}
@@ -109,7 +109,7 @@ export default function FormRecype({ locale, recypeDefault }) {
             type="submit"
             onClick={() => handleClick('dish')}
             id="dish"
-            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1 "
+            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1 "
           >
             <MdFlatware className="w-8" />
             {t('btn-plat')}
@@ -118,7 +118,7 @@ export default function FormRecype({ locale, recypeDefault }) {
           <Button
             type="submit"
             onClick={() => handleClick('entrance')}
-            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1"
+            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
             <LuSalad className="w-8" />
             {t('btn-entree')}
@@ -126,14 +126,14 @@ export default function FormRecype({ locale, recypeDefault }) {
           <Button
             type="submit"
             onClick={() => handleClick('dessert')}
-            className="bg-white text-[black] hover:bg-secondaryLight w-full sm:w-1/4 m-1"
+            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1"
           >
             <LuCakeSlice className="w-8" />
             {t('btn-dessert')}
           </Button>
         </div>
       </form>
-      <div>
+      <div className="flex justify-center">
         {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
         )}
@@ -143,6 +143,6 @@ export default function FormRecype({ locale, recypeDefault }) {
           ? <p dangerouslySetInnerHTML={{ __html: state.message }} className="ml-8" />
           : !state.loading && <div dangerouslySetInnerHTML={{ __html: recypeDefault }} className="ml-8" /> }
       </div>
-    </div>
+    </Card>
   );
 }

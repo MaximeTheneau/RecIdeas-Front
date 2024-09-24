@@ -56,9 +56,8 @@ export default function Page({ page }: PageProps) {
         <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
       <section>
-        <div className="flex flex-col sm:flex-row  sm:items-end">
-          <h1 className="w-full sm:w-2/3">{page.title}</h1>
-          <figure className="w-full sm:w-1/3">
+        <div className="">
+          <figure>
             <ImageLoader
               src={page.imgPost}
               alt={page.altImg || page.title}
@@ -68,6 +67,7 @@ export default function Page({ page }: PageProps) {
               priority
             />
           </figure>
+          <h1 className="w-full sm:w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <Comments posts={page} />

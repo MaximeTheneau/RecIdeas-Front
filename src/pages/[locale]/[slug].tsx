@@ -7,6 +7,9 @@ import Head from 'next/head';
 import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import ImageLoader from '@/components /image/ImageLoader';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Button } from 'flowbite-react';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -17,8 +20,16 @@ interface PageProps {
     page: Post;
     isRecypePage: boolean;
     recypeDefault: string ;
+    dailyRecypeData: any;
 }
-export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
+export default function Page({
+  page, isRecypePage, recypeDefault, dailyRecypeData,
+}: PageProps) {
+  const t = useTranslations('recype');
+
+  const dailyRecype = dailyRecypeData.filter(
+    (recype: { locale: string; }) => recype.locale === page.locale,
+  );
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
@@ -73,6 +84,15 @@ export default function Page({ page, isRecypePage, recypeDefault }: PageProps) {
           <h1 className="w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        {isRecypePage && (
+        <Button className="text-link font-bold my-4 w-full hover:text-white" color="light">
+          <Link href={`/${dailyRecype[0].url}`}>
+            {t('link-daily-recype')}
+            {' '}
+            {dailyRecype[0].title}
+          </Link>
+        </Button>
+        )}
         {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
 
@@ -134,7 +154,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   }
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}/${params.slug}`);
   const recype = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeaze12aazxsd`);
-
+  const dailyRecypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/daily-recype`);
   const { post } = pageData;
   let page;
   if (params.locale !== 'fr') {
@@ -160,6 +180,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
       isRecypePage,
       recypeDefault: recype.contents,
+      dailyRecypeData,
     },
   };
 };
