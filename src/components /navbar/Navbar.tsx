@@ -6,9 +6,9 @@ import { useTranslations } from 'next-intl';
 export default function Navbar() {
   const t = useTranslations('link');
   return (
-    <nav className="flex justify-between content-center w-full z-10 fixed h-auto font-bold p-2 backdrop-blur">
+    <nav className="flex justify-between content-center w-full z-10 fixed h-auto font-bold p-2 backdrop-blur ">
       <div className="">
-        <ul className="list-none">
+        <ul className="list-none ">
           <li>
             <Button color="light" className="  font-black">
               <Link href={t('15-recype-link')}>

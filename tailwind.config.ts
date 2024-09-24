@@ -13,12 +13,12 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#fa8305',
-        secondaryLight: '#FB9C37',
-        secondary: '#B461A7',
+        secondaryLight: '#F1FAEE',
+        secondary: '#A8DADC',
         white: '#ffffff',
         whiteOpacity: 'rgba(255, 255, 255, 0.5)',
-        black: '#B461A8',
-        link: '#3774b9',
+        black: '##111011',
+        link: '#012B73',
       },
     },
   },

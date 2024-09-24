@@ -79,7 +79,7 @@ export default function Page({ pageData }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
-          <Button className="font-black bg-primary ">
+          <Button className="font-black text-black bg-primary ">
             <Link href={t('15-recype-link')}>
               {t('15-recype')}
             </Link>

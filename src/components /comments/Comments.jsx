@@ -247,7 +247,7 @@ export default function Comments({ posts }) {
             </Button>
           ) : (
             <Button
-              className="button button--disabled mt-4 mb-4"
+              className="button button--disabled mt-4 mb-4 text-black"
               type="button"
               disabled
             >

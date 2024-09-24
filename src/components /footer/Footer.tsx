@@ -9,7 +9,7 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <div className=" p-4 leading-loose bg-secondary text-xl">
+    <div className=" p-4 leading-loose bg-secondaryLight text-xl">
       <ul className="flex justify-around sm:flex-row flex-col">
         <li className="py-4">
           <Link href={t('mention-legal-link')}>
@@ -21,18 +21,16 @@ export default function Footer() {
             Blog
           </Link>
         </li>
-        <ul className="flex justify-around sm:flex-row flex-col w-1/12">
-          <li>
-            <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about">
-              <FaFacebook />
-            </Link>
-          </li>
-          {/* <li>
+        <li>
+          <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com">
+            <FaFacebook />
+          </Link>
+        </li>
+        {/* <li>
             <Link href="/twitter">
               <FaXTwitter />
             </Link>
           </li> */}
-        </ul>
       </ul>
     </div>
   );

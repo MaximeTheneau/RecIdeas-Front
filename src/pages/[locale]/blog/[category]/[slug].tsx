@@ -54,7 +54,7 @@ export default function Page({ page }: PageProps) {
         />
       </Head>
       <RecypeJsonLd post={page} />
-      <section>
+      <section className="p-4">
         <div className="">
           <figure>
             <ImageLoader
