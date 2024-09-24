@@ -67,8 +67,8 @@ export default function Page({
           imageSizes="100w"
           fetchPriority="high"
         />
-        <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
+      <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
         <div className="flex items-end">
           <figure className="w-1/3">

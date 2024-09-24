@@ -85,8 +85,8 @@ export default function Page({ pageData }: PageProps) {
           imageSizes="100w"
           fetchPriority="high"
         />
-        <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       </Head>
+      <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       <section>
         <div className="flex items-end">
           <figure className="w-1/3">

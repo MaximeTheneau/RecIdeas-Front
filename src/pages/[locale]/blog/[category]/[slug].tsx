@@ -7,7 +7,7 @@ import Head from 'next/head';
 import { Post } from '@/types/post';
 import ImageLoader from '@/components /image/ImageLoader';
 import Comments from '@/components /comments/Comments';
-import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
+import RecypeJsonLd from '@/components /jsonLd/RecypeJsonLd';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 
@@ -53,8 +53,8 @@ export default function Page({ page }: PageProps) {
           imageSizes="100w"
           fetchPriority="high"
         />
-        <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       </Head>
+      <RecypeJsonLd post={page} />
       <section>
         <div className="">
           <figure>
