@@ -19,7 +19,6 @@ export default function Page({ page }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
-  const urlPost = `${process.env.NEXT_PUBLIC_URL}${page.url}`;
   return (
     <>
       <Head>
