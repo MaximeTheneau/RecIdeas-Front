@@ -4,8 +4,7 @@ import type {
   GetStaticPropsContext,
 } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { Post, Translation } from '@/types/post';
+import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import fetcher from '../utils/fetcher';
