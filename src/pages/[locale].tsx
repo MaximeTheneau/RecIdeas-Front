@@ -12,46 +12,17 @@ import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
 
-interface PageProps {
-  pageData: {
-    post: Post;
-    translation: Translation | Translation[];
-  };
+interface Translations {
+  locale: string;
+  url: string;
 }
-export default function Page({ pageData }: PageProps) {
-  const router = useRouter();
-  const { query } = router;
 
-  // if (isFallback) {
-  //   return <div>Loading...</div>; // Affichez un indicateur de chargement
-  // }
+interface PageProps {
+page: Post;
+translations: Translations[];
+}
 
-  // const translations = Array.isArray(pageData.translation)
-  //   ? pageData.translation
-  //   : [pageData.translation];
-
-  // const translation = translations.find(
-  //   (translationFind:
-  //     { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
-  // );
-  // const page = {
-  //   ...pageData.post,
-  //   ...translation,
-  // };
-  const { post, translation } = pageData;
-
-  const translations = Array.isArray(translation)
-    ? translation
-    : [translation];
-
-  const translationFilter = translations.find(
-    (translationFind:
-      { locale: string | string[] | undefined }) => translationFind.locale === query.locale,
-  );
-  const page = {
-    ...post,
-    ...translationFilter,
-  };
+export default function Page({ page, translations }: PageProps) {
   return (
     <>
       <Head>
@@ -72,11 +43,13 @@ export default function Page({ pageData }: PageProps) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/`} hrefLang="fr" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/en`} hrefLang="en" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/es`} hrefLang="es" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/it`} hrefLang="it" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/de`} hrefLang="de" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang={`${page.locale}`} />
+        {
+          translations.map(
+            (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
+          )
+        }
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`}
@@ -166,10 +139,28 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     };
   }
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/${params.locale}/${params.locale}home`);
-
+  const { post } = pageData;
+  let page;
+  if (params.locale !== 'fr') {
+    const translationList = post.translations.find(
+      (translationFind:
+      { locale: string | string[] | undefined }) => translationFind.locale === params.locale,
+    );
+    page = {
+      ...post,
+      ...translationList,
+    };
+  } else {
+    page = post;
+  }
+  const translations = post.translations.map(({ url, locale }: any) => ({
+    url,
+    locale,
+  }));
   return {
     props: {
-      pageData,
+      page,
+      translations,
       messages: (await import(`../../messages/${params.locale}.json`)).default,
     },
   };

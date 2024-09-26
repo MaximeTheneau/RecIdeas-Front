@@ -47,7 +47,8 @@ export default function Page({ pageData }: PageProps) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/`} hrefLang="fr" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="fr" />
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/en`} hrefLang="en" />
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/es`} hrefLang="es" />
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/it`} hrefLang="it" />

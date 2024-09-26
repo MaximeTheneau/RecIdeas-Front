@@ -16,14 +16,20 @@ import Comments from '../../components /comments/Comments';
 import FormRecype from '../../components /formRecype/FormRecype';
 import BreadcrumbJsonLd from '../../components /jsonLd/BreadcrumbJsonLd';
 
+interface Translations {
+    locale: string;
+    url: string;
+}
+
 interface PageProps {
-    page: Post;
-    isRecypePage: boolean;
-    recypeDefault: string ;
-    dailyRecypeData: any;
+  page: Post;
+  isRecypePage: boolean;
+  recypeDefault: string ;
+  dailyRecypeData: any;
+  translations: Translations[];
 }
 export default function Page({
-  page, isRecypePage, recypeDefault, dailyRecypeData,
+  page, isRecypePage, recypeDefault, dailyRecypeData, translations,
 }: PageProps) {
   const t = useTranslations('recype');
 
@@ -54,6 +60,13 @@ export default function Page({
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang={`${page.locale}`} />
+        {
+          translations.map(
+            (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
+          )
+        }
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
@@ -67,6 +80,7 @@ export default function Page({
           imageSizes="100w"
           fetchPriority="high"
         />
+
       </Head>
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
@@ -158,23 +172,23 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   const { post } = pageData;
   let page;
   if (params.locale !== 'fr') {
-    const translations = Array.isArray(pageData.translation)
-      ? pageData.translation
-      : [pageData.translation];
-
-    const translation = translations.find(
+    const translationList = post.translations.find(
       (translationFind:
       { locale: string | string[] | undefined }) => translationFind.locale === params.locale,
     );
     page = {
       ...post,
-      ...translation,
+      ...translationList,
     };
   } else {
     page = post;
   }
   const isRecypePage = page.slug.startsWith('15');
 
+  const translations = post.translations.map(({ url, locale }: any) => ({
+    url,
+    locale,
+  }));
   return {
     props: {
       page,
@@ -182,6 +196,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       isRecypePage,
       recypeDefault: recype.contents,
       dailyRecypeData,
+      translations,
     },
   };
 };

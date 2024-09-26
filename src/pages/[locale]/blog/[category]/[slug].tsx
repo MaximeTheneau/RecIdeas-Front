@@ -11,11 +11,16 @@ import RecypeJsonLd from '@/components /jsonLd/RecypeJsonLd';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 
-interface PageProps {
-    page: Post;
-
+interface Translations {
+  locale: string;
+  url: string;
 }
-export default function Page({ page }: PageProps) {
+
+interface PageProps {
+page: Post;
+translations: Translations[];
+}
+export default function Page({ page, translations }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
@@ -39,6 +44,13 @@ export default function Page({ page }: PageProps) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang={`${page.locale}`} />
+        {
+          translations.map(
+            (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
+          )
+        }
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`}
@@ -102,9 +114,15 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   } else {
     page = post;
   }
+
+  const translations = post.translations.map(({ url, locale }: any) => ({
+    url,
+    locale,
+  }));
   return {
     props: {
       page,
+      translations,
       messages: (await import(`../../../../../messages/${params.locale}.json`)).default,
     },
   };

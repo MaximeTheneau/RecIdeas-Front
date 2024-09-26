@@ -29,6 +29,12 @@ export default function Home({ articles, page } : any) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.heading} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog`} hrefLang="fr" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/en/blog`} hrefLang="en" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/es/blog`} hrefLang="es" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/it/blog`} hrefLang="it" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/de/blog`} hrefLang="de" />
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/blog`}
