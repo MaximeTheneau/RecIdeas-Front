@@ -99,11 +99,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   const { post } = pageData;
   let page;
   if (params.locale !== 'fr') {
-    const translations = Array.isArray(pageData.translation)
-      ? pageData.translation
-      : [pageData.translation];
-
-    const translation = translations.find(
+    const translation = post.translations.find(
       (translationFind:
       { locale: string | string[] | undefined }) => translationFind.locale === params.locale,
     );
