@@ -8,6 +8,7 @@ import { Post } from '@/types/post';
 import ImageLoader from '@/components /image/ImageLoader';
 import Comments from '@/components /comments/Comments';
 import RecypeJsonLd from '@/components /jsonLd/RecypeJsonLd';
+import { FaRegCalendarDays } from 'react-icons/fa6';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 
@@ -78,6 +79,10 @@ export default function Page({ page, translations }: PageProps) {
               priority
             />
           </figure>
+          <p className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+            <FaRegCalendarDays className="mr-4" />
+            {page.formattedDate}
+          </p>
           <h1 className="w-full sm:w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />

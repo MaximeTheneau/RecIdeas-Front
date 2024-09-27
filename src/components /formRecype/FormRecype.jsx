@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   Button, Card, Label, Spinner, TextInput,
+  Tooltip,
 } from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
@@ -101,36 +102,43 @@ export default function FormRecype({ locale, recypeDefault }) {
             },
           })}
           maxLength={150}
-          className="m-4"
+          className="my-4  sm:w-2/3"
+          color="gray"
         />
 
-        <div className="flex flex-col sm:flex-row justify-around items-center m-4">
-          <Button
-            type="submit"
-            onClick={() => handleClick('dish')}
-            id="dish"
-            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1 "
-          >
-            <MdFlatware className="w-8" />
-            {t('btn-plat')}
-          </Button>
-
-          <Button
-            type="submit"
-            onClick={() => handleClick('entrance')}
-            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1"
-          >
-            <LuSalad className="w-8" />
-            {t('btn-entree')}
-          </Button>
-          <Button
-            type="submit"
-            onClick={() => handleClick('dessert')}
-            className="bg-primary min-h-20 font-bold text-[black] hover:text-white hover:bg-secondaryLight w-full sm:w-1/4 m-1"
-          >
-            <LuCakeSlice className="w-8" />
-            {t('btn-dessert')}
-          </Button>
+        <div>
+          <Button.Group className="">
+            <Button
+              type="submit"
+              onClick={() => handleClick('dish')}
+              id="dish"
+              className="font-bold text-black hover:bg-secondaryLight"
+              color="gray"
+            >
+              <MdFlatware className="w-8" />
+              {t('btn-plat')}
+            </Button>
+            <Button
+              type="submit"
+              onClick={() => handleClick('entrance')}
+              className="font-bold text-[black] hover:bg-secondaryLight h-auto"
+              color="gray"
+            >
+              <Tooltip content={t('btn-entree')} className="">
+                <LuSalad className="w-8" />
+              </Tooltip>
+            </Button>
+            <Button
+              type="submit"
+              onClick={() => handleClick('dessert')}
+              color="gray"
+              className="font-bold text-[black] hover:text-secondary"
+            >
+              <Tooltip content={t('btn-dessert')} className="">
+                <LuCakeSlice className="w-8" />
+              </Tooltip>
+            </Button>
+          </Button.Group>
         </div>
       </form>
       <div className="flex justify-center">

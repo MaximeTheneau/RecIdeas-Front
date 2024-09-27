@@ -9,7 +9,6 @@ import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import ImageLoader from '@/components /image/ImageLoader';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { Button } from 'flowbite-react';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -99,13 +98,13 @@ export default function Page({
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         {isRecypePage && (
-        <Button className="text-link font-bold my-4 w-full hover:text-white" color="light">
+        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
           <Link href={`/${dailyRecype[0].url}`}>
             {t('link-daily-recype')}
             {' '}
             {dailyRecype[0].title}
           </Link>
-        </Button>
+        </div>
         )}
         {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
