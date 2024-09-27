@@ -5,7 +5,8 @@
     "btn-dessert":"Clicca per 15 dessert deliziosi!",
     "placeholder-french":  "Francese, veloce, uova, verdure, ecc...",
     "label": "Ingredienti o parole chiave",
-    "link-daily-recype": "Ricetta del giorno di stagione:"
+    "link-daily-recype": "Ricetta del giorno di stagione:",
+    "error": "Attendere prima di inviare nuovamente"
   },
   "link": {
     "15-recype": "15 idee per ricette",

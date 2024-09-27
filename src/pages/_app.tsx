@@ -45,6 +45,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="ca-pub-9194552698690511" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}`}
+          crossOrigin="anonymous"
+        />
       </Head>
       <NextIntlClientProvider
         locale={getLocale(router.query)}

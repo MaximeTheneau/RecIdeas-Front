@@ -5,7 +5,8 @@
     "btn-dessert":"Click for 15 delicious desserts!",
     "placeholder-french":  "French, quick, eggs, vegetables, etc...",
     "label": "Ingredients or keywords",
-    "link-daily-recype": "Seasonal daily recipe:"
+    "link-daily-recype": "Seasonal daily recipe:",
+    "error": "Please wait before submitting again"
   },
   "link": {
     "15-recype": "15 Recipe Ideas",

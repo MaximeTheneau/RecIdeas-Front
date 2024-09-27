@@ -5,7 +5,8 @@
     "btn-dessert": "Klicken Sie für 15 köstliche Desserts!",
     "placeholder-french":  "Französisch, schnell, Eier, Gemüse, usw...",
     "label": "Zutaten oder Stichwörter",
-    "link-daily-recype": "Tagesrezept der Saison:"
+    "link-daily-recype": "Tagesrezept der Saison:",
+    "error": "Bitte warten Sie, bevor Sie erneut einreichen"
   },
   "link": {
     "15-recype": "15 Rezeptideen",

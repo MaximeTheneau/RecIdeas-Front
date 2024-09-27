@@ -58,7 +58,7 @@ export default function FormRecype({ locale, recypeDefault }) {
     event.preventDefault();
 
     if (state.timer > 0) {
-      setState({ ...state, error: `Veuillez attendre ${state.timer} secondes avant de soumettre à nouveau.` });
+      setState({ ...state, error: `${t('error')} ${state.timer}` });
       return;
     }
     setState({

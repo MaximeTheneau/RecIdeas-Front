@@ -5,7 +5,8 @@
     "btn-dessert":"¡Haz clic para 15 postres postre!",
     "placeholder-french":  "Francés, rápido, huevos, verduras, etc...",
     "label": "Ingredientes o palabras clave",
-    "link-daily-recype": "Receta diaria de temporada:"
+    "link-daily-recype": "Receta diaria de temporada:",
+    "error": "Por favor, espere antes de enviar de nuevo"
   },   
   "link": {
     "15-recype": "15 ideas de recetas",
