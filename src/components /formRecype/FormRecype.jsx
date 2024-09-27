@@ -141,7 +141,7 @@ export default function FormRecype({ locale, recypeDefault }) {
           </Button.Group>
         </div>
       </form>
-      <div className="flex justify-center">
+      <div className="">
         {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
         )}
