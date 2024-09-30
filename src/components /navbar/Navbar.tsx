@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl';
 export default function Navbar() {
   const t = useTranslations('link');
   return (
-    <nav className="flex justify-between content-center items-center w-full z-10 fixed h-auto font-bold p-2 backdrop-blur ">
-      <Button color="light" className=" p-2 m-2 font-black">
+    <nav className="flex justify-between item-center content-center items-center w-full z-10 fixed h-auto font-bold p-2 backdrop-blur ">
+      <Button color="light" className="m-4 font-black ">
         <Link href={t('15-recype-link')}>
           {t('15-recype')}
         </Link>
@@ -15,7 +15,7 @@ export default function Navbar() {
 
       <div>
         <Dropdown
-          aria-label="lang"
+          aria-label="Language"
           dismissOnClick={false}
           label={<TbMessageLanguage />}
           color="light"

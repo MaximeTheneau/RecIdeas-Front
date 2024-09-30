@@ -112,6 +112,7 @@ export default function FormRecype({ locale, recypeDefault }) {
               type="submit"
               onClick={() => handleClick('dish')}
               id="dish"
+              aria-label={t('btn-plat')}
               className="font-bold text-black hover:bg-secondaryLight"
               color="gray"
             >
@@ -121,6 +122,7 @@ export default function FormRecype({ locale, recypeDefault }) {
             <Button
               type="submit"
               onClick={() => handleClick('entrance')}
+              aria-label={t('btn-entree')}
               className="font-bold text-[black] hover:bg-secondaryLight h-auto"
               color="gray"
             >
@@ -131,6 +133,7 @@ export default function FormRecype({ locale, recypeDefault }) {
             <Button
               type="submit"
               onClick={() => handleClick('dessert')}
+              aria-label={t('btn-dessert')}
               color="gray"
               className="font-bold text-[black] hover:text-secondary"
             >
