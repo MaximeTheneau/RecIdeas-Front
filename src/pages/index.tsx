@@ -7,6 +7,7 @@ import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import { Button } from 'flowbite-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { MdFlatware } from 'react-icons/md';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -16,12 +17,15 @@ interface PageProps {
   pageData: {
     post: Post;
   };
+  dailyRecype: any;
+
 }
-export default function Page({ pageData }: PageProps) {
+export default function Page({ pageData, dailyRecype }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
   const t = useTranslations('link');
+  const tr = useTranslations('recype');
 
   const { post } = pageData;
   const page = {
@@ -85,13 +89,15 @@ export default function Page({ pageData }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
-          <Button className="font-black text-black bg-primary ">
-            <Link href={t('15-recype-link')}>
-              {t('15-recype')}
-            </Link>
+          <Button className="font-black text-black bg-primary " as={Link} href={t('15-recype-link')}>
+            <MdFlatware className="w-8 inline-block" />
+            {' '}
+            {t('15-recype')}
           </Button>
         </div>
+
         <TableOfContents post={page} />
+
         {page.paragraphPosts.map((paragraphArticle : any) => (
           <div key={paragraphArticle.id}>
             {paragraphArticle.subtitle && (
@@ -120,7 +126,6 @@ export default function Page({ pageData }: PageProps) {
                 <div
                   dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
                 />
-
                 {/* {paragraphArticle.link && (
                   <div className={styles.page__contents__paragraph__links}>
                     <span className={styles.page__contents__paragraph__links__link}>
@@ -136,6 +141,14 @@ export default function Page({ pageData }: PageProps) {
             )}
           </div>
         ))}
+        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+          <Link href={`/${dailyRecype[0].url}`}>
+            {tr('link-daily-recype')}
+            {' '}
+            {dailyRecype[0].title}
+          </Link>
+        </div>
+
         <Comments posts={page} />
       </section>
     </>
@@ -144,10 +157,14 @@ export default function Page({ pageData }: PageProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const pageData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/fr/home`);
-
+  const dailyRecypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/daily-recype`);
+  const dailyRecype = dailyRecypeData.filter(
+    (recype: { locale: string; }) => recype.locale === 'fr',
+  );
   return {
     props: {
       pageData,
+      dailyRecype,
       messages: (await import('../../messages/fr.json')).default,
     },
   };

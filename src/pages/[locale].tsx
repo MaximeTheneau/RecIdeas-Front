@@ -7,6 +7,10 @@ import Head from 'next/head';
 import { Post } from '@/types/post';
 import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
+import { Button } from 'flowbite-react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { MdFlatware } from 'react-icons/md';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -19,9 +23,13 @@ interface Translations {
 interface PageProps {
 page: Post;
 translations: Translations[];
+dailyRecype: any;
 }
 
-export default function Page({ page, translations }: PageProps) {
+export default function Page({ page, translations, dailyRecype }: PageProps) {
+  const t = useTranslations('link');
+  const tr = useTranslations('recype');
+
   return (
     <>
       <Head>
@@ -80,6 +88,13 @@ export default function Page({ page, translations }: PageProps) {
         </div>
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <div className="flex flex-col items-center my-4">
+          <Button className="font-black text-black bg-primary " as={Link} href={t('15-recype-link')}>
+            <MdFlatware className="w-8 inline-block" />
+            {' '}
+            {t('15-recype')}
+          </Button>
+        </div>
         <TableOfContents post={page} />
         {page.paragraphPosts.map((paragraphArticle : any) => (
           <div key={paragraphArticle.id}>
@@ -109,6 +124,7 @@ export default function Page({ page, translations }: PageProps) {
                 <div
                   dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
                 />
+
                 {/* {paragraphArticle.link && (
                   <div className={styles.page__contents__paragraph__links}>
                     <span className={styles.page__contents__paragraph__links__link}>
@@ -124,6 +140,13 @@ export default function Page({ page, translations }: PageProps) {
             )}
           </div>
         ))}
+        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+          <Link href={`/${dailyRecype[0].url}`}>
+            {tr('link-daily-recype')}
+            {' '}
+            {dailyRecype[0].title}
+          </Link>
+        </div>
         <Comments posts={page} />
       </section>
     </>
@@ -156,10 +179,15 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     url,
     locale,
   }));
+  const dailyRecypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/daily-recype`);
+  const dailyRecype = dailyRecypeData.filter(
+    (recype: { locale: string; }) => recype.locale === page.locale,
+  );
   return {
     props: {
       page,
       translations,
+      dailyRecype,
       messages: (await import(`../../messages/${params.locale}.json`)).default,
     },
   };

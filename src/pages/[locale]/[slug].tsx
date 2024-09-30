@@ -24,18 +24,15 @@ interface PageProps {
   page: Post;
   isRecypePage: boolean;
   recypeDefault: string ;
-  dailyRecypeData: any;
+  dailyRecype: any;
   translations: Translations[];
   pageUrlDefault: string;
 }
 export default function Page({
-  page, isRecypePage, recypeDefault, dailyRecypeData, translations, pageUrlDefault,
+  page, isRecypePage, recypeDefault, dailyRecype, translations, pageUrlDefault,
 }: PageProps) {
   const t = useTranslations('recype');
 
-  const dailyRecype = dailyRecypeData.filter(
-    (recype: { locale: string; }) => recype.locale === page.locale,
-  );
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
@@ -98,15 +95,7 @@ export default function Page({
           <h1 className="w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        {isRecypePage && (
-        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
-          <Link href={`/${dailyRecype[0].url}`}>
-            {t('link-daily-recype')}
-            {' '}
-            {dailyRecype[0].title}
-          </Link>
-        </div>
-        )}
+
         {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
         <TableOfContents post={page} />
 
@@ -138,6 +127,7 @@ export default function Page({
                 <div
                   dangerouslySetInnerHTML={{ __html: paragraphArticle.paragraph }}
                 />
+
                 {/* {paragraphArticle.link && (
                   <div className={styles.page__contents__paragraph__links}>
                     <span className={styles.page__contents__paragraph__links__link}>
@@ -153,6 +143,15 @@ export default function Page({
             )}
           </div>
         ))}
+        {isRecypePage && (
+        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+          <Link href={`/${dailyRecype[0].url}`}>
+            {t('link-daily-recype')}
+            {' '}
+            {dailyRecype[0].title}
+          </Link>
+        </div>
+        )}
         {isRecypePage && <Comments posts={page} />}
       </section>
     </>
@@ -183,19 +182,23 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   } else {
     page = post;
   }
+  const dailyRecype = dailyRecypeData.filter(
+    (recypeDaily: { locale: string; }) => recypeDaily.locale === page.locale,
+  );
   const isRecypePage = page.slug.startsWith('15');
 
   const translations = post.translations.map(({ url, locale }: any) => ({
     url,
     locale,
   }));
+
   return {
     props: {
       page,
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
       isRecypePage,
       recypeDefault: recype.contents,
-      dailyRecypeData,
+      dailyRecype,
       translations,
       pageUrlDefault: post.url,
     },
