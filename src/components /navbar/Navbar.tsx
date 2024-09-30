@@ -1,18 +1,20 @@
 import Link from 'next/link';
 import { TbMessageLanguage } from 'react-icons/tb';
-import { Button, Dropdown } from 'flowbite-react';
+import { Dropdown } from 'flowbite-react';
 import { useTranslations } from 'next-intl';
+import { MdFlatware } from 'react-icons/md';
 
 export default function Navbar() {
   const t = useTranslations('link');
   return (
-    <nav className="flex justify-between item-center content-center items-center w-full z-10 fixed h-auto font-bold p-2 backdrop-blur ">
-      <Button color="light" className="m-4 font-black ">
+    <nav className="flex justify-between item-center content-center items-center w-full z-10 fixed h-auto font-bold  backdrop-blur ">
+      <div className="m-4  hover:text-primary">
         <Link href={t('15-recype-link')}>
+          <MdFlatware className="w-8 inline-block" />
+          {' '}
           {t('15-recype')}
         </Link>
-      </Button>
-
+      </div>
       <div>
         <Dropdown
           aria-label="Language"
