@@ -26,9 +26,10 @@ interface PageProps {
   recypeDefault: string ;
   dailyRecypeData: any;
   translations: Translations[];
+  pageUrlDefault: string;
 }
 export default function Page({
-  page, isRecypePage, recypeDefault, dailyRecypeData, translations,
+  page, isRecypePage, recypeDefault, dailyRecypeData, translations, pageUrlDefault,
 }: PageProps) {
   const t = useTranslations('recype');
 
@@ -59,8 +60,8 @@ export default function Page({
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang="x-default" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang={`${page.locale}`} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="fr" />
         {
           translations.map(
             (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
@@ -196,6 +197,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       recypeDefault: recype.contents,
       dailyRecypeData,
       translations,
+      pageUrlDefault: post.url,
     },
   };
 };

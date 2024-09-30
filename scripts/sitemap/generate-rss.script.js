@@ -1,72 +1,75 @@
 const fs = require('fs');
-// const xml = require('xml');
 
-const RSS_NAMESPACE = 'http://www.w3.org/2005/Atom';
-const SITE_URL = 'https://recideas.com';
-const FEED_URL = `${SITE_URL}/rss.xml`;
-const API_URL = 'https://back.recideas.com/api/posts/all';
+const generateRss = async () => {
+  const urlApi = 'http://localhost:8000/api/';
+  const baseUrl = 'https://recideas.com/';
 
-const fetchPostsFromApi = async () => {
-  try {
-    const response = await fetch(API_URL);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
+  const fetchJson = async (url) => {
+    const response = await fetch(url);
+    return response.json();
+  };
 
-    if (!Array.isArray(data)) {
-      throw new Error('Expected an array of posts');
-    }
+  const generateXml = (pages, frontUrl) => {
+    const rssItems = pages
+      .map((page) => {
+        const pageUrl = page.url.startsWith('/') ? page.url.slice(1) : page.url;
 
-    return data.map((post) => ({
-      title: post.title || 'Untitled',
-      description: post.metaDescription || 'No description available',
-      link: `${SITE_URL}${post.url || '/'}`,
-      pubDate: new Date(post.updatedAt || post.createdAt).toUTCString(),
-      guid: `${SITE_URL}${post.url || '/'}`,
-    }));
-  } catch (error) {
-    console.error('Error fetching posts from API:', error);
-    throw error;
-  }
-};
+        return `<item>
+          <title>${page.title}</title>
+          <link>${frontUrl}${pageUrl}</link>
+          <description>${page.metaDescription || 'Description non disponible'}</description>
+          <pubDate>${new Date(page.createdAt).toUTCString()}</pubDate>
+          <guid>${frontUrl}${pageUrl}</guid>
+        </item>`;
+      })
+      .join('');
 
-const generateRssFeed = async () => {
-  try {
-    const posts = await fetchPostsFromApi();
+    const rssXml = `<?xml version="1.0" encoding="UTF-8" ?>
+      <rss version="2.0">
+        <channel>
+          <title>RecIdeas RSS Feed</title>
+          <link>${frontUrl}</link>
+          <description>Les dernières recettes de RecIdeas</description>
+          <language>fr</language>
+          ${rssItems}
+        </channel>
+      </rss>`;
 
-    const rssItems = posts.map((post) => ({
-      item: [
-        { title: post.title },
-        { description: post.description },
-        { link: post.link },
-        { guid: post.guid },
-        { pubDate: post.pubDate },
-      ],
-    }));
+    // Écrire le fichier rss.xml
+    fs.writeFileSync('./public/fr/rss.xml', rssXml);
+  };
 
-    const rssFeed = xml({
-      rss: [
-        { _attr: { version: '2.0', 'xmlns:atom': 'http://www.w3.org/2005/Atom' } },
-        {
-          channel: [
-            { title: 'recideas.com ' },
-            { link: SITE_URL },
-            { description: 'Generateur de recette' },
-            { 'atom:link': { _attr: { href: FEED_URL, rel: 'self', type: 'application/rss+xml' } } },
-            ...rssItems,
-          ],
-        },
-      ],
-      _attr: { xmlns: RSS_NAMESPACE },
+  // Récupérer les données depuis l'API
+  const responsePages = await fetchJson(`${urlApi}posts/all`);
+
+  // Générer le fichier RSS
+  generateXml(responsePages, baseUrl);
+
+  const generateXmlTranslation = (pages, frontUrl) => {
+    pages.forEach((page) => {
+      if (page.translations && Array.isArray(page.translations)) {
+        page.translations.forEach((t) => {
+          const rssXml = `<?xml version="1.0" encoding="UTF-8" ?>
+            <rss version="2.0">
+              <channel>
+                <title>RecIdeas RSS Feed</title>
+                <link>${frontUrl}${t}</link>
+              `;
+
+          const dirPath = `./public/${t.locale}`;
+          if (!fs.existsSync(dirPath)) {
+            fs.mkdirSync(dirPath);
+          }
+
+          fs.writeFileSync(`${dirPath}/rss.xml`, rssXml);
+        });
+      }
     });
+  };
 
-    fs.writeFileSync('./public/rss.xml', rssFeed, 'utf8');
-    console.log('RSS feed generated successfully!');
-  } catch (error) {
-    console.error('Error generating RSS feed:', error);
-    process.exit(1); // Exit with error code
-  }
+  generateXmlTranslation(responsePages, baseUrl);
+
+  console.log('RSS feed generated successfully!');
 };
 
-generateRssFeed();
+generateRss();

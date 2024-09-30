@@ -43,7 +43,7 @@ export default function Page({ page, translations }: PageProps) {
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="x-default" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang={`${page.locale}`} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="fr" />
         {
           translations.map(
             (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,

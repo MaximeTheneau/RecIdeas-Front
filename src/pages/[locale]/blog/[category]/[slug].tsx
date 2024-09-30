@@ -20,8 +20,9 @@ interface Translations {
 interface PageProps {
 page: Post;
 translations: Translations[];
+pageUrlDefault: string;
 }
-export default function Page({ page, translations }: PageProps) {
+export default function Page({ page, translations, pageUrlDefault }: PageProps) {
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
@@ -45,8 +46,8 @@ export default function Page({ page, translations }: PageProps) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang="x-default" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${page.url}`} hrefLang={`${page.locale}`} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="fr" />
         {
           translations.map(
             (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
@@ -124,6 +125,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     props: {
       page,
       translations,
+      pageUrlDefault: post.url,
       messages: (await import(`../../../../../messages/${params.locale}.json`)).default,
     },
   };
