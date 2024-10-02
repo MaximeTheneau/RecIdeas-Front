@@ -22,7 +22,8 @@
     },
     "footer":{
       "mention-legal": "Mentions légales",
-      "mention-legal-link":"/fr/mentions-legales"
+      "mention-legal-link":"/fr/mentions-legales",
+      "contact": "Contact"
     },
     "comment": {
       "title": "Commentaire"

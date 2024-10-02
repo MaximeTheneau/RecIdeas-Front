@@ -21,7 +21,8 @@
   },
   "footer":{
     "mention-legal": "Avvisi legali",
-    "mention-legal-link":"/it/Avvisi-legali"
+    "mention-legal-link":"/it/Avvisi-legali",
+      "contact": "Contactto"
   },
   "comment": {
     "title": "Commento"

@@ -2,6 +2,62 @@
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
               xmlns:xhtml="http://www.w3.org/1999/xhtml">
         <url>
+          <loc>https://recideas.com/fr/contact</loc>
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-confortante-con-zucca-e-spezie-autunnali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuende-suppe-mit-kurbis-und-herbst-gewurzen" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Cassoulet-d-Automne-Comfort-Food-Reconfortante</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/cassoulet-d-automne-comfort-comida-confortante" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-cassoulet-comfort-food-comforting" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/cassoulet-d-automne-comfort-food-confortante" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cassoulet-d-automne-comfort-food-confortante" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/15-idees-de-recettes</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/mentions-legales</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Veloute-de-Potimarron-au-Gingembre-et-Noix-de-Coco</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/veloute-de-potimarron-con-jengibre-y-coco" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-veloute-with-ginger-and-coconut" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/vellutata-di-potimarron-con-zenzero-e-cocco" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/potimarron-veloute-mit-ingwer-und-kokosnuss" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Bourguignon-Vegetal-Revisite-pour-l-Automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/borgona-vegetal-revisitada-para-el-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/bourguignon-vegetal-revisited-for-autumn" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/borgognone-vegetale-rivisitato-per-l-39-autunno" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/burgundisch-pflanzlich-revisitiert-fur-den-herbst" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Choucroute-garnie-d-automne-recette-traditionnelle-facile</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chucrut-con-guarnicion-de-otono-receta-tradicional" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sauerkraut-garnished-with-autumn-traditional-easy-" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/crauti-guarniti-con-ricetta-tradizionale-facile-au" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/sauerkraut-garniert-mit-herbst-einfaches-tradition" />
+          
+        </url><url>
           <loc>https://recideas.com/</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
@@ -21,20 +77,6 @@
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-autumn-mushrooms-and-parmesan" />
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-funghi-autunnali-e-parmigiano" />
           <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-herbstpilzen-und-parmesan" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/mentions-legales</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/15-idees-de-recettes</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
           
         </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/Poelee-de-champignons-forestiers-et-pommes-de-terre-roties</loc>
@@ -59,6 +101,230 @@
           
         </url>
         <url>
+                <loc>https://recideas.com/en/contact</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/contact" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/contact</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/contact" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/contact</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/contact" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
+              <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/contact</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/contact" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
+              <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-confortante-con-zucca-e-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuende-suppe-mit-kurbis-und-herbst-gewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-confortante-con-zucca-e-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuende-suppe-mit-kurbis-und-herbst-gewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-confortante-con-zucca-e-spezie-autunnali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuende-suppe-mit-kurbis-und-herbst-gewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/wohltuende-suppe-mit-kurbis-und-herbst-gewurzen</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-confortante-con-zucca-e-spezie-autunnali" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/cassoulet-d-automne-comfort-comida-confortante</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Cassoulet-d-Automne-Comfort-Food-Reconfortante" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-cassoulet-comfort-food-comforting" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/cassoulet-d-automne-comfort-food-confortante" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cassoulet-d-automne-comfort-food-confortante" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/autumn-cassoulet-comfort-food-comforting</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Cassoulet-d-Automne-Comfort-Food-Reconfortante" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/cassoulet-d-automne-comfort-comida-confortante" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/cassoulet-d-automne-comfort-food-confortante" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cassoulet-d-automne-comfort-food-confortante" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/cassoulet-d-automne-comfort-food-confortante</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Cassoulet-d-Automne-Comfort-Food-Reconfortante" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/cassoulet-d-automne-comfort-comida-confortante" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-cassoulet-comfort-food-comforting" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cassoulet-d-automne-comfort-food-confortante" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/cassoulet-d-automne-comfort-food-confortante</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Cassoulet-d-Automne-Comfort-Food-Reconfortante" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/cassoulet-d-automne-comfort-comida-confortante" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-cassoulet-comfort-food-comforting" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/cassoulet-d-automne-comfort-food-confortante" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/15-ideas-de-recetas</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/15-Recipe-Ideas</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/15-idee-per-ricette</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/15-Rezeptideen</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/Avisos-Legales</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/Legal-Notices</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/Avvisi-legali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/Rechtliche-Hinweise</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/veloute-de-potimarron-con-jengibre-y-coco</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Veloute-de-Potimarron-au-Gingembre-et-Noix-de-Coco" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-veloute-with-ginger-and-coconut" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/vellutata-di-potimarron-con-zenzero-e-cocco" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/potimarron-veloute-mit-ingwer-und-kokosnuss" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/pumpkin-veloute-with-ginger-and-coconut</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Veloute-de-Potimarron-au-Gingembre-et-Noix-de-Coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/veloute-de-potimarron-con-jengibre-y-coco" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/vellutata-di-potimarron-con-zenzero-e-cocco" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/potimarron-veloute-mit-ingwer-und-kokosnuss" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/vellutata-di-potimarron-con-zenzero-e-cocco</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Veloute-de-Potimarron-au-Gingembre-et-Noix-de-Coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/veloute-de-potimarron-con-jengibre-y-coco" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-veloute-with-ginger-and-coconut" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/potimarron-veloute-mit-ingwer-und-kokosnuss" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/potimarron-veloute-mit-ingwer-und-kokosnuss</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Veloute-de-Potimarron-au-Gingembre-et-Noix-de-Coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/veloute-de-potimarron-con-jengibre-y-coco" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-veloute-with-ginger-and-coconut" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/vellutata-di-potimarron-con-zenzero-e-cocco" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/borgona-vegetal-revisitada-para-el-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Bourguignon-Vegetal-Revisite-pour-l-Automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/bourguignon-vegetal-revisited-for-autumn" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/borgognone-vegetale-rivisitato-per-l-39-autunno" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/burgundisch-pflanzlich-revisitiert-fur-den-herbst" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/bourguignon-vegetal-revisited-for-autumn</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Bourguignon-Vegetal-Revisite-pour-l-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/borgona-vegetal-revisitada-para-el-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/borgognone-vegetale-rivisitato-per-l-39-autunno" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/burgundisch-pflanzlich-revisitiert-fur-den-herbst" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/borgognone-vegetale-rivisitato-per-l-39-autunno</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Bourguignon-Vegetal-Revisite-pour-l-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/borgona-vegetal-revisitada-para-el-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/bourguignon-vegetal-revisited-for-autumn" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/burgundisch-pflanzlich-revisitiert-fur-den-herbst" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/burgundisch-pflanzlich-revisitiert-fur-den-herbst</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Bourguignon-Vegetal-Revisite-pour-l-Automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/borgona-vegetal-revisitada-para-el-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/bourguignon-vegetal-revisited-for-autumn" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/borgognone-vegetale-rivisitato-per-l-39-autunno" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/chucrut-con-guarnicion-de-otono-receta-tradicional</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Choucroute-garnie-d-automne-recette-traditionnelle-facile" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sauerkraut-garnished-with-autumn-traditional-easy-" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/crauti-guarniti-con-ricetta-tradizionale-facile-au" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/sauerkraut-garniert-mit-herbst-einfaches-tradition" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/sauerkraut-garnished-with-autumn-traditional-easy-</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Choucroute-garnie-d-automne-recette-traditionnelle-facile" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chucrut-con-guarnicion-de-otono-receta-tradicional" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/crauti-guarniti-con-ricetta-tradizionale-facile-au" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/sauerkraut-garniert-mit-herbst-einfaches-tradition" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/crauti-guarniti-con-ricetta-tradizionale-facile-au</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Choucroute-garnie-d-automne-recette-traditionnelle-facile" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chucrut-con-guarnicion-de-otono-receta-tradicional" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sauerkraut-garnished-with-autumn-traditional-easy-" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/sauerkraut-garniert-mit-herbst-einfaches-tradition" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/sauerkraut-garniert-mit-herbst-einfaches-tradition</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Choucroute-garnie-d-automne-recette-traditionnelle-facile" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chucrut-con-guarnicion-de-otono-receta-tradicional" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sauerkraut-garnished-with-autumn-traditional-easy-" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/crauti-guarniti-con-ricetta-tradizionale-facile-au" />
+              
+              </url><url>
                 <loc>https://recideas.com/es</loc>
                 <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
@@ -141,62 +407,6 @@
                 <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-setas-de-otono-y-parmesano" />
               <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-autumn-mushrooms-and-parmesan" />
               <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-funghi-autunnali-e-parmigiano" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/Avisos-Legales</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/Legal-Notices</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/Avvisi-legali</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Rechtliche-Hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/Rechtliche-Hinweise</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Avisos-Legales" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Legal-Notices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Avvisi-legali" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/15-ideas-de-recetas</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/15-Recipe-Ideas</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/15-idee-per-ricette</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/15-Rezeptideen</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/15-idees-de-recettes" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/15-ideas-de-recetas" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/15-Recipe-Ideas" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/champinones-del-bosque-fritos-y-patatas-asadas</loc>

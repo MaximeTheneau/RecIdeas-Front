@@ -1,7 +1,9 @@
 const fs = require('fs');
 
 const generateSitemap = async () => {
-  const urlApi = 'http://localhost:8000/api/';
+  const urlApi = 'https://back.recideas.com/api/';
+  // const urlApi = 'http://localhost:8000/api/';
+
   const baseUrl = 'https://recideas.com/';
 
   const fetchJson = async (url) => {

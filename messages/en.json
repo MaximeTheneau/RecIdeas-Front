@@ -21,7 +21,8 @@
   },
   "footer":{
     "mention-legal": "Legal Mentions",
-    "mention-legal-link":"/en/Legal-Notices"
+    "mention-legal-link":"/en/Legal-Notices",
+      "contact": "Contact"
   },
   "comment": {
     "title": "Comment"

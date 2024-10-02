@@ -22,6 +22,11 @@ export default function Footer() {
             Blog
           </Link>
         </li>
+        <li className="">
+          <Link href={`/${router.query.locale || 'fr'}/contact`}>
+            {t('contact')}
+          </Link>
+        </li>
         <li className="flex justify-between w-1/3 sm:w-1/12">
           <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com">
             <FaFacebook />
