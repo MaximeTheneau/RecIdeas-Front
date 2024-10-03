@@ -69,7 +69,6 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
         />
       </Head>
       <RecypeJsonLd post={page} />
-      <RecypeDaily locale={page.locale} />
       <section className="p-4">
         <div className="">
           <figure>
@@ -89,6 +88,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
           <h1 className="w-full sm:w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <RecypeDaily locale={page.locale} />
         <Comments posts={page} />
       </section>
     </>

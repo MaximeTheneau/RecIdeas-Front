@@ -8,6 +8,12 @@
     "link-daily-recype": "Ricetta del giorno di stagione:",
     "error": "Attendere prima di inviare nuovamente"
   },
+  "recype-daily": {
+    "button": "Ricevi la Ricetta del Giorno!",
+    "h2": "Ricevi la Ricetta del Giorno!",
+    "p": "Iscriviti per ricevere ricette deliziose direttamente nella tua casella di posta ogni giorno!",
+    "button-submit": "Voglio Ricette Deliziose!"
+  },
   "link": {
     "15-recype": "15 idee per ricette",
     "15-recype-link": "/it/15-idee-per-ricette"

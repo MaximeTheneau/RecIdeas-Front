@@ -8,6 +8,12 @@
     "link-daily-recype": "Seasonal daily recipe:",
     "error": "Please wait before submitting again"
   },
+  "recype-daily": {
+    "button": "Get the Recipe of the Day!",
+    "h2": "Get the Recipe of the Day!",
+    "p": "Sign up to receive delicious recipes directly in your inbox, every day!",
+    "button-submit": "I want Delicious Recipes!"
+  },
   "link": {
     "15-recype": "15 Recipe Ideas",
     "15-recype-link": "/en/15-Recipe-Ideas"

@@ -8,6 +8,12 @@
     "link-daily-recype": "Tagesrezept der Saison:",
     "error": "Bitte warten Sie, bevor Sie erneut einreichen"
   },
+  "recype-daily": {
+    "button": "Erhalten Sie das Rezept des Tages!",
+    "h2": "Erhalten Sie das Rezept des Tages!",
+    "p": "Melden Sie sich an, um köstliche Rezepte täglich direkt in Ihren Posteingang zu erhalten!",
+    "button-submit": "Ich möchte leckere Rezepte!"
+  },
   "link": {
     "15-recype": "15 Rezeptideen",
     "15-recype-link": "/de/15-Rezeptideen"

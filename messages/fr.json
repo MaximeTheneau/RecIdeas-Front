@@ -7,7 +7,12 @@
     "label": "Ingrédients ou mots-clés",
     "link-daily-recype": "Recette du jour de saison :",
     "error": "Veuillez attendre avant de soumettre à nouveau"
-
+  },
+  "recype-daily": {
+    "button": "Recevez la Recette du Jour !",
+    "h2": "Recevez la Recette du Jour !",
+    "p": "Inscrivez-vous pour recevoir des recettes délicieuses directement dans votre boîte e-mail, chaque jour !",
+    "button-submit": "Je veux des Recettes Délicieuses !"
   },
   "link": {
     "15-recype": "15 Idées de Recettes",
