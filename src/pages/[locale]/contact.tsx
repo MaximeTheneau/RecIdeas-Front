@@ -21,7 +21,7 @@ export default function Contact({ page }: PageProps) {
         <meta property="og:title" content={page.heading} />
         <meta property="og:description" content={page.metaDescription} />
         <meta property="og:site_name" content="Une Taupe Chez Vous" />
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_URL}/${page.slug}`} />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/contact`} />
         <meta property="og:image" content="https://picture.unetaupechezvous.fr/Accueil.webp?format=jpeg" />
         <meta property="og:image:width" content={`${page.imgWidth}`} />
         <meta property="og:image:height" content={`${page.imgHeight}`} />
@@ -31,7 +31,7 @@ export default function Contact({ page }: PageProps) {
         <meta name="twitter:image" content="https://picture.unetaupechezvous.fr/Accueil.webp?format=jpeg" />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.slug}`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/contact`}
           key="canonical"
         />
       </Head>

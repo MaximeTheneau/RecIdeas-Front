@@ -9,6 +9,13 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Curry-de-legumes-d-automne-et-lait-de-coco</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/curry-de-verduras-de-otono-y-leche-de-coco" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-vegetable-curry-with-coconut-milk" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/verdure-autunnali-al-curry-e-latte-di-cocco" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-gemuse-curry-kokos-milch" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/Soupe-Reconfortante-au-Potiron-et-Epices-d-Automne</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-pumpkin-and-autumn-spice-soup" />
@@ -127,6 +134,34 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/curry-de-verduras-de-otono-y-leche-de-coco</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Curry-de-legumes-d-automne-et-lait-de-coco" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-vegetable-curry-with-coconut-milk" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/verdure-autunnali-al-curry-e-latte-di-cocco" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-gemuse-curry-kokos-milch" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/autumn-vegetable-curry-with-coconut-milk</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Curry-de-legumes-d-automne-et-lait-de-coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/curry-de-verduras-de-otono-y-leche-de-coco" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/verdure-autunnali-al-curry-e-latte-di-cocco" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-gemuse-curry-kokos-milch" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/verdure-autunnali-al-curry-e-latte-di-cocco</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Curry-de-legumes-d-automne-et-lait-de-coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/curry-de-verduras-de-otono-y-leche-de-coco" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-vegetable-curry-with-coconut-milk" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-gemuse-curry-kokos-milch" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/herbst-gemuse-curry-kokos-milch</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Curry-de-legumes-d-automne-et-lait-de-coco" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/curry-de-verduras-de-otono-y-leche-de-coco" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-vegetable-curry-with-coconut-milk" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/verdure-autunnali-al-curry-e-latte-di-cocco" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/sopa-reconfortante-con-calabaza-y-especias-de-oton</loc>
