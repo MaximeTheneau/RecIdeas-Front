@@ -9,6 +9,7 @@ import ImageLoader from '@/components /image/ImageLoader';
 import Comments from '@/components /comments/Comments';
 import RecypeJsonLd from '@/components /jsonLd/RecypeJsonLd';
 import { FaRegCalendarDays } from 'react-icons/fa6';
+import RecypeDaily from '@/components /modal/cookies/RecypeDaily';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 
@@ -68,6 +69,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
         />
       </Head>
       <RecypeJsonLd post={page} />
+      <RecypeDaily />
       <section className="p-4">
         <div className="">
           <figure>
