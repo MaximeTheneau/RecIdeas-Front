@@ -27,7 +27,6 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
-  console.log(page);
   return (
     <>
       <Head>

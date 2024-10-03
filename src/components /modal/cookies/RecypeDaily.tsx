@@ -5,7 +5,11 @@ import {
   FormEvent, useEffect, useRef, useState,
 } from 'react';
 
-export default function RecypeDaily(locale: string) {
+interface RecypeDailyProps {
+    locale: string;
+  }
+
+export default function RecypeDaily({ locale }: RecypeDailyProps) {
   const [state, setState] = useState({
     responses: {
       error: false,
