@@ -27,6 +27,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
   // if (isFallback) {
   //   return <div>Loading...</div>; // Affichez un indicateur de chargement
   // }
+  console.log(page);
   return (
     <>
       <Head>
@@ -69,7 +70,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
         />
       </Head>
       <RecypeJsonLd post={page} />
-      <RecypeDaily />
+      <RecypeDaily locale={page.locale} />
       <section className="p-4">
         <div className="">
           <figure>
