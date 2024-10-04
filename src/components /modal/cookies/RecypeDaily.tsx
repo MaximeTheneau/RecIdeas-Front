@@ -39,6 +39,17 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
     }
   }, []);
 
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault();
+    if (state.responses.confirmEmail) {
+      setState({
+        ...state,
+        openModal: false,
+      });
+      window.localStorage.setItem('newDailyRecipe', 'true');
+    }
+  };
+
   const handleBlur = (e: any) => {
     if (!e.target.value) return;
     fetch(`${process.env.NEXT_PUBLIC_API_URL}newsletter/verify_email`, {
@@ -61,6 +72,8 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
               messageComment: '',
             },
           });
+
+          handleSubmit({ preventDefault: () => {} } as FormEvent);
         } else {
           const errorData = await response.json();
           setState({
@@ -75,16 +88,6 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
       });
   };
 
-  const handleSubmit = async (event: FormEvent) => {
-    event.preventDefault();
-    if (state.responses.confirmEmail) {
-      setState({
-        ...state,
-        openModal: false,
-      });
-      window.localStorage.setItem('newDailyRecipe', 'true');
-    }
-  };
   return (
     <>
       <Button onClick={() => setState({ ...state, openModal: true })}>
