@@ -3,6 +3,7 @@ import type {
 } from 'next';
 import Head from 'next/head';
 import { Post } from '@/types/post';
+import WebApplicationJsonLd from '@/components /jsonLd/WebApplicationJsonLd';
 import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import { Button } from 'flowbite-react';
 import Link from 'next/link';
@@ -71,6 +72,7 @@ export default function Page({ pageData, dailyRecype }: PageProps) {
           fetchPriority="high"
         />
       </Head>
+      <WebApplicationJsonLd page={page} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       <section>
         <div className="flex items-end">
