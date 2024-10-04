@@ -11,7 +11,6 @@ export default function WebApplicationJsonLd({ page }) {
     description: page.metaDescription,
     applicationCategory: 'Multimedia',
     thumbnail: `${page.imgPost}?format=jpeg`,
-    logo: 'https://picture.recideas.com/logo-recideas.webp?format=jpeg',
     sameAs: [
       'https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about',
       'https://www.instagram.com/rec.ideas/',
