@@ -70,7 +70,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
         />
       </Head>
       <RecypeJsonLd post={page} />
-      <WebSiteJsonLd page={page} />
+      <WebSiteJsonLd />
       <section className="p-4">
         <div className="">
           <figure>

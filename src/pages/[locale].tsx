@@ -73,7 +73,7 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
           fetchPriority="high"
         />
       </Head>
-      <WebSiteJsonLd page={page} />
+      <WebSiteJsonLd />
       <WebPageJsonLd page={page} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       <section>

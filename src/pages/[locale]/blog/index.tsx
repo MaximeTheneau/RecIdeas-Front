@@ -51,7 +51,7 @@ export default function Home({ articles, page } : any) {
           fetchPriority="high"
         />
       </Head>
-      <WebSiteJsonLd page={page} />
+      <WebSiteJsonLd />
       <WebPageJsonLd page={page} />
       <section>
         <h1 className="w-full sm:w-2/3">{page.heading}</h1>

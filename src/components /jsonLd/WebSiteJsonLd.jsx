@@ -1,11 +1,11 @@
 /* eslint-disable react/no-danger */
 import Head from 'next/head';
 
-export default function WebSiteJsonLd({ page }) {
+export default function WebSiteJsonLd() {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: page.title,
+    name: 'Recideas - 15 Recettes Faciles et Savoureuses en Un Clic !',
     url: process.env.NEXT_PUBLIC_URL,
     sameAs: [
       'https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about',

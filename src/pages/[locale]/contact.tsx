@@ -37,7 +37,7 @@ export default function Contact({ page }: PageProps) {
           key="canonical"
         />
       </Head>
-      <WebSiteJsonLd page={page} />
+      <WebSiteJsonLd />
       <WebPageJsonLd page={page} />
       <section>
         <div className="flex items-end">

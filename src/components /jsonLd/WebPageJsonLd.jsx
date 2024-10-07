@@ -5,7 +5,7 @@ export default function WebPageJsonLd({ page }) {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: page.title,
+    name: page.heading,
     url: `${process.env.NEXT_PUBLIC_URL}/${page.url}`,
     description: page.metaDescription,
     sameAs: [

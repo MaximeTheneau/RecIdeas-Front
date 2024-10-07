@@ -81,7 +81,7 @@ export default function Page({
         />
 
       </Head>
-      <WebSiteJsonLd page={page} />
+      <WebSiteJsonLd />
       <WebPageJsonLd page={page} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
