@@ -4,6 +4,8 @@ import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { Post } from '@/types/post';
 import ImageLoader from '@/components /image/ImageLoader';
 import Link from 'next/link';
+import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
+import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '../../utils/fetcher';
 
 interface PageProps {
@@ -35,7 +37,8 @@ export default function Contact({ page }: PageProps) {
           key="canonical"
         />
       </Head>
-
+      <WebSiteJsonLd page={page} />
+      <WebPageJsonLd page={page} />
       <section>
         <div className="flex items-end">
           <figure className="w-1/3">

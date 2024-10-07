@@ -50,9 +50,9 @@ export default function Home({ articles, page } : any) {
           imageSizes="100w"
           fetchPriority="high"
         />
-        <WebSiteJsonLd page={page} />
-        <WebPageJsonLd page={page} />
       </Head>
+      <WebSiteJsonLd page={page} />
+      <WebPageJsonLd page={page} />
       <section>
         <h1 className="w-full sm:w-2/3">{page.heading}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
