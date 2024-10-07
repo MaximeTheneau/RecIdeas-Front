@@ -19,6 +19,9 @@ const config: Config = {
         black: '##111011',
         link: '#012B73',
       },
+      boxShadow: {
+        custom: '0px -20px 20px 100vh rgba(151, 151, 151, 0.8)',
+      },
     },
   },
 

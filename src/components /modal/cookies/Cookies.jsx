@@ -117,7 +117,7 @@ export default function CookiesModal() {
 
   return (
     cookies.cookiesModal === false && (
-    <div className="bottom-0 fixed bg-primary z-10 p-4 w-full ">
+    <div className="bottom-0 fixed bg-primary z-10 p-4 w-full shadow-custom ">
       <FaCookieBite className="w-8" />
       {cookies.cookiesChoice ? (
         <div>
