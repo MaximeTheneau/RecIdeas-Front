@@ -11,7 +11,8 @@ import { Button } from 'flowbite-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { MdFlatware } from 'react-icons/md';
-import WebApplicationJsonLd from '@/components /jsonLd/WebApplicationJsonLd';
+import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
+import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -72,7 +73,8 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
           fetchPriority="high"
         />
       </Head>
-      <WebApplicationJsonLd page={page} />
+      <WebSiteJsonLd page={page} />
+      <WebPageJsonLd page={page} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       <section>
         <div className="flex items-end">

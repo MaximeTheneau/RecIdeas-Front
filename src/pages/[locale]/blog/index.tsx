@@ -6,6 +6,8 @@ import type {
   GetStaticPropsContext,
 } from 'next';
 import Cards from '@/components /cards/cards';
+import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
+import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '../../../utils/fetcher';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
@@ -48,6 +50,8 @@ export default function Home({ articles, page } : any) {
           imageSizes="100w"
           fetchPriority="high"
         />
+        <WebSiteJsonLd page={page} />
+        <WebPageJsonLd page={page} />
       </Head>
       <section>
         <h1 className="w-full sm:w-2/3">{page.heading}</h1>

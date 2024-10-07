@@ -1,6 +1,9 @@
 import Head from 'next/head';
 
 export default function BreadcrumbJsonLd({ paragraphPosts, urlPost }) {
+  if (!paragraphPosts || paragraphPosts.length === 0) {
+    return null;
+  }
   return (
     <Head>
       <script

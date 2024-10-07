@@ -9,7 +9,8 @@ import TableOfContents from '@/components /tableOfContents/TableOfContents';
 import ImageLoader from '@/components /image/ImageLoader';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import WebApplicationJsonLd from '@/components /jsonLd/WebApplicationJsonLd';
+import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
+import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -80,7 +81,8 @@ export default function Page({
         />
 
       </Head>
-      <WebApplicationJsonLd page={page} />
+      <WebSiteJsonLd page={page} />
+      <WebPageJsonLd page={page} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
         <div className="flex items-end">

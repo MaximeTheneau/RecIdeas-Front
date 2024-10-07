@@ -9,6 +9,20 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Ragout-reconfortant-de-legumes-d-automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/reconfortante-guiso-de-verduras-de-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-fall-vegetable-stew" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/confortante-stufato-di-verdure-autunnali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuender-herbst-gemuseintopf" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/Risotto-cremeux-aux-betteraves-et-fromage-de-chevre</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-remolacha-y-queso-de-cabra" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-beetroot-and-goat-cheese" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-barbabietola-e-formaggio-di-ca" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-ruben-und-ziegenkase" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/Tiramisu-aux-poires-Douceur-automnale-en-dessert</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/tiramisu-con-peras-dulzura-otonal-de-postre" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pear-tiramisu-autumnal-sweetness-for-dessert" />
@@ -141,6 +155,62 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/reconfortante-guiso-de-verduras-de-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Ragout-reconfortant-de-legumes-d-automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-fall-vegetable-stew" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/confortante-stufato-di-verdure-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuender-herbst-gemuseintopf" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/comforting-fall-vegetable-stew</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Ragout-reconfortant-de-legumes-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/reconfortante-guiso-de-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/confortante-stufato-di-verdure-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuender-herbst-gemuseintopf" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/confortante-stufato-di-verdure-autunnali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Ragout-reconfortant-de-legumes-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/reconfortante-guiso-de-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-fall-vegetable-stew" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wohltuender-herbst-gemuseintopf" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/wohltuender-herbst-gemuseintopf</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Ragout-reconfortant-de-legumes-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/reconfortante-guiso-de-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/comforting-fall-vegetable-stew" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/confortante-stufato-di-verdure-autunnali" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-remolacha-y-queso-de-cabra</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Risotto-cremeux-aux-betteraves-et-fromage-de-chevre" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-beetroot-and-goat-cheese" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-barbabietola-e-formaggio-di-ca" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-ruben-und-ziegenkase" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-beetroot-and-goat-cheese</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Risotto-cremeux-aux-betteraves-et-fromage-de-chevre" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-remolacha-y-queso-de-cabra" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-barbabietola-e-formaggio-di-ca" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-ruben-und-ziegenkase" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-barbabietola-e-formaggio-di-ca</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Risotto-cremeux-aux-betteraves-et-fromage-de-chevre" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-remolacha-y-queso-de-cabra" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-beetroot-and-goat-cheese" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-ruben-und-ziegenkase" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-ruben-und-ziegenkase</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/Risotto-cremeux-aux-betteraves-et-fromage-de-chevre" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-remolacha-y-queso-de-cabra" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-beetroot-and-goat-cheese" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-barbabietola-e-formaggio-di-ca" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/tiramisu-con-peras-dulzura-otonal-de-postre</loc>
