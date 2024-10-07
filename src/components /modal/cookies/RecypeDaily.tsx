@@ -35,7 +35,7 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
     if (!localStorage.getItem('newDailyRecipe')) {
       setTimeout(() => {
         setState({ ...state, openModal: true });
-      }, 5000);
+      }, 8000);
     }
   }, []);
 
