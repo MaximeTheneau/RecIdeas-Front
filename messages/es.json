@@ -28,7 +28,11 @@
   "footer":{
     "mention-legal": "Avisos Legales",
     "mention-legal-link":"/es/Avisos-Legales",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "terms-link": "/es\/Terminos-de-uso-RecIdeas-com",
+      "terms": "Términos de uso",
+      "who-link": "/es\/Quienes-somos-RecIdeas-15-recetas-faciles",
+      "who": "¿Quiénes somos?"
   },
   "comment": {
     "title": "Commentario"

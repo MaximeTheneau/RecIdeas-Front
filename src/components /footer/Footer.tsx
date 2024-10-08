@@ -10,30 +10,18 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <div className=" p-8 leading-loose bg-secondaryLight text-xl">
-      <ul className="flex justify-around sm:flex-row flex-col item-center">
+    <div className=" p-4 leading-loose bg-secondaryLight text-xl">
+      <ul className="flex justify-around w-full sm:w-1/4  py-4 mx-auto">
         <li className="">
-          <Link href={t('mention-legal-link')}>
-            {t('mention-legal')}
-          </Link>
-        </li>
-        <li className="">
-          <Link href={`/${router.query.locale || 'fr'}/blog`}>
-            Blog
-          </Link>
-        </li>
-        <li className="">
-          <Link href={`/${router.query.locale || 'fr'}/contact`}>
-            {t('contact')}
-          </Link>
-        </li>
-        <li className="flex justify-between w-1/3 sm:w-1/12">
-          <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com">
+          <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com" target="_blank">
             <FaFacebook />
           </Link>
-          <Link href="https://www.instagram.com/rec.ideas/" aria-label="Instagram page RecIdeas.com">
+        </li>
+        <li>
+          <Link href="https://www.instagram.com/rec.ideas/" aria-label="Instagram page RecIdeas.com" target="_blank">
             <FaInstagram />
           </Link>
+
         </li>
         {/* <li>
             <Link href="/twitter">
@@ -41,6 +29,36 @@ export default function Footer() {
             </Link>
           </li> */}
       </ul>
+
+      <ul className="flex justify-around sm:flex-row flex-col item-center text-xs ">
+        <li className="py-4">
+          <Link href={`/${router.query.locale || 'fr'}/blog`}>
+            Blog
+          </Link>
+        </li>
+        <li className="py-4">
+          <Link href={`/${router.query.locale || 'fr'}/contact`}>
+            {t('contact')}
+          </Link>
+        </li>
+        <li className="py-4">
+          <Link href={t('terms-link')}>
+            {t('terms')}
+          </Link>
+        </li>
+        <li className="py-4">
+          <Link href={t('who-link')}>
+            {t('who')}
+          </Link>
+        </li>
+        <li className="py-4">
+          <Link href={t('mention-legal-link')}>
+            {t('mention-legal')}
+          </Link>
+        </li>
+
+      </ul>
     </div>
+
   );
 }

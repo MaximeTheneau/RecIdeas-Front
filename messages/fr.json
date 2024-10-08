@@ -28,7 +28,11 @@
     "footer":{
       "mention-legal": "Mentions légales",
       "mention-legal-link":"/fr/mentions-legales",
-      "contact": "Contact"
+      "terms-link": "/fr\/conditions-d-utilisation-recideas-com",
+      "contact": "Contact",
+      "terms": "Conditions d'Utilisation",
+      "who-link": "/fr\/qui-sommes-nous-recideas-15-recettes-faciles",
+      "who": "Qui sommes-nous"
     },
     "comment": {
       "title": "Commentaire"
