@@ -52,7 +52,7 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.title} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/`} hrefLang="x-default" />
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}`} hrefLang="fr" />
         {
           translations.map(

@@ -8,11 +8,16 @@ import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '../../utils/fetcher';
 
-interface PageProps {
-  page: Post;
+interface Translations {
+  locale: string;
 }
 
-export default function Contact({ page }: PageProps) {
+interface PageProps {
+  page: Post;
+  translations: Translations[];
+}
+
+export default function Contact({ page, translations }: PageProps) {
   return (
     <>
       <Head>
@@ -31,6 +36,13 @@ export default function Contact({ page }: PageProps) {
         <meta name="twitter:title" content={page.heading} />
         <meta name="twitter:description" content={page.metaDescription} />
         <meta name="twitter:image" content={`${page.imgPost}?format=jpeg`} />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/contact`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/contact`} hrefLang="fr" />
+        {
+          translations.map(
+            (translation: { locale: string }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/contact`} hrefLang={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/contact`} />,
+          )
+        }
         <link
           rel="canonical"
           href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/contact`}
@@ -115,9 +127,14 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   } else {
     page = post;
   }
+
+  const translations = post.translations.map(({ locale }: any) => ({
+    locale,
+  }));
   return {
     props: {
       page,
+      translations,
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
     },
   };
