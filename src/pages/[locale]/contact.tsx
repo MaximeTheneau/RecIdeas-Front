@@ -40,7 +40,7 @@ export default function Contact({ page, translations }: PageProps) {
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/contact`} hrefLang="fr" />
         {
           translations.map(
-            (translation: { locale: string }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/contact`} hrefLang={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/contact`} />,
+            (translation: { locale: string }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/contact`} hrefLang={translation.locale} />,
           )
         }
         <link
@@ -50,7 +50,7 @@ export default function Contact({ page, translations }: PageProps) {
         />
       </Head>
       <WebSiteJsonLd />
-      <WebPageJsonLd page={page} />
+      <WebPageJsonLd page={page} url={`${page.locale}/contact`} />
       <section>
         <div className="flex items-end">
           <figure className="w-1/3">
@@ -123,6 +123,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     page = {
       ...post,
       ...translationList,
+      url: `${params.locale}/contact`,
     };
   } else {
     page = post;

@@ -74,7 +74,7 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
         />
       </Head>
       <WebSiteJsonLd />
-      <WebPageJsonLd page={page} />
+      <WebPageJsonLd page={page} url={null} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={`${process.env.NEXT_PUBLIC_URL}/${page.locale}`} />
       <section>
         <div className="flex items-end">

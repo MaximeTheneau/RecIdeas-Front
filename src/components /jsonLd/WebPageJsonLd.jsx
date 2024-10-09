@@ -1,12 +1,12 @@
 /* eslint-disable react/no-danger */
 import Head from 'next/head';
 
-export default function WebPageJsonLd({ page }) {
+export default function WebPageJsonLd({ page, url }) {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: page.heading,
-    url: `${process.env.NEXT_PUBLIC_URL}/${page.url}`,
+    url: `${process.env.NEXT_PUBLIC_URL}/${url || page.url}`,
     description: page.metaDescription,
     sameAs: [
       'https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about',

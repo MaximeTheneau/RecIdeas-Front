@@ -45,6 +45,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="msvalidate.01" content="ED971B0CFF044FFA9DE24B864BA7ED75" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="ca-pub-9194552698690511" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <script
           async

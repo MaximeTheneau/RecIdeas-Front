@@ -82,7 +82,7 @@ export default function Page({
 
       </Head>
       <WebSiteJsonLd />
-      <WebPageJsonLd page={page} />
+      <WebPageJsonLd page={page} url={null} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
         <div className="flex items-end">
