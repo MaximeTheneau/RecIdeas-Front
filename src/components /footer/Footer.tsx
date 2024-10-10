@@ -70,7 +70,7 @@ export default function Footer() {
 
         </li>
         <li>
-          <Link href="/twitter">
+          <Link href="https://x.com/RecIdeas" aria-label="X - Twitter page RecIdeas.com" target="_blank">
             <FaXTwitter />
           </Link>
         </li>
