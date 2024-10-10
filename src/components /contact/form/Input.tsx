@@ -1,5 +1,3 @@
-import { Input as InputUi } from '@headlessui/react';
-
 interface InputProps {
   type: string;
   title: string;
@@ -17,7 +15,7 @@ export default function Input({
   required,
 }: InputProps) {
   return (
-    <InputUi
+    <input
       type={type}
       title={title}
       value={value}
