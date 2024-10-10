@@ -1,7 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
-import { Label, Textarea } from 'flowbite-react';
 import formMiddleware from '../../middleware/FormMiddleware';
-import Input from './form/Input';
 
 interface FormState {
   name: string;
@@ -130,36 +128,43 @@ export default function ContactForm() {
       <div className="w-full bg-secondaryLight sm:flex sm:justify-around pt-4 pb-4">
 
         <form className="w-full sm:w-1/2 sm:flex sm:flex-col sm:justify-center pr-4" onSubmit={handleSubmit}>
-          <Label htmlFor="name" value="Name:" />
-          <Input
-            type="text"
-            title="name"
-            placeholder="Name"
-            value={state.form.name}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => changeField(e.target.value, 'name')}
-            required
-          />
-          <Label htmlFor="email" value="Email:" />
-          <Input
-            type="email"
-            title="email"
-            value={state.form.email}
-            placeholder="exemple@email.fr"
-            onChange={(e: ChangeEvent<HTMLInputElement>) => changeField(e.target.value, 'email')}
-            required
-          />
-          <div className="">
-            <Label htmlFor="message" value="Message:" />
-            <Textarea
-              rows={4}
-              title="message"
-              value={state.form.message}
-              onChange={handleChangeMessage}
-              name="message"
-              wrap="off"
-              placeholder="Message"
+          <label htmlFor="name">
+            Name:
+            <input
+              type="text"
+              title="name"
+              placeholder="Name"
+              value={state.form.name}
+              onChange={(e: ChangeEvent<HTMLInputElement>) => changeField(e.target.value, 'name')}
               required
             />
+          </label>
+          <label htmlFor="email">
+            Email:
+            <input
+              type="email"
+              title="email"
+              value={state.form.email}
+              placeholder="exemple@email.fr"
+              onChange={(e: ChangeEvent<HTMLInputElement>) => changeField(e.target.value, 'email')}
+              required
+            />
+          </label>
+          <div className="">
+            <label htmlFor="message">
+              Message :
+              <textarea
+                rows={4}
+                id="message"
+                title="message"
+                value={state.form.message}
+                onChange={handleChangeMessage}
+                name="message"
+                wrap="off"
+                placeholder="Message"
+                required
+              />
+            </label>
           </div>
           <button
             className="text-base text-white sm:w-ful bg-secondary p-2 rounded   hover:scale-90  hover:text-white p-4 m-4"

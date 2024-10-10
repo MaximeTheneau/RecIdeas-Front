@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaCookieBite } from 'react-icons/fa';
-import { Button } from 'flowbite-react';
 import { useTranslations } from 'next-intl';
+import Button from '@/components /ui/Button';
 import CookieChoice from './CookieChoice';
 import { useCookies } from '../../../context/CookiesContext';
 

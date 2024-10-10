@@ -1,14 +1,14 @@
 import type { Config } from 'tailwindcss';
 
-const flowbite = require('flowbite-react/tailwind');
-
 const config: Config = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
-    flowbite.content(),
-
   ],
   theme: {
+    borderWidth: {
+      DEFAULT: '1px',
+      1: '0.05rem',
+    },
     extend: {
       colors: {
         primary: '#fa8305',
@@ -16,7 +16,8 @@ const config: Config = {
         secondary: '#A8DADC',
         white: '#ffffff',
         whiteOpacity: 'rgba(255, 255, 255, 0.5)',
-        black: '##111011',
+        black: '#111011',
+        blackOpacity: '#1807e7e',
         link: '#012B73',
       },
       boxShadow: {
@@ -25,8 +26,5 @@ const config: Config = {
     },
   },
 
-  plugins: [
-    flowbite.plugin(),
-  ],
 };
 export default config;

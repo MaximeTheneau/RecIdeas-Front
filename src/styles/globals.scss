@@ -41,6 +41,14 @@ ol {
 img{
   max-width: 100%;
 }
+
+input,
+textarea{
+  width: 100%;
+  padding: .5rem;
+  border: .002rem solid rgb(128, 126, 126);
+  border-radius: 1rem
+}
 @media screen and (max-width: 768px){
   h1{
     font-family: var(--font-heading);

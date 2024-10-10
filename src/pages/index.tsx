@@ -6,10 +6,10 @@ import { Post } from '@/types/post';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
-import { Button } from 'flowbite-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { MdFlatware } from 'react-icons/md';
+import Button from '../components /ui/Button';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -93,16 +93,18 @@ export default function Page({ pageData, dailyRecype }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
-          <Button className="font-black text-black bg-primary " as={Link} href={t('15-recype-link')}>
-            <MdFlatware className="w-8 inline-block" />
-            {' '}
-            {t('15-recype')}
+          <Button className="">
+            <Link href={t('15-recype-link')}>
+              <MdFlatware className="w-8 inline-block" />
+              {' '}
+              {t('15-recype')}
+            </Link>
           </Button>
         </div>
 
         <TableOfContents post={page} />
 
-        {page.paragraphPosts.map((paragraphArticle : any) => (
+        {page.paragraphPosts.map((paragraphArticle) => (
           <div key={paragraphArticle.id}>
             {paragraphArticle.subtitle && (
               <h2 id={paragraphArticle.slug}>

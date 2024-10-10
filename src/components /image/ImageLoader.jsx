@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Spinner } from 'flowbite-react'; // Assurez-vous d'avoir importé Flowbite
+import Spinner from '../ui/Spinner';
 
 /* eslint-disable @next/next/no-img-element */
 

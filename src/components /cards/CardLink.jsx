@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import { Card } from 'flowbite-react';
+import Card from '../ui/Card';
 
 export default function CardLink({ card }) {
   return (

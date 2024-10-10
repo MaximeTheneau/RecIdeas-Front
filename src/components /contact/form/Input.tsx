@@ -1,4 +1,4 @@
-import { TextInput } from 'flowbite-react';
+import { Input as InputUi } from '@headlessui/react';
 
 interface InputProps {
   type: string;
@@ -17,15 +17,13 @@ export default function Input({
   required,
 }: InputProps) {
   return (
-    <TextInput
+    <InputUi
       type={type}
       title={title}
-      id={title}
       value={value}
       placeholder={placeholder}
       onChange={onChange}
       required={required}
-      className="pb-4"
     />
   );
 }

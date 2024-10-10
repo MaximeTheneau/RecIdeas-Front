@@ -15,7 +15,6 @@ Vous pouvez accéder RecIdeas en cliquant sur le lien suivant : [recideas.com](h
 
 - **Next.js** : Framework React pour construire une interface utilisateur dynamique et réactive.
 - **Tailwind CSS** : Pour un design moderne et personnalisable avec des classes utilitaires.
-- **Flowbite React** : Composants UI basés sur Tailwind CSS pour des éléments d'interface réactifs et esthétiques.
 
 ## Fonctionnalités
 

@@ -1,8 +1,7 @@
-import {
-  Button, Spinner, Textarea, TextInput,
-} from 'flowbite-react';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import Button from '../ui/Button';
+import Spinner from '../ui/Spinner';
 
 export default function Comments({ posts }) {
   const t = useTranslations('comment');
@@ -180,7 +179,7 @@ export default function Comments({ posts }) {
       <form className="flex max-w-md flex-col gap-4 mr-auto ml-auto mt-4 mb-4" onSubmit={(e) => handleSubmit(e)}>
         <h2>{t('title')}</h2>
         <div>
-          <TextInput
+          <input
             placeholder="Pseudo"
             type="text"
             id="user"
@@ -195,7 +194,7 @@ export default function Comments({ posts }) {
             })}
             className="mb-4"
           />
-          <TextInput
+          <input
             type="email"
             id="email"
             name="email"
@@ -216,7 +215,7 @@ export default function Comments({ posts }) {
             {state.responses.messageComment}
           </p>
           )}
-          <Textarea
+          <textarea
             placeholder="Comment"
             id="comment"
             name="comment"

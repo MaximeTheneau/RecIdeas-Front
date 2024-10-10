@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import {
-  Button, Card, Label, Spinner, TextInput,
-  Tooltip,
-} from 'flowbite-react';
 import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
 import Middleware from '../../middleware/Middleware';
+import Spinner from '../ui/Spinner';
+import Card from '../ui/Card';
 
 export default function FormRecype({ locale, recypeDefault }) {
   const t = useTranslations('recype');
@@ -83,12 +81,12 @@ export default function FormRecype({ locale, recypeDefault }) {
   return (
     <Card>
       <form onSubmit={handleSubmit} className=" p-4 rounded">
-        <Label htmlFor="supplement" className="text-xl">
+        <label htmlFor="supplement" className="text-xl block">
           {t('label')}
           {' '}
           :
-        </Label>
-        <TextInput
+        </label>
+        <input
           placeholder={t('placeholder-french')}
           type="text"
           id="supplement"
@@ -107,41 +105,40 @@ export default function FormRecype({ locale, recypeDefault }) {
         />
 
         <div>
-          <Button.Group className="">
-            <Button
+          <div className="flex">
+            <button
               type="submit"
               onClick={() => handleClick('dish')}
               id="dish"
               aria-label={t('btn-plat')}
-              className="font-bold text-black hover:bg-secondaryLight"
-              color="gray"
+              className="border-solid border-1 border-blackOpacity py-2 px-4 font-bold data-[hover]:bg-sky-500 font-bold text-black hover:bg-secondaryLight flex rounded-l-lg"
             >
               <MdFlatware className="w-8" />
               {t('btn-plat')}
-            </Button>
-            <Button
+            </button>
+            <button
               type="submit"
               onClick={() => handleClick('entrance')}
               aria-label={t('btn-entree')}
-              className="font-bold text-[black] hover:bg-secondaryLight h-auto"
+              className="border-solid border-y-1 border-blackOpacity font-bold text-black hover:bg-secondaryLight h-auto rounded-none"
               color="gray"
             >
-              <Tooltip content={t('btn-entree')} className="">
-                <LuSalad className="w-8" />
-              </Tooltip>
-            </Button>
-            <Button
+              <LuSalad className="w-8" />
+              {/* <Tooltip content={t('btn-entree')} className="">
+              </Tooltip> */}
+            </button>
+            <button
               type="submit"
               onClick={() => handleClick('dessert')}
               aria-label={t('btn-dessert')}
               color="gray"
-              className="font-bold text-[black] hover:text-secondary"
+              className="border-solid border-1 border-blackOpacity font-bold text-black hover:bg-secondaryLight h-auto rounded-r-lg"
             >
-              <Tooltip content={t('btn-dessert')} className="">
-                <LuCakeSlice className="w-8" />
-              </Tooltip>
-            </Button>
-          </Button.Group>
+              <LuCakeSlice className="w-8" />
+              {/* <Tooltip content={t('btn-dessert')} className="">
+              </Tooltip> */}
+            </button>
+          </div>
         </div>
       </form>
       <div className="">
