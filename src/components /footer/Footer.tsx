@@ -7,7 +7,6 @@ import { FaInstagram, FaXTwitter } from 'react-icons/fa6';
 export default function Footer() {
   const t = useTranslations('footer');
   const router = useRouter();
-  console.log(router.query.locale);
   return (
     <div className=" p-4 leading-loose bg-secondaryLight text-xl">
       <div className="flex justify-around sm:flex-row flex-col">
@@ -59,18 +58,18 @@ export default function Footer() {
       <hr className="h-px  bg-gray-200 border-0 dark:bg-gray-700" />
       <ul className="flex justify-around w-full sm:w-1/4  py-4 mx-auto">
         <li className="">
-          <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com" target="_blank">
+          <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com" target="_blank" rel="noopener">
             <FaFacebook />
           </Link>
         </li>
         <li>
-          <Link href="https://www.instagram.com/rec.ideas/" aria-label="Instagram page RecIdeas.com" target="_blank">
+          <Link href="https://www.instagram.com/rec.ideas/" aria-label="Instagram page RecIdeas.com" target="_blank" rel="noopener">
             <FaInstagram />
           </Link>
 
         </li>
         <li>
-          <Link href="https://x.com/RecIdeas" aria-label="X - Twitter page RecIdeas.com" target="_blank">
+          <Link href="https://x.com/RecIdeas" aria-label="X - Twitter page RecIdeas.com" target="_blank" rel="noopener">
             <FaXTwitter />
           </Link>
         </li>

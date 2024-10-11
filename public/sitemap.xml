@@ -9,6 +9,13 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/tourte-aux-champignons-d-automne-et-herbes-fines</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-champinones-y-hierbas-finas" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-mushroom-and-herbs-pie" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-autunnale-con-funghi-ed-erbe-aromatiche" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-pilz-und-feine-krauter-kuchen" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/tarte-automnale-aux-poireaux-et-camembert</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/tarta-otonal-de-puerros-y-camembert" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-leek-and-camembert-tart" />
@@ -197,6 +204,34 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/pastel-de-champinones-y-hierbas-finas</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tourte-aux-champignons-d-automne-et-herbes-fines" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-mushroom-and-herbs-pie" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-autunnale-con-funghi-ed-erbe-aromatiche" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-pilz-und-feine-krauter-kuchen" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/autumn-mushroom-and-herbs-pie</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tourte-aux-champignons-d-automne-et-herbes-fines" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-champinones-y-hierbas-finas" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-autunnale-con-funghi-ed-erbe-aromatiche" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-pilz-und-feine-krauter-kuchen" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/torta-autunnale-con-funghi-ed-erbe-aromatiche</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tourte-aux-champignons-d-automne-et-herbes-fines" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-champinones-y-hierbas-finas" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-mushroom-and-herbs-pie" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-pilz-und-feine-krauter-kuchen" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/herbst-pilz-und-feine-krauter-kuchen</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tourte-aux-champignons-d-automne-et-herbes-fines" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-champinones-y-hierbas-finas" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-mushroom-and-herbs-pie" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-autunnale-con-funghi-ed-erbe-aromatiche" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/tarta-otonal-de-puerros-y-camembert</loc>

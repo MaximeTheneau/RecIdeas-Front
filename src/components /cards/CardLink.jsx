@@ -4,7 +4,7 @@ import Card from '../ui/Card';
 
 export default function CardLink({ card }) {
   return (
-    <li className="py-4 max-w-80 min-h-80 hover:text-primary">
+    <li className="py-4 w-1/2 sm:w-1/1 max-w-80 hover:text-primary">
       <Card>
         <Link
           href={`/${card.url}`}
@@ -17,9 +17,9 @@ export default function CardLink({ card }) {
             height={320}
             loading="lazy"
             decoding="async"
-            className="w-full"
+            className="w-full "
           />
-          <p className="font-bold py-4">{card.title}</p>
+          <p className="font-bold py-4 px-2">{card.title}</p>
         </Link>
       </Card>
     </li>

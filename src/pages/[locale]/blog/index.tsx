@@ -12,7 +12,6 @@ import fetcher from '../../../utils/fetcher';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
 export default function Home({ articles, page } : any) {
-  console.log(page.heading);
   return (
     <>
       <Head>
@@ -55,7 +54,7 @@ export default function Home({ articles, page } : any) {
       <WebSiteJsonLd />
       <WebPageJsonLd page={page} url={null} />
       <section>
-        <h1 className="w-full sm:w-2/3">{`${page.heading}`}</h1>
+        <h1 className="w-full sm:w-2/3">{page.heading}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         {/* --Articles--*/}
         <div>
