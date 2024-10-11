@@ -7,13 +7,13 @@ import { FaInstagram, FaXTwitter } from 'react-icons/fa6';
 export default function Footer() {
   const t = useTranslations('footer');
   const router = useRouter();
-
+  console.log(router.query.locale);
   return (
     <div className=" p-4 leading-loose bg-secondaryLight text-xl">
       <div className="flex justify-around sm:flex-row flex-col">
         <ul className="text-xs">
           <li className="py-4">
-            <Link href={`/${router.query.locale || ''}`} className="flex items-center font-bold">
+            <Link href={`/${router.query.locale === 'fr' ? '' : router.query.locale || ''}`} className="flex items-center font-bold">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt="Logo RecIdeas"
