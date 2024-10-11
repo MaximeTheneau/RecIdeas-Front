@@ -83,7 +83,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
               priority
             />
           </figure>
-          <p className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+          <p className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
             <FaRegCalendarDays className="mr-4" />
             {page.formattedDate}
           </p>

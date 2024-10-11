@@ -43,12 +43,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="yandex-verification" content={process.env.NEXT_PUBLIC_YANDEX_WEBMASTER_ID} />
         <meta name="ahrefs-site-verification" content="80e1e4c68c5760798a0c167d6db84e79e9b343301fd1eb054f1da5fc8529e778" />
         <meta name="msvalidate.01" content="ED971B0CFF044FFA9DE24B864BA7ED75" />
-        <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content="ca-pub-9194552698690511" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
         {/* <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}`}

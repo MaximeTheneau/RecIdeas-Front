@@ -60,7 +60,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <hr className="h-px  bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr className="h-px  bg-gray-200 border-0 " />
       <ul className="flex justify-around w-full sm:w-1/4  py-4 mx-auto">
         <li className="">
           <Link href="https://www.facebook.com/people/RecIdeas/61565854959587/?sk=about" aria-label="Facebook page RecIdeas.com" target="_blank" rel="noopener noreferrer" prefetch={false}>

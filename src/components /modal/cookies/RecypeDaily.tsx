@@ -108,19 +108,19 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
 
       {state.openModal && (
       <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-md w-full p-6 relative">
+        <div className="bg-white  rounded-lg shadow-lg max-w-md w-full p-6 relative">
           <button
             type="button"
-            className="absolute top-0 right-0 m-4 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100"
+            className="absolute top-0 right-0 m-4 text-gray-500 hover:text-gray-700 "
             onClick={() => setState({ ...state, openModal: false })}
           >
             X
           </button>
           <h2 className="text-xl font-semibold mb-4">{t('h2')}</h2>
-          <p className="text-gray-900 dark:text-white text-lg mb-6">{t('p')}</p>
+          <p className="text-gray-900  text-lg mb-6">{t('p')}</p>
 
           <div>
-            <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 mb-2">
+            <label htmlFor="email" className="block text-gray-700  mb-2">
               E-mail
               <input
                 type="email"
@@ -136,7 +136,7 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
                   },
                 })}
                 ref={emailInputRef}
-                className="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white mb-4"
+                className="w-full p-2 border border-gray-300 rounded-lg  mb-4"
               />
 
               {state.responses.messageComment && (

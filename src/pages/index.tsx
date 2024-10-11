@@ -147,7 +147,7 @@ export default function Page({ pageData, dailyRecype }: PageProps) {
             )}
           </div>
         ))}
-        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
           <Link href={`/${dailyRecype[0].url}`}>
             {tr('link-daily-recype')}
             {' '}
