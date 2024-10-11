@@ -32,7 +32,9 @@
       "contact": "Contact",
       "terms": "Conditions d'Utilisation",
       "who-link": "/fr\/qui-sommes-nous-recideas-15-recettes-faciles",
-      "who": "Qui sommes-nous"
+      "who": "Qui sommes-nous",
+      "policy-link": "/fr\/politique-de-confidentialite",
+      "policy": "Politique de confidentialité"
     },
     "comment": {
       "title": "Commentaire"

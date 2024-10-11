@@ -239,14 +239,14 @@ export default function Comments({ posts }) {
           )}
           {isFormValid && state.responses.confirmEmail ? (
             <Button
-              className="button mt-4 mb-4"
+              className=" mt-4 mb-4"
               type="submit"
             >
               Submit
             </Button>
           ) : (
             <Button
-              className="button button--disabled mt-4 mb-4 text-black"
+              className="cursor-not-allowed opacity-50 mt-4 mb-4 text-black"
               type="button"
               disabled
             >

@@ -53,6 +53,11 @@ export default function Footer() {
               {t('mention-legal')}
             </Link>
           </li>
+          <li className="py-4">
+            <Link href={t('policy-link')}>
+              {t('policy')}
+            </Link>
+          </li>
         </ul>
       </div>
       <hr className="h-px  bg-gray-200 border-0 dark:bg-gray-700" />
