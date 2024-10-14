@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import { MdFlatware } from 'react-icons/md';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
 import Middleware from '../../middleware/Middleware';
 import Spinner from '../ui/Spinner';
-import Card from '../ui/Card';
 
-export default function FormRecype({ locale, recypeDefault }) {
+export default function FormRecype({ locale }) {
   const t = useTranslations('recype');
   const [state, setState] = useState({
     form: {
@@ -79,8 +77,8 @@ export default function FormRecype({ locale, recypeDefault }) {
     });
   }
   return (
-    <Card>
-      <form onSubmit={handleSubmit} className=" p-4 rounded">
+    <div className=" p-4 rounded  bg-secondaryLight sm:flex">
+      <form onSubmit={handleSubmit} className="sm:w-1/2">
         <label htmlFor="supplement" className="text-xl block">
           {t('label')}
           {' '}
@@ -100,8 +98,7 @@ export default function FormRecype({ locale, recypeDefault }) {
             },
           })}
           maxLength={150}
-          className="my-4  sm:w-2/3"
-          color="gray"
+          className="my-4 p-4 w-full"
         />
 
         <div>
@@ -111,16 +108,15 @@ export default function FormRecype({ locale, recypeDefault }) {
               onClick={() => handleClick('dish')}
               id="dish"
               aria-label={t('btn-plat')}
-              className="border-solid border-1 border-blackOpacity py-2 px-4 font-bold data-[hover]:bg-sky-500 font-bold text-black hover:bg-secondaryLight flex rounded-l-lg"
+              className=" border-solid border-1 border-blackOpacity bg-primary p-4 sm:p-6 font-bold  font-bold text-black hover:bg-secondary flex rounded-l-lg"
             >
-              <MdFlatware className="w-8" />
               {t('btn-plat')}
             </button>
             <button
               type="submit"
               onClick={() => handleClick('entrance')}
               aria-label={t('btn-entree')}
-              className="border-solid border-y-1 border-blackOpacity font-bold text-black hover:bg-secondaryLight h-auto rounded-none"
+              className="border-solid border-y-1 bg-primary p-4 sm:p-6 border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-none"
               color="gray"
             >
               <LuSalad className="w-8" />
@@ -132,7 +128,7 @@ export default function FormRecype({ locale, recypeDefault }) {
               onClick={() => handleClick('dessert')}
               aria-label={t('btn-dessert')}
               color="gray"
-              className="border-solid border-1 border-blackOpacity font-bold text-black hover:bg-secondaryLight h-auto rounded-r-lg"
+              className="border-solid border-1 bg-primary p-4 sm:p-6border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-r-lg"
             >
               <LuCakeSlice className="w-8" />
               {/* <Tooltip content={t('btn-dessert')} className="">
@@ -141,16 +137,15 @@ export default function FormRecype({ locale, recypeDefault }) {
           </div>
         </div>
       </form>
-      <div className="">
+      <div className="mt-4 sm:w-1/2">
         {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
         )}
 
         {state.error && <p className="mt-4 text-xl">{state.error}</p>}
         {state.message
-          ? <p dangerouslySetInnerHTML={{ __html: state.message }} className="ml-8" />
-          : !state.loading && <div dangerouslySetInnerHTML={{ __html: recypeDefault }} className="ml-8" /> }
+          && <p dangerouslySetInnerHTML={{ __html: state.message }} className="ml-8" /> }
       </div>
-    </Card>
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-const fetcher = async (url) => {
+const fetcher = async (url: string): Promise<any> => {
   const response = await fetch(url);
   if (!response.ok) {
     console.error(`Erreur lors de la requête à ${url}: ${response.status} ${response.statusText}`);

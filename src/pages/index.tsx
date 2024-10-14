@@ -9,7 +9,6 @@ import BreadcrumbJsonLd from '@/components /jsonLd/BreadcrumbJsonLd';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { MdFlatware } from 'react-icons/md';
-import Button from '../components /ui/Button';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -93,13 +92,14 @@ export default function Page({ pageData, dailyRecype }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
-          <Button className="">
-            <Link href={t('15-recype-link')}>
-              <MdFlatware className="w-8 inline-block" />
-              {' '}
-              {t('15-recype')}
-            </Link>
-          </Button>
+          <Link
+            href={t('15-recype-link')}
+            className="rounded bg-primary py-2 px-4 font-bold text-black hover:bg-secondary "
+          >
+            <MdFlatware className="w-8 inline-block" />
+            {' '}
+            {t('15-recype')}
+          </Link>
         </div>
 
         <TableOfContents post={page} />

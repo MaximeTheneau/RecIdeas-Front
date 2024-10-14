@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useState } from 'react';
 import formMiddleware from '../../middleware/FormMiddleware';
+import Button from '../ui/Button';
 
 interface FormState {
   name: string;
@@ -166,13 +167,13 @@ export default function ContactForm() {
               />
             </label>
           </div>
-          <button
-            className="text-base text-white sm:w-ful bg-secondary p-2 rounded   hover:scale-90  hover:text-white p-4 m-4"
+          <Button
+            className="text-base  sm:w-ful bg-white p-2 rounded  p-4 m-4"
             type="submit"
           >
             Envoyer
             <i className="icon-paper-plane pl-1" />
-          </button>
+          </Button>
         </form>
       </div>
     </>

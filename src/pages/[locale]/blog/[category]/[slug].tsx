@@ -52,7 +52,7 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="fr" />
         {
           translations.map(
-            (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
+            (translation: { locale: string; url: string; }) => <link key={translation.locale} rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
           )
         }
         <link

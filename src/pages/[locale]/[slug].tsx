@@ -25,13 +25,12 @@ interface Translations {
 interface PageProps {
   page: Post;
   isRecypePage: boolean;
-  recypeDefault: string ;
   dailyRecype: any;
   translations: Translations[];
   pageUrlDefault: string;
 }
 export default function Page({
-  page, isRecypePage, recypeDefault, dailyRecype, translations, pageUrlDefault,
+  page, isRecypePage, dailyRecype, translations, pageUrlDefault,
 }: PageProps) {
   const t = useTranslations('recype');
 
@@ -63,7 +62,7 @@ export default function Page({
         <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault}`} hrefLang="fr" />
         {
           translations.map(
-            (translation: { locale: string; url: string; }) => <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
+            (translation: { locale: string; url: string; }) => <link key={translation.locale} rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.url}`} hrefLang={`${translation.locale}`} />,
           )
         }
         <link
@@ -85,7 +84,7 @@ export default function Page({
       <WebPageJsonLd page={page} url={null} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
-        <div className="flex items-end">
+        <div className="flex items-end ">
           <figure className="w-1/3">
             <ImageLoader
               src={page.imgPost}
@@ -100,17 +99,18 @@ export default function Page({
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
 
-        {isRecypePage && <FormRecype locale={page.locale} recypeDefault={recypeDefault} />}
-        <TableOfContents post={page} />
+        {isRecypePage && <FormRecype locale={page.locale} />}
+        {!isRecypePage && <TableOfContents post={page} />}
+        <div className="m-4">
 
-        {page.paragraphPosts.map((paragraphArticle : any) => (
-          <div key={paragraphArticle.id}>
-            {paragraphArticle.subtitle && (
+          {page.paragraphPosts.map((paragraphArticle : any) => (
+            <div key={paragraphArticle.id}>
+              {paragraphArticle.subtitle && (
               <h2 id={paragraphArticle.slug}>
                 {paragraphArticle.subtitle}
               </h2>
-            )}
-            {paragraphArticle.paragraph && (
+              )}
+              {paragraphArticle.paragraph && (
               <div key={paragraphArticle.id}>
                 {/* {paragraphArticle.imgPostParagh && (
                 <figure className={styles.page__contents__paragraph__figure}>
@@ -144,19 +144,20 @@ export default function Page({
                   </div>
                 )} */}
               </div>
-            )}
+              )}
+            </div>
+          ))}
+          {isRecypePage && (
+          <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
+            <Link href={`/${dailyRecype[0].url}`}>
+              {t('link-daily-recype')}
+              {' '}
+              {dailyRecype[0].title}
+            </Link>
           </div>
-        ))}
-        {isRecypePage && (
-        <div className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
-          <Link href={`/${dailyRecype[0].url}`}>
-            {t('link-daily-recype')}
-            {' '}
-            {dailyRecype[0].title}
-          </Link>
+          )}
+          {isRecypePage && <Comments posts={page} />}
         </div>
-        )}
-        {isRecypePage && <Comments posts={page} />}
       </section>
     </>
   );

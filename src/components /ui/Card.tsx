@@ -8,7 +8,7 @@ export default function Card({
   ...props
 }: CardProps) {
   return (
-    <div {...props} className={` w-full rounded overflow-hidden border border-gray-200 shadow bg-white  ${className}`}>
+    <div {...props} className={` w-full rounded overflow-hidden  bg-secondaryLight  ${className}`}>
       {props.children}
     </div>
   );

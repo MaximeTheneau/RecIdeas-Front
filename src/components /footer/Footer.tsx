@@ -24,6 +24,11 @@ export default function Footer() {
               RecIdeas
             </Link>
           </li>
+          <li className="py-4">
+            <Link href={t('15-recype-link')}>
+              {t('15-recype')}
+            </Link>
+          </li>
         </ul>
         <ul className="text-xs">
           <li className="py-4">
