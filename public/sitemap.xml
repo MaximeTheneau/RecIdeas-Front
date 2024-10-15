@@ -9,6 +9,13 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
@@ -91,13 +98,6 @@
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumnal-tacos-with-spicy-chicken-and-seasonal-veg" />
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacos-autunnali-con-pollo-piccante-e-verdure-di-st" />
           <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-tacos-mit-scharfem-hahnchen-und-saisonalem-" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
           
         </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/Pouding-au-Pain-aux-Pommes-pour-l-Automne</loc>
@@ -239,6 +239,34 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema</loc>
@@ -575,34 +603,6 @@
                 <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/tacos-de-otono-con-pollo-picantes-y-verduras-de-te" />
               <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumnal-tacos-with-spicy-chicken-and-seasonal-veg" />
               <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacos-autunnali-con-pollo-piccante-e-verdure-di-st" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/budin-de-pan-de-manzana-para-el-otono</loc>

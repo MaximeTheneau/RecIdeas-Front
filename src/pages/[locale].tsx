@@ -12,7 +12,6 @@ import { useTranslations } from 'next-intl';
 import { MdFlatware } from 'react-icons/md';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
-import Button from '@/components /ui/Button';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
