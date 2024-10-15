@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 type CategoryProps = {
   locale: string;
-  categoryName: string;
-  categorySlug: string;
+  categoryName: string | null;
+  categorySlug: string | null;
 };
 
 export default function Category({ locale, categoryName, categorySlug }: CategoryProps) {
