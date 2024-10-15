@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
+import path from 'path';
 import fetcher from '../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 import Comments from '../../components /comments/Comments';
@@ -212,15 +213,29 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category/page`);
-  const posts = await res.json();
+  const posts = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/category/page`);
 
   posts.forEach((post: any) => {
-    paths.push({
-      params: { locale: post.locale, slug: post.slug },
+    if (post.locale === 'fr') {
+      paths.push({
+        params: {
+          locale: post.locale,
+          slug: post.slug,
+        },
+      });
+    }
+
+    post.translations.forEach((tt: any) => {
+      if (tt.locale !== 'fr') {
+        paths.push({
+          params: {
+            locale: tt.locale,
+            slug: tt.slug,
+          },
+        });
+      }
     });
   });
-
   return {
     paths,
     fallback: false,
