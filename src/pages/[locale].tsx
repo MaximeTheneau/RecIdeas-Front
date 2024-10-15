@@ -93,13 +93,14 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
 
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="flex flex-col items-center my-4">
-          <Button className="font-black text-black bg-primary ">
-            <Link href={t('15-recype-link')}>
-              <MdFlatware className="w-8 inline-block" />
-              {' '}
-              {t('15-recype')}
-            </Link>
-          </Button>
+          <Link
+            href={t('15-recype-link')}
+            className="rounded bg-primary py-2 px-4 font-bold text-black hover:bg-secondary "
+          >
+            <MdFlatware className="w-8 inline-block" />
+            {' '}
+            {t('15-recype')}
+          </Link>
         </div>
         <TableOfContents post={page} />
         {page.paragraphPosts.map((paragraphArticle : any) => (
