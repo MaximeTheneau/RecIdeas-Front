@@ -8,11 +8,12 @@ import type {
 import Cards from '@/components /cards/cards';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
-import Link from 'next/link';
-import fetcher from '../../../utils/fetcher';
+import fetcher from '@/utils/fetcher';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
-export default function Home({ articles, page } : any) {
+export default function Home({
+  articles, page, pageUrlDefault, pageFrUrlDefault,
+} : any) {
   return (
     <>
       <Head>
@@ -32,15 +33,16 @@ export default function Home({ articles, page } : any) {
         <meta property="twitter:image" content={`${page.imgPost}?format=jpeg`} />
         <meta property="twitter:creator" content="@RecIdeas" />
         <meta property="twitter:image:alt" content={page.altImg || page.heading} />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog`} hrefLang="x-default" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog`} hrefLang="fr" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/en/blog`} hrefLang="en" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/es/blog`} hrefLang="es" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/it/blog`} hrefLang="it" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/de/blog`} hrefLang="de" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog/${pageFrUrlDefault.category.slug}`} hrefLang="x-default" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/fr/blog/${pageFrUrlDefault.category.slug}`} hrefLang="fr" />
+        {
+          articles[0].translations.map(
+            (translation: any) => <link key={translation.locale} rel="alternate" href={`${process.env.NEXT_PUBLIC_URL}/${translation.locale}/blog/${translation.category.slug}`} hrefLang={`${translation.locale}`} />,
+          )
+        }
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/blog`}
+          href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault?.locale || 'fr'}/blog/${pageUrlDefault?.category.slug || pageFrUrlDefault.category.slug}`}
           key="canonical"
         />
         {/* Image Preload */}
@@ -55,15 +57,10 @@ export default function Home({ articles, page } : any) {
       <WebSiteJsonLd />
       <WebPageJsonLd page={page} url={null} />
       <section>
-        <h1 className="w-full sm:w-2/3">{page.heading}</h1>
+        <h1 className="w-full ">{page.heading}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         {/* --Articles--*/}
         <div>
-          <Link href={`/${page.locale}/blog/${articles[0].category.slug}`}>
-            <h2>
-              {articles[0].category.name || articles.category.name}
-            </h2>
-          </Link>
           <Cards cards={articles} />
         </div>
       </section>
@@ -79,34 +76,49 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     };
   }
 
-  const { locale } = params;
+  const { locale, category } = params;
 
-  const recypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=recette-du-jour`);
-  const page = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeblog11ea`);
+  const recypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/category/${category}`);
+  const page = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${locale}/azedailyRec11ea`);
 
-  const currentLocale = params.locale || 'fr';
+  //   const translation = recypeData.filter(
+  //     (translationFind:
+  //       { locale: string | string[] | undefined }) => translationFind.locale === locale,
+  //   );
 
   const translatedPosts = recypeData.map((post: any) => {
-    const translation = post.translations?.find(
-      (t: { locale: string }) => t.locale === currentLocale,
+    const translation = post.translations.find(
+      (t: { locale: string }) => t.locale === locale,
     );
-    return translation ? { ...post, ...translation } : post;
+    return { ...post, ...translation };
   });
+
+  const pageUrlDefault = recypeData[0].translations.find(
+    (tf: any) => tf.locale === locale,
+  );
 
   return {
     props: {
       articles: translatedPosts,
       page,
-      messages: (await import(`../../../../messages/${locale}.json`)).default,
+      pageUrlDefault: pageUrlDefault || null,
+      pageFrUrlDefault: recypeData[0],
+      messages: (await import(`../../../../../messages/${locale}.json`)).default,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const locales = ['en', 'de', 'fr', 'it', 'de', 'es'];
-  const paths = locales.map((locale) => ({
-    params: { locale },
-  }));
+  const paths: { params: { category: string, locale: string } }[] = [];
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category=blog`);
+  const posts = await res.json();
+
+  posts.forEach((post: any) => {
+    paths.push({
+      params: { locale: post.locale, category: post.category.slug },
+    });
+  });
 
   return {
     paths,

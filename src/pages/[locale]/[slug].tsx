@@ -212,7 +212,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts&category=Page`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category/page`);
   const posts = await res.json();
 
   posts.forEach((post: any) => {

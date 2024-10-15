@@ -83,10 +83,10 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
               priority
             />
           </figure>
-          <p className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
+          <time className="flex justify-start items-center text-link font-bold my-4 w-full border-gray-200 bg-gray-50 p-4">
             <FaRegCalendarDays className="mr-4" />
             {page.formattedDate}
-          </p>
+          </time>
           <h1 className="w-full sm:w-2/3">{page.title}</h1>
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
@@ -137,7 +137,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: { slug: string, locale: string, category : string } }[] = [];
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category/blog`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}posts/category=blog`);
   const posts = await res.json();
 
   posts.forEach((post: any) => {
