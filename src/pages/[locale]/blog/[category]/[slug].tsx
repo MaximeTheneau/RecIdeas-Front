@@ -11,6 +11,7 @@ import RecypeJsonLd from '@/components /jsonLd/RecypeJsonLd';
 import { FaRegCalendarDays } from 'react-icons/fa6';
 import RecypeDaily from '@/components /modal/cookies/RecypeDaily';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
+import Category from '@/components /category/Category';
 import fetcher from '../../../../utils/fetcher';
 // import ImageLoader from '../../components /image/ImageLoader';
 
@@ -88,6 +89,11 @@ export default function Page({ page, translations, pageUrlDefault }: PageProps) 
             {page.formattedDate}
           </time>
           <h1 className="w-full sm:w-2/3">{page.title}</h1>
+          <Category
+            locale={page.locale || 'fr'}
+            categoryName={page.category.name}
+            categorySlug={page.category.slug}
+          />
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <RecypeDaily locale={page.locale} />

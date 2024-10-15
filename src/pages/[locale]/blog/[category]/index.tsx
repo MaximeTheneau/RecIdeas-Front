@@ -9,6 +9,7 @@ import Cards from '@/components /cards/cards';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
 import fetcher from '@/utils/fetcher';
+import Category from '@/components /category/Category';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
 export default function Home({
@@ -59,6 +60,11 @@ export default function Home({
       <section>
         <h1 className="w-full ">{page.heading}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
+        <Category
+          locale={pageUrlDefault?.locale || 'fr'}
+          categoryName={pageUrlDefault?.category.name || pageFrUrlDefault.category.name}
+          categorySlug={pageUrlDefault?.category.slug || pageFrUrlDefault.category.slug}
+        />
         {/* --Articles--*/}
         <div>
           <Cards cards={articles} />
