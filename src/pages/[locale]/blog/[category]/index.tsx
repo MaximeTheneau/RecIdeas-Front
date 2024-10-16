@@ -15,6 +15,7 @@ import Category from '@/components /category/Category';
 export default function Home({
   articles, page, pageUrlDefault, pageFrUrlDefault,
 } : any) {
+  const url = `{process.env.NEXT_PUBLIC_URL}/${pageUrlDefault?.locale || 'fr'}/blog/${pageUrlDefault?.category.slug || pageFrUrlDefault.category.slug}`;
   return (
     <>
       <Head>
@@ -23,7 +24,7 @@ export default function Home({
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={page.heading} />
-        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_URL}/${page.locale}/blog`} />
+        <meta property="og:url" content={url} />
         <meta property="og:description" content={page.metaDescription} />
         <meta property="og:site_name" content="RecIdeas" />
         <meta property="og:image" content={`${page.imgPost}?format=jpeg`} />
@@ -43,7 +44,7 @@ export default function Home({
         }
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_URL}/${pageUrlDefault?.locale || 'fr'}/blog/${pageUrlDefault?.category.slug || pageFrUrlDefault.category.slug}`}
+          href={url}
           key="canonical"
         />
         {/* Image Preload */}
