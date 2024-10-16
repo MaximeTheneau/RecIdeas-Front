@@ -9,6 +9,13 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
@@ -239,6 +246,34 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
               
               </url><url>
                 <loc>https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles</loc>
