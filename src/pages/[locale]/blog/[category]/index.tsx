@@ -16,7 +16,6 @@ export default function Home({
   articles, page, pageUrlDefault, pageFrUrlDefault,
 } : any) {
   const url = `{process.env.NEXT_PUBLIC_URL}/${pageUrlDefault?.locale || 'fr'}/blog/${pageUrlDefault?.category.slug || pageFrUrlDefault.category.slug}`;
-  console.log(articles);
   return (
     <>
       <Head>
