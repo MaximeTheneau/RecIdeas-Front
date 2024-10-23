@@ -6,7 +6,7 @@ import Dropdown from '../ui/Dropdown';
 export default function Navbar() {
   const t = useTranslations('link');
   return (
-    <nav className="pr-8 flex justify-between item-center content-center items-center w-full z-10 fixed h-auto font-bold  backdrop-blur ">
+    <nav className="pr-8 flex justify-between item-center content-center items-center w-full z-10 fixed h-auto font-bold backdrop-blur ">
       <div className="m-4  hover:text-primary">
         <Link href={t('15-recype-link')}>
           <MdFlatware className="w-8 inline-block" />

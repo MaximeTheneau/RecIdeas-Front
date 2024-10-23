@@ -1,12 +1,14 @@
+import Flags from '../flags/Flags';
+
 function DonorItem({ donor }: { donor: any }) {
   return (
     <li className="border  p-4 rounded-lg bg-gray-100">
       <p className="font-bold w-full flex justify-between">
-        {donor.name}
-        {' '}
-        -
-        {' '}
-        {donor.locale}
+        <span>
+          <Flags language={donor.locale} />
+          {' '}
+          {donor.name}
+        </span>
         <span>
           {donor.amount}
           {' '}

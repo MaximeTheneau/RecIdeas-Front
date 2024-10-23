@@ -50,6 +50,10 @@ textarea{
   border: .002rem solid rgb(128, 126, 126);
   border-radius: 1rem
 }
+
+svg{
+  display: inline-block;
+}
 @media screen and (max-width: 768px){
   h1{
     font-family: var(--font-heading);
