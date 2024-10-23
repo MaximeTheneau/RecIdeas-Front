@@ -148,6 +148,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       donorsInitial,
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
     },
+
   };
 };
 
