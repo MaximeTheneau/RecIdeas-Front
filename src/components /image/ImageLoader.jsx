@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Spinner from '../ui/Spinner';
 
 /* eslint-disable @next/next/no-img-element */
+export const dynamic = 'force-static';
 
 export default function ImageLoader({
   src,
