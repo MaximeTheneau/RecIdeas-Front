@@ -9,39 +9,11 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
-          <loc>https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
-          
-        </url><url>
-          <loc>https://recideas.com/fr/mentions-legales</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
-          
-        </url><url>
-          <loc>https://recideas.com/</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
+          <loc>https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-di-zucca-piccante-conforto-autunnale" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wurzig-kurbiskuchen-herbstkomfort" />
           
         </url><url>
           <loc>https://recideas.com/fr/15-idees-de-recettes</loc>
@@ -51,11 +23,32 @@
           <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/15-Rezeptideen" />
           
         </url><url>
-          <loc>https://recideas.com/fr/conditions-d-utilisation-recideas-com</loc>
-          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
-          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
-          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
-          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+          <loc>https://recideas.com/</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/ratatouille-d-automne-au-four-legumes-savoureux</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/ratatouille-de-otono-verduras-sabrosas-al-horno" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-ratatouille-in-the-oven-tasty-vegetables" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/autunno-ratatouille-gustose-verdure-al-forno" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-ratatouille-gebackenes-leckeres-gemuse" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/gratin-de-pommes-de-terre-et-poireaux-d-automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/gratinado-de-patatas-y-puerros-de-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-potato-and-leek-gratin" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/gratin-autunnale-di-patate-e-porri" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-kartoffel-lauch-gratin" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
           
         </url><url>
           <loc>https://recideas.com/fr/politique-de-confidentialite</loc>
@@ -63,6 +56,55 @@
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/privacy-policy" />
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/politica-sulla-riservatezza" />
           <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/datenschutzrichtlinie" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/risotto-cremeux-aux-cepes-et-petits-pois-pour-l-au</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-ceps-y-guisantes-para-l-au" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-porcini-and-peas-for-the-au" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-porcini-e-piselli-per-l-au" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-steinpilzen-und-erbsen-fur-l-" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/mentions-legales</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/soupe-de-potiron-et-noisettes-grillees-reconfort-a</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-de-calabaza-y-avellanas-asadas-confort-a" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-soup-and-roasted-hazelnuts-comfort-a" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-di-zucca-e-nocciole-tostate-comfort-a" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/kurbis-und-gerostete-haselnuss-suppe-komfort-a" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/ragout-de-lentilles-aux-legumes-d-automne-reconfor</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/guiso-de-lentejas-con-verduras-de-otono-reconfort" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/lentil-stew-with-autumn-vegetables-reconfor" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/stufato-di-lenticchie-con-verdure-autunnali-ricomf" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/linseneintopf-mit-herbstgemuse-recomfort" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/conditions-d-utilisation-recideas-com</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
           
         </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/ragout-de-boeuf-d-automne-aux-legumes-racines-savo</loc>
@@ -248,144 +290,32 @@
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
               
               </url><url>
-                <loc>https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+                <loc>https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-di-zucca-piccante-conforto-autunnale" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wurzig-kurbiskuchen-herbstkomfort" />
               
               </url><url>
-                <loc>https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-di-zucca-piccante-conforto-autunnale" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wurzig-kurbiskuchen-herbstkomfort" />
               
               </url><url>
-                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/torta-di-zucca-piccante-conforto-autunnale</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/wurzig-kurbiskuchen-herbstkomfort" />
               
               </url><url>
-                <loc>https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
-              
-              </url><url>
-                <loc>https://recideas.com/es/avisos-legales</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/en/legal-notices</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/it/avvisi-legali</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
-              
-              </url><url>
-                <loc>https://recideas.com/de/rechtliche-hinweise</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
-              
-              </url><url>
-                <loc>https://recideas.com/es</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
-              
-              </url><url>
-                <loc>https://recideas.com/en</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
-              
-              </url><url>
-                <loc>https://recideas.com/it</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
-              
-              </url><url>
-                <loc>https://recideas.com/de</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
+                <loc>https://recideas.com/de/blog/rezept-des-tages/wurzig-kurbiskuchen-herbstkomfort</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/torta-di-zucca-piccante-conforto-autunnale" />
               
               </url><url>
                 <loc>https://recideas.com/es/15-ideas-de-recetas</loc>
@@ -416,32 +346,116 @@
               <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/15-idee-per-ricette" />
               
               </url><url>
-                <loc>https://recideas.com/es/Terminos-de-uso-RecIdeas-com</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
-                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+                <loc>https://recideas.com/es</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
               
               </url><url>
-                <loc>https://recideas.com/en/Terms-of-Use-RecIdeas-com</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+                <loc>https://recideas.com/en</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
               
               </url><url>
-                <loc>https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+                <loc>https://recideas.com/it</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de" />
               
               </url><url>
-                <loc>https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com</loc>
-                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
-                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
-              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
+                <loc>https://recideas.com/de</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/ratatouille-de-otono-verduras-sabrosas-al-horno</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ratatouille-d-automne-au-four-legumes-savoureux" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-ratatouille-in-the-oven-tasty-vegetables" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/autunno-ratatouille-gustose-verdure-al-forno" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-ratatouille-gebackenes-leckeres-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/autumn-ratatouille-in-the-oven-tasty-vegetables</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ratatouille-d-automne-au-four-legumes-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/ratatouille-de-otono-verduras-sabrosas-al-horno" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/autunno-ratatouille-gustose-verdure-al-forno" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-ratatouille-gebackenes-leckeres-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/autunno-ratatouille-gustose-verdure-al-forno</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ratatouille-d-automne-au-four-legumes-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/ratatouille-de-otono-verduras-sabrosas-al-horno" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-ratatouille-in-the-oven-tasty-vegetables" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-ratatouille-gebackenes-leckeres-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/herbst-ratatouille-gebackenes-leckeres-gemuse</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ratatouille-d-automne-au-four-legumes-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/ratatouille-de-otono-verduras-sabrosas-al-horno" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-ratatouille-in-the-oven-tasty-vegetables" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/autunno-ratatouille-gustose-verdure-al-forno" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/gratinado-de-patatas-y-puerros-de-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/gratin-de-pommes-de-terre-et-poireaux-d-automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-potato-and-leek-gratin" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/gratin-autunnale-di-patate-e-porri" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-kartoffel-lauch-gratin" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/autumn-potato-and-leek-gratin</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/gratin-de-pommes-de-terre-et-poireaux-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/gratinado-de-patatas-y-puerros-de-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/gratin-autunnale-di-patate-e-porri" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-kartoffel-lauch-gratin" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/gratin-autunnale-di-patate-e-porri</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/gratin-de-pommes-de-terre-et-poireaux-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/gratinado-de-patatas-y-puerros-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-potato-and-leek-gratin" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/herbst-kartoffel-lauch-gratin" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/herbst-kartoffel-lauch-gratin</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/gratin-de-pommes-de-terre-et-poireaux-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/gratinado-de-patatas-y-puerros-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/autumn-potato-and-leek-gratin" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/gratin-autunnale-di-patate-e-porri" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/Wer-sind-wir-RecIdeas-15-einfache-Rezepte</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/qui-sommes-nous-recideas-15-recettes-faciles" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Quienes-somos-RecIdeas-15-recetas-faciles" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Who-we-are-RecIdeas-15-Easy-Recipes" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Chi-siamo-RecIdeas-15-ricette-facili" />
               
               </url><url>
                 <loc>https://recideas.com/es/politica-de-privacidad</loc>
@@ -470,6 +484,202 @@
                 <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/politica-de-privacidad" />
               <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/privacy-policy" />
               <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/politica-sulla-riservatezza" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-ceps-y-guisantes-para-l-au</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/risotto-cremeux-aux-cepes-et-petits-pois-pour-l-au" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-porcini-and-peas-for-the-au" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-porcini-e-piselli-per-l-au" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-steinpilzen-und-erbsen-fur-l-" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-porcini-and-peas-for-the-au</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/risotto-cremeux-aux-cepes-et-petits-pois-pour-l-au" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-ceps-y-guisantes-para-l-au" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-porcini-e-piselli-per-l-au" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-steinpilzen-und-erbsen-fur-l-" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-porcini-e-piselli-per-l-au</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/risotto-cremeux-aux-cepes-et-petits-pois-pour-l-au" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-ceps-y-guisantes-para-l-au" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-porcini-and-peas-for-the-au" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-steinpilzen-und-erbsen-fur-l-" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/cremiges-risotto-mit-steinpilzen-und-erbsen-fur-l-</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/risotto-cremeux-aux-cepes-et-petits-pois-pour-l-au" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/risotto-cremoso-con-ceps-y-guisantes-para-l-au" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/creamy-risotto-with-porcini-and-peas-for-the-au" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/risotto-cremoso-con-porcini-e-piselli-per-l-au" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/avisos-legales</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/legal-notices</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/avvisi-legali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/rechtliche-hinweise" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/rechtliche-hinweise</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/mentions-legales" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/avisos-legales" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/legal-notices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/avvisi-legali" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/sopa-de-calabaza-y-avellanas-asadas-confort-a</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/soupe-de-potiron-et-noisettes-grillees-reconfort-a" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-soup-and-roasted-hazelnuts-comfort-a" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-di-zucca-e-nocciole-tostate-comfort-a" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/kurbis-und-gerostete-haselnuss-suppe-komfort-a" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/pumpkin-soup-and-roasted-hazelnuts-comfort-a</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/soupe-de-potiron-et-noisettes-grillees-reconfort-a" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-de-calabaza-y-avellanas-asadas-confort-a" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-di-zucca-e-nocciole-tostate-comfort-a" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/kurbis-und-gerostete-haselnuss-suppe-komfort-a" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-di-zucca-e-nocciole-tostate-comfort-a</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/soupe-de-potiron-et-noisettes-grillees-reconfort-a" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-de-calabaza-y-avellanas-asadas-confort-a" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-soup-and-roasted-hazelnuts-comfort-a" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/kurbis-und-gerostete-haselnuss-suppe-komfort-a" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/kurbis-und-gerostete-haselnuss-suppe-komfort-a</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/soupe-de-potiron-et-noisettes-grillees-reconfort-a" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/sopa-de-calabaza-y-avellanas-asadas-confort-a" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-soup-and-roasted-hazelnuts-comfort-a" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/zuppa-di-zucca-e-nocciole-tostate-comfort-a" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/guiso-de-lentejas-con-verduras-de-otono-reconfort</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ragout-de-lentilles-aux-legumes-d-automne-reconfor" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/lentil-stew-with-autumn-vegetables-reconfor" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/stufato-di-lenticchie-con-verdure-autunnali-ricomf" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/linseneintopf-mit-herbstgemuse-recomfort" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/lentil-stew-with-autumn-vegetables-reconfor</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ragout-de-lentilles-aux-legumes-d-automne-reconfor" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/guiso-de-lentejas-con-verduras-de-otono-reconfort" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/stufato-di-lenticchie-con-verdure-autunnali-ricomf" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/linseneintopf-mit-herbstgemuse-recomfort" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/stufato-di-lenticchie-con-verdure-autunnali-ricomf</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ragout-de-lentilles-aux-legumes-d-automne-reconfor" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/guiso-de-lentejas-con-verduras-de-otono-reconfort" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/lentil-stew-with-autumn-vegetables-reconfor" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/linseneintopf-mit-herbstgemuse-recomfort" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/linseneintopf-mit-herbstgemuse-recomfort</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/ragout-de-lentilles-aux-legumes-d-automne-reconfor" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/guiso-de-lentejas-con-verduras-de-otono-reconfort" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/lentil-stew-with-autumn-vegetables-reconfor" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/stufato-di-lenticchie-con-verdure-autunnali-ricomf" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/entenparmentier-mit-herbstgewurzen</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/parmentier-de-canard-aux-epices-d-automne" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/parmentier-de-pato-con-especias-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/duck-parmentier-with-autumn-spices" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/parmentier-d-39-anatra-alle-spezie-autunnali" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/gehackter-truthahn-mit-herbstpilzen-und-sahne</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/emince-de-dinde-aux-champignons-d-automne-et-creme" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pavo-picado-con-setas-de-otono-y-crema" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/sliced-turkey-with-autumn-mushrooms-and-cream" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/tacchino-tritato-con-funghi-autunnali-e-panna" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/Terminos-de-uso-RecIdeas-com</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/Terms-of-Use-RecIdeas-com</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/Nutzungsbedingungen-RecIdeas-com</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/conditions-d-utilisation-recideas-com" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/Terminos-de-uso-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/Terms-of-Use-RecIdeas-com" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/Condizioni-d-39-uso-RecIdeas-com" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/estofado-de-carne-de-otono-con-verduras-de-raiz-sa</loc>

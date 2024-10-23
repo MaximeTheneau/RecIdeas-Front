@@ -168,7 +168,7 @@ export default function ContactForm() {
             </label>
           </div>
           <Button
-            className="text-base  sm:w-ful bg-white p-2 rounded  p-4 m-4"
+            className="text-base  sm:w-ful  p-2 rounded  p-4 m-4"
             type="submit"
           >
             Envoyer
