@@ -9,6 +9,20 @@
           <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/contact" />
           
         </url><url>
+          <loc>https://recideas.com/fr/dons</loc>
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/dons" />
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/dons" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/dons" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/dons" />
+          
+        </url><url>
+          <loc>https://recideas.com/fr/blog/recette-du-jour/chili-vegetarien-aux-legumes-d-automne-savoureux</loc>
+          <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chili-vegetariano-con-deliciosas-verduras-de-otono" />
+          <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/vegetarian-chili-with-tasty-autumn-vegetables" />
+          <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/peperoncino-vegetariano-con-gustose-verdure-autunn" />
+          <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/vegetarisches-chili-mit-leckerem-herbst-gemuse" />
+          
+        </url><url>
           <loc>https://recideas.com/fr/blog/recette-du-jour/tarte-a-la-citrouille-epicee-reconfort-automnal</loc>
           <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad" />
           <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/pumpkin-pie-spicy-autumn-comfort" />
@@ -288,6 +302,62 @@
                 <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/contact" />
               <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/contact" />
               <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/contact" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/dons</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/dons" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/dons" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/dons" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/dons" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/dons</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/dons" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/dons" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/dons" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/dons" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/dons</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/dons" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/dons" />
+              <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/dons" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/dons" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/dons</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/dons" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/dons" />
+              <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/dons" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/dons" />
+              
+              </url><url>
+                <loc>https://recideas.com/es/blog/receta-del-dia/chili-vegetariano-con-deliciosas-verduras-de-otono</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/chili-vegetarien-aux-legumes-d-automne-savoureux" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/vegetarian-chili-with-tasty-autumn-vegetables" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/peperoncino-vegetariano-con-gustose-verdure-autunn" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/vegetarisches-chili-mit-leckerem-herbst-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/en/blog/recipe-of-the-day/vegetarian-chili-with-tasty-autumn-vegetables</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/chili-vegetarien-aux-legumes-d-automne-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chili-vegetariano-con-deliciosas-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/peperoncino-vegetariano-con-gustose-verdure-autunn" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/vegetarisches-chili-mit-leckerem-herbst-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/it/blog/la-ricetta-del-giorno/peperoncino-vegetariano-con-gustose-verdure-autunn</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/chili-vegetarien-aux-legumes-d-automne-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chili-vegetariano-con-deliciosas-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/vegetarian-chili-with-tasty-autumn-vegetables" />
+              <xhtml:link rel="alternate" hreflang="de" href="https://recideas.com/de/blog/rezept-des-tages/vegetarisches-chili-mit-leckerem-herbst-gemuse" />
+              
+              </url><url>
+                <loc>https://recideas.com/de/blog/rezept-des-tages/vegetarisches-chili-mit-leckerem-herbst-gemuse</loc>
+                <xhtml:link rel="alternate" hreflang="fr" href="https://recideas.com/fr/blog/recette-du-jour/chili-vegetarien-aux-legumes-d-automne-savoureux" />
+                <xhtml:link rel="alternate" hreflang="es" href="https://recideas.com/es/blog/receta-del-dia/chili-vegetariano-con-deliciosas-verduras-de-otono" />
+              <xhtml:link rel="alternate" hreflang="en" href="https://recideas.com/en/blog/recipe-of-the-day/vegetarian-chili-with-tasty-autumn-vegetables" />
+              <xhtml:link rel="alternate" hreflang="it" href="https://recideas.com/it/blog/la-ricetta-del-giorno/peperoncino-vegetariano-con-gustose-verdure-autunn" />
               
               </url><url>
                 <loc>https://recideas.com/es/blog/receta-del-dia/pastel-de-calabaza-picante-otono-comodidad</loc>

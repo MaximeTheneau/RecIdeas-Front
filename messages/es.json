@@ -36,9 +36,19 @@
       "policy-link": "/es\/politica-de-privacidad",
       "policy": "política de privacidad",
       "15-recype": "Generador de recetas",
-      "15-recype-link": "/es/15-ideas-de-recetas"
+      "15-recype-link": "/es/15-ideas-de-recetas",
+      "dons": "Hacer una donación"
   },
   "comment": {
     "title": "Commentario"
+  },
+  "donate": {
+    "pseudo": "Seudónimo",
+    "message": "Mensaje",
+    "other-amount": "Otra cantidad",
+    "support": "Yo apoyo",
+    "thank-you": "¡Gracias por su donación!",
+    "error": "Error, por favor inténtelo de nuevo más tarde.",
+    "invalid-amount": "Por favor, introduzca una cantidad válida."
   }
 }

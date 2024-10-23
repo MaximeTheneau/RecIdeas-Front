@@ -36,9 +36,19 @@
       "policy-link": "/en\/privacy-policy",
       "policy": "Privacy Policy",
       "15-recype": "Recipe Generator",
-      "15-recype-link": "/en/15-Recipe-Ideas"
+      "15-recype-link": "/en/15-Recipe-Ideas",
+      "dons": "Make a donation"
   },
   "comment": {
     "title": "Comment"
+  },
+  "donate": {
+    "pseudo": "Pseudo",
+    "message": "Message",
+    "other-amount": "Other amount",
+    "support": "I support",
+    "thank-you": "Thank you for your donation!",
+    "error": "Error, please try again later.",
+    "invalid-amount": "Please enter a valid amount."
   }
 }

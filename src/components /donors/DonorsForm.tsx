@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from 'next/router';
 import Button from '@/components /ui/Button';
+import { useTranslations } from 'next-intl';
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 interface FormState {
@@ -12,6 +13,8 @@ interface FormState {
 }
 
 export default function DonorsForm({ locale }: { locale: string }) {
+  const t = useTranslations('donate');
+
   const [state, setState] = useState<FormState>({
     name: '',
     message: '',
@@ -30,7 +33,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
     e.preventDefault();
 
     if (state.amount <= 0) {
-      setErrorStripe('Veuillez entrer un montant valide.');
+      setErrorStripe(t('invalid-amount'));
       return;
     }
 
@@ -49,7 +52,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
       });
 
       if (!response.ok) {
-        throw new Error('Erreur lors de la création de la session de paiement.');
+        throw new Error(t('error'));
       }
 
       const session = await response.json();
@@ -64,7 +67,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
         }
       }
     } catch (error: any) {
-      setErrorStripe(error.message || 'Une erreur est survenue.');
+      setErrorStripe(error.message || t('error'));
     } finally {
       setIsLoading(false);
     }
@@ -84,7 +87,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
   return (
     <form onSubmit={handleDonate} className="w-full sm:w-1/2 sm:flex sm:flex-col sm:justify-center mx-auto pr-4">
       <label htmlFor="name">
-        Speudo :
+        {t('pseudo')}
         <input
           className="mb-4"
           id="name"
@@ -97,7 +100,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
         />
       </label>
       <label htmlFor="message">
-        Message :
+        {t('message')}
         <input
           className="mb-4"
           id="message"
@@ -132,7 +135,7 @@ export default function DonorsForm({ locale }: { locale: string }) {
         }`}
         onClick={() => { setCustomAmount(true); setState({ ...state, amount: 0 }); }}
       >
-        Autre montant
+        {t('other-amount')}
       </button>
       {customAmount && (
       <input
@@ -149,10 +152,18 @@ export default function DonorsForm({ locale }: { locale: string }) {
         type="submit"
         disabled={isLoading}
       >
-        {isLoading ? '...' : 'Donner'}
+        {isLoading ? '...' : t('support')}
       </Button>
-      {status === 'success' && <h2>Merci pour votre don !</h2>}
-      {errorStripe && status === 'error' && <p>Erreur </p>}
+      {status === 'success' && (
+      <h2>
+        {t('thank-you')}
+      </h2>
+      )}
+      {errorStripe && status === 'error' && (
+      <p>
+        {t('error')}
+      </p>
+      )}
     </form>
   );
 }

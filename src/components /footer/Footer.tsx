@@ -29,6 +29,11 @@ export default function Footer() {
               {t('15-recype')}
             </Link>
           </li>
+          <li className="py-4">
+            <Link href={`/${router.query.locale || 'fr'}/dons`}>
+              {t('dons')}
+            </Link>
+          </li>
         </ul>
         <ul className="text-xs">
           <li className="py-4">

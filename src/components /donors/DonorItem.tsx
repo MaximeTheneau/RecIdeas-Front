@@ -19,7 +19,6 @@ function DonorItem({ donor }: { donor: any }) {
         {donor.message}
       </p>
       )}
-      <p />
     </li>
   );
 }

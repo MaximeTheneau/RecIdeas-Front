@@ -30,6 +30,7 @@
       "mention-legal-link":"/fr/mentions-legales",
       "terms-link": "/fr\/conditions-d-utilisation-recideas-com",
       "contact": "Contact",
+      "dons": "Faire un don",
       "terms": "Conditions d'Utilisation",
       "who-link": "/fr\/qui-sommes-nous-recideas-15-recettes-faciles",
       "who": "Qui sommes-nous",
@@ -40,5 +41,14 @@
     },
     "comment": {
       "title": "Commentaire"
+    },
+    "donate": {
+      "pseudo": "Pseudo",
+      "message": "Message",
+      "other-amount": "Autre montant",
+      "support": "Je soutiens",
+      "thank-you": "Merci pour votre don !",
+      "error": "Erreur, veuillez recommencer plus tard.",
+      "invalid-amount": "Veuillez entrer un montant valide."
     }
 }
