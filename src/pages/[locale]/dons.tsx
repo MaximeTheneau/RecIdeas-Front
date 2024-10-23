@@ -1,3 +1,4 @@
+import useSWR from 'swr';
 import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import fetcher from '@/utils/fetcher';
@@ -20,10 +21,16 @@ interface Donors {
 interface PageProps {
   page: Post;
   translations: Translations[];
-  donors: Donors[];
+  donorsInitial: Donors[];
 }
 
-export default function DonsPage({ page, translations, donors }: PageProps) {
+export default function DonsPage({ page, translations, donorsInitial }: PageProps) {
+  const { data: donors } = useSWR(
+    `${process.env.NEXT_PUBLIC_API_URL}payment/donors`,
+    fetcher,
+    { fallbackData: donorsInitial },
+  );
+
   return (
     <>
       <Head>
@@ -133,12 +140,12 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   const translations = post.translations.map(({ locale }: any) => ({
     locale,
   }));
-  const donors = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}payment/donors`);
+  const donorsInitial = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}payment/donors`);
   return {
     props: {
       page,
       translations,
-      donors,
+      donorsInitial,
       messages: (await import(`../../../messages/${params.locale}.json`)).default,
     },
   };
