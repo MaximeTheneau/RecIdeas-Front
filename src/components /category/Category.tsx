@@ -9,7 +9,7 @@ type CategoryProps = {
 export default function Category({ locale, categoryName, categorySlug }: CategoryProps) {
   return (
     <nav aria-label="breadcrumb">
-      <ul className="flex space-x-2 ">
+      <ul className="flex space-x-2 list-none my-4 ">
         <li>
           <Link href={`/${locale}/blog`} className={`${categoryName ? 'text-gray-500' : 'text-black'}`}>
             Blog

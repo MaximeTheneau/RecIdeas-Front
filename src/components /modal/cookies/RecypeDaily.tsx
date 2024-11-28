@@ -100,7 +100,7 @@ export default function RecypeDaily({ locale }: RecypeDailyProps) {
   return (
     <>
       <Button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="  hover:bg-blue-700 py-4 mt-8 w-1/2 mx-auto block"
         onClick={() => setState({ ...state, openModal: true })}
       >
         {t('button')}

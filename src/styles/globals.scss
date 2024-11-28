@@ -33,8 +33,15 @@ button{
 // button:hover{
 //   background-color: #FB9C37;
 // }
-
+article ul{
+  margin-left: 1rem;
+  list-style: disc;
+  & > ul{
+    margin-left: 1rem;
+  }
+}
 ol {
+  margin-left: 1rem;
   list-style-position: inside;
   list-style: decimal;
   font-weight: bold;
