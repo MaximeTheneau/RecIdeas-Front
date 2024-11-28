@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { LuCakeSlice, LuSalad } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
+import { FaRobot } from 'react-icons/fa';
 import Middleware from '../../middleware/Middleware';
 import Spinner from '../ui/Spinner';
 
@@ -77,9 +78,9 @@ export default function FormRecype({ locale }) {
     });
   }
   return (
-    <div className=" p-4 rounded  bg-secondaryLight sm:flex">
-      <form onSubmit={handleSubmit} className="sm:w-1/2">
-        <label htmlFor="supplement" className="text-xl block">
+    <div className="rounded bg-primary pb-8 pt-16 px-4">
+      <form onSubmit={handleSubmit} className="sm:w-1/2 mx-auto">
+        <label htmlFor="supplement" className="text-xl block font-heading">
           {t('label')}
           {' '}
           :
@@ -102,24 +103,27 @@ export default function FormRecype({ locale }) {
         />
 
         <div>
-          <div className="flex">
+          <div className="flex border-solid border-1 border-black rounded-lg">
             <button
               type="submit"
               onClick={() => handleClick('dish')}
               id="dish"
               aria-label={t('btn-plat')}
-              className=" border-solid border-1 border-blackOpacity bg-primary p-4 sm:p-6 font-bold  font-bold text-black hover:bg-secondary flex rounded-l-lg"
+              className="flex items-center border-solid border-1 border-blackOpacity w-full text-left bg-white p-4 sm:p-6 font-bold  font-bold text-black hover:bg-secondary  rounded-l-lg"
             >
+              <span className="mr-4">
+                <FaRobot size={20} />
+              </span>
               {t('btn-plat')}
             </button>
             <button
               type="submit"
               onClick={() => handleClick('entrance')}
               aria-label={t('btn-entree')}
-              className="border-solid border-y-1 bg-primary p-4 sm:p-6 border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-none"
+              className="border-solid border-y-1 bg-white p-4 sm:p-6 border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-none"
               color="gray"
             >
-              <LuSalad className="w-8" />
+              <LuSalad size={20} />
               {/* <Tooltip content={t('btn-entree')} className="">
               </Tooltip> */}
             </button>
@@ -128,16 +132,16 @@ export default function FormRecype({ locale }) {
               onClick={() => handleClick('dessert')}
               aria-label={t('btn-dessert')}
               color="gray"
-              className="border-solid border-1 bg-primary p-4 sm:p-6border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-r-lg"
+              className="border-solid border-1 bg-white p-4 sm:p-6border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-r-lg"
             >
-              <LuCakeSlice className="w-8" />
+              <LuCakeSlice size={20} />
               {/* <Tooltip content={t('btn-dessert')} className="">
               </Tooltip> */}
             </button>
           </div>
         </div>
       </form>
-      <div className="mt-4 sm:w-1/2">
+      <div className="mt-4 sm:w-1/2 mx-auto">
         {state.loading && (
         <Spinner aria-label="Recype loading" size="lg" className="flex justify-center" />
         )}

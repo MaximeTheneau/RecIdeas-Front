@@ -97,10 +97,10 @@ export default function Page({
           </figure>
           <h1 className="w-2/3">{page.title}</h1>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: page.contents }} />
 
         {isRecypePage && <FormRecype locale={page.locale} />}
         {!isRecypePage && <TableOfContents post={page} />}
+        <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="m-4">
 
           {page.paragraphPosts.map((paragraphArticle : any) => (
