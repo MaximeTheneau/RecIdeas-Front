@@ -1,7 +1,10 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
 import '../styles/globals.scss';
-import { Rubik, Exo } from 'next/font/google';
+import {
+  Karla,
+  BioRhyme,
+} from 'next/font/google';
 import Layout from '@/components /layout';
 import { AppProps } from 'next/app';
 import { ParsedUrlQuery } from 'querystring';
@@ -9,11 +12,11 @@ import Head from 'next/head';
 import CookiesModal from '../components /modal/cookies/Cookies';
 import { CookiesProvider } from '../context/CookiesContext';
 
-const roboto = Rubik({
+const roboto = Karla({
   weight: '400',
   subsets: ['latin'],
 });
-const title = Exo({
+const title = BioRhyme({
   weight: '400',
   subsets: ['latin'],
 });

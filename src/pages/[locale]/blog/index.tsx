@@ -13,7 +13,7 @@ import Category from '@/components /category/Category';
 import fetcher from '../../../utils/fetcher';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
-export default function Home({ articles, page } : any) {
+export default function Home({ articles, page, ia } : any) {
   return (
     <>
       <Head>
@@ -72,6 +72,15 @@ export default function Home({ articles, page } : any) {
           </Link>
           <Cards cards={articles} />
         </div>
+        {/* --Ia--*/}
+        <div>
+          <Link href={`/${page.locale}/blog/${ia[0].category.slug}`}>
+            <h2>
+              {ia[0].category.name || ia.category.name}
+            </h2>
+          </Link>
+          <Cards cards={ia} />
+        </div>
       </section>
     </>
   );
@@ -88,6 +97,8 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   const { locale } = params;
 
   const recypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=recette-du-jour`);
+  const iaData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=intelligence-artificiel`);
+
   const page = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeblog11ea`);
 
   const currentLocale = params.locale || 'fr';
@@ -99,9 +110,17 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     return translation ? { ...post, ...translation } : post;
   });
 
+  const translatedIaPosts = iaData.map((post: any) => {
+    const translation = post.translations?.find(
+      (t: { locale: string }) => t.locale === currentLocale,
+    );
+    return translation ? { ...post, ...translation } : post;
+  });
+
   return {
     props: {
       articles: translatedPosts,
+      ia: translatedIaPosts,
       page,
       messages: (await import(`../../../../messages/${locale}.json`)).default,
     },

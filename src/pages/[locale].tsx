@@ -12,6 +12,8 @@ import { useTranslations } from 'next-intl';
 import { MdFlatware } from 'react-icons/md';
 import WebSiteJsonLd from '@/components /jsonLd/WebSiteJsonLd';
 import WebPageJsonLd from '@/components /jsonLd/WebPageJsonLd';
+import AtoutsList from '@/components /ui/AtoutsList';
+import { FaRobot } from 'react-icons/fa';
 import fetcher from '../utils/fetcher';
 import ImageLoader from '../components /image/ImageLoader';
 import Comments from '../components /comments/Comments';
@@ -89,17 +91,34 @@ export default function Page({ page, translations, dailyRecype }: PageProps) {
           </figure>
           <h1 className="w-2/3">{page.title}</h1>
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: page.contents }} />
-        <div className="flex flex-col items-center my-4">
-          <Link
-            href={t('15-recype-link')}
-            className="rounded bg-primary py-2 px-4 font-bold text-black hover:bg-secondary "
-          >
-            <MdFlatware className="w-8 inline-block" />
-            {' '}
-            {t('15-recype')}
-          </Link>
+        <div className="rounded bg-primary pb-8 pt-4 px-4 text-center">
+          <div className="">
+            <Link
+              href={t('15-recype-link')}
+              className=" font-bold  p-4 bg-white hover:bg-secondaryLight shadow-lg  rounded md:w-1/2 mx-auto text-black hover:bg-white flex flex-col items-center justify-center my-4 "
+            >
+              <span className="inline-block animate-bounce">
+                <FaRobot size={30} />
+                <MdFlatware size={30} />
+              </span>
+              {' '}
+              <span className="text-2xl font-heading underline">
+                {t('15-recype')}
+              </span>
+              <span className="text-2xs  underline">
+                {t('15-recype-click')}
+              </span>
+            </Link>
+            <div className="text-xs md:w-2/3 mx-auto font-black-opacity" dangerouslySetInnerHTML={{ __html: page.contents }} />
+            <Link
+              href={t('15-recype-link')}
+            >
+              <AtoutsList />
+              <span className="text-2xs  underline">
+                {t('15-recype-click')}
+              </span>
+            </Link>
+          </div>
         </div>
         <TableOfContents post={page} />
         {page.paragraphPosts.map((paragraphArticle : any) => (

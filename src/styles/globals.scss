@@ -23,9 +23,16 @@ h4{
 box-shadow: none !important;
 }
 
-button:hover{
-  background-color: #FB9C37;
+section a{
+  text-decoration: underline;
 }
+
+button{
+  font-family: var(--font-heading);
+}
+// button:hover{
+//   background-color: #FB9C37;
+// }
 
 ol {
   list-style-position: inside;

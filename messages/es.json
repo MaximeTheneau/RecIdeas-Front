@@ -16,7 +16,11 @@
   },
   "link": {
     "15-recype": "15 ideas de recetas",
-    "15-recype-link": "/es/15-ideas-de-recetas"
+    "15-recype-click": "haga clic aquí",
+    "15-recype-link": "/es/15-ideas-de-recetas",
+    "15-recype-i-1": "Recetas creativas",
+    "15-recype-i-2": "Gana tiempo",
+    "15-recype-i-3": "Recetas saludables y equilibradas"
     },
     "cookies": {
       "preference-accept": "Enviar preferencias",

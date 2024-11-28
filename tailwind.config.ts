@@ -11,17 +11,21 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: '#fa8305',
+        primary: '#ffd676',
         secondaryLight: '#f1f0ef',
-        secondary: '#d1c9c0',
+        secondary: '#98dddf',
         white: '#ffffff',
         whiteOpacity: 'rgba(255, 255, 255, 0.5)',
         black: '#111011',
         blackOpacity: '#1807e7e',
         link: '#012B73',
+        form: '#717388',
       },
       boxShadow: {
         custom: '0px -20px 20px 100vh rgba(151, 151, 151, 0.8)',
+      },
+      fontFamily: {
+        heading: 'var(--font-heading)',
       },
     },
   },
