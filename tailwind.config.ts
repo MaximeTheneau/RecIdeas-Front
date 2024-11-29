@@ -5,10 +5,10 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    borderWidth: {
-      DEFAULT: '1px',
-      1: '0.05rem',
-    },
+    // borderWidth: {
+    //   DEFAULT: '1px',
+    //   1: '0.05rem',
+    // },
     extend: {
       colors: {
         primary: '#ffd676',
@@ -26,6 +26,19 @@ const config: Config = {
       },
       fontFamily: {
         heading: 'var(--font-heading)',
+      },
+      animation: {
+        spin: 'spin 1s ease-in-out infinite',
+      },
+      keyframes: {
+        spin: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg)',
+          },
+        },
       },
     },
   },
