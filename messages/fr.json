@@ -1,8 +1,8 @@
 {
   "recype": {
     "btn-plat": "Cliquez pour 15 plats savoureux !",
-    "btn-entree": "Cliquez pour 15 entrée savoureuses !",
-    "btn-dessert":"Cliquez pour 15 dessert savoureux !",
+    "btn-entree": "Entrée",
+    "btn-dessert":"Dessert",
     "placeholder-french":  "Français, rapide, oeufs, légumes, etc...",
     "label": "Ingrédients ou mots-clés",
     "link-daily-recype": "Recette du jour de saison :",

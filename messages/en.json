@@ -1,8 +1,8 @@
 {
   "recype": {
     "btn-plat": "Click for 15 delicious dishes!",
-    "btn-entree": "Click for 15 delicious starters!",
-    "btn-dessert":"Click for 15 delicious desserts!",
+    "btn-entree": "Starters",
+    "btn-dessert":"Desserts",
     "placeholder-french":  "French, quick, eggs, vegetables, etc...",
     "label": "Ingredients or keywords",
     "link-daily-recype": "Seasonal daily recipe:",

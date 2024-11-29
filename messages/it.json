@@ -1,8 +1,8 @@
 {
   "recype": {
     "btn-plat": "Clicca per 15 piatti deliziosi!",
-    "btn-entree": "Clicca per 15 antipasti deliziosi!",
-    "btn-dessert":"Clicca per 15 dessert deliziosi!",
+    "btn-entree": "Antipasti",
+    "btn-dessert":"Dessert",
     "placeholder-french":  "Francese, veloce, uova, verdure, ecc...",
     "label": "Ingredienti o parole chiave",
     "link-daily-recype": "Ricetta del giorno di stagione:",

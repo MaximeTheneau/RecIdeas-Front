@@ -1,8 +1,8 @@
 {
   "recype": {
     "btn-plat": "Klicken Sie für 15 köstliche Gerichte!",
-    "btn-entree": "Klicken Sie für 15 köstliche Vorspeisen!",
-    "btn-dessert": "Klicken Sie für 15 köstliche Desserts!",
+    "btn-entree": "Vorspeisen",
+    "btn-dessert": "Desserts",
     "placeholder-french":  "Französisch, schnell, Eier, Gemüse, usw...",
     "label": "Zutaten oder Stichwörter",
     "link-daily-recype": "Tagesrezept der Saison:",

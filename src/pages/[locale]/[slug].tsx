@@ -84,21 +84,20 @@ export default function Page({
       <WebPageJsonLd page={page} url={null} />
       <BreadcrumbJsonLd paragraphPosts={page.paragraphPosts} urlPost={urlPost} />
       <section>
-        <div className="flex items-end ">
-          <figure className="w-1/3">
-            <ImageLoader
-              src={page.imgPost}
-              alt={page.altImg || page.title}
-              width={page.imgWidth}
-              height={page.imgHeight}
-              srcset={page.srcset}
-              priority
-            />
-          </figure>
-          <h1 className="w-2/3">{page.title}</h1>
+        <div className="rounded bg-primary pb-8 pt-16 px-4">
+          <h1 className="text-center mb-4">{page.title}</h1>
+          {isRecypePage && <FormRecype locale={page.locale} />}
         </div>
-
-        {isRecypePage && <FormRecype locale={page.locale} />}
+        <figure className="">
+          <ImageLoader
+            src={page.imgPost}
+            alt={page.altImg || page.title}
+            width={page.imgWidth}
+            height={page.imgHeight}
+            srcset={page.srcset}
+            priority
+          />
+        </figure>
         {!isRecypePage && <TableOfContents post={page} />}
         <div dangerouslySetInnerHTML={{ __html: page.contents }} />
         <div className="m-4">

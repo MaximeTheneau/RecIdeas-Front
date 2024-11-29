@@ -78,7 +78,7 @@ export default function FormRecype({ locale }) {
     });
   }
   return (
-    <div className="rounded bg-primary pb-8 pt-16 px-4">
+    <div className="">
       <form onSubmit={handleSubmit} className="sm:w-1/2 mx-auto">
         <label htmlFor="supplement" className="text-xl block font-heading">
           {t('label')}
@@ -124,6 +124,7 @@ export default function FormRecype({ locale }) {
               color="gray"
             >
               <LuSalad size={20} />
+              {t('btn-entree')}
               {/* <Tooltip content={t('btn-entree')} className="">
               </Tooltip> */}
             </button>
@@ -135,6 +136,7 @@ export default function FormRecype({ locale }) {
               className="border-solid border-1 bg-white p-4 sm:p-6border-blackOpacity font-bold text-black hover:bg-secondary h-auto rounded-r-lg"
             >
               <LuCakeSlice size={20} />
+              {t('btn-dessert')}
               {/* <Tooltip content={t('btn-dessert')} className="">
               </Tooltip> */}
             </button>
