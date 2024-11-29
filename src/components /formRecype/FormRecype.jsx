@@ -99,33 +99,33 @@ export default function FormRecype({ locale }) {
             },
           })}
           maxLength={150}
-          className="my-4 p-4 w-full hover:scale-105 hover:shadow-lg"
+          className="my-4 p-4 w-full hover:scale-105 hover:shadow-lg  border border-black"
         />
 
         <div>
-          <div className=" hover:scale-105 hover:shadow-lg flex border-solid border-1 border-black rounded-lg  break-words">
+          <div className="md:hover:scale-105 hover:shadow-lg flex flex-col md:flex-row md:border border-black rounded-lg  break-words">
             <button
               type="submit"
               onClick={() => handleClick('dish')}
               id="dish"
               aria-label={t('btn-plat')}
-              className={`w-full border-solid py-4 md:w-8/12 border-1 border-blackOpacity  px-4 sm:p-6 hover:bg-secondary rounded-l-lg ${
+              className={` border-black border md:border-0 py-4 md:w-8/12  px-4 sm:p-6 hover:bg-secondary rounded md:rounded-l-lg break-words ${
                 state.form.type === 'dish' ? 'bg-secondary' : 'bg-white'
               }`}
 
             >
-              <FaRobot className="mr-2" size={20} />
+              <FaRobot className="mr-2" size={15} />
               {t('btn-plat')}
             </button>
             <button
               type="submit"
               onClick={() => handleClick('entrance')}
               aria-label={t('btn-entree')}
-              className={`md:w-2/12 px-2 border-solid border-y-1 border-blackOpacity  hover:bg-secondary h-auto rounded-none ${
+              className={`md:w-2/12 px-2 border-solid rounded p-4 my-8 md:p-0 md:my-0 border-black border md:border-0 md:border-0 md:border-x hover:bg-secondary h-auto md:rounded-none break-words ${
                 state.form.type === 'entrance' ? 'bg-secondary' : 'bg-white'
               }`}
             >
-              <LuSalad className="inline-block" size={20} />
+              <LuSalad className="mr-2" size={15} />
               {t('btn-entree')}
               {/* <Tooltip content={t('btn-entree')} className="">
               </Tooltip> */}
@@ -134,11 +134,11 @@ export default function FormRecype({ locale }) {
               type="submit"
               onClick={() => handleClick('dessert')}
               aria-label={t('btn-dessert')}
-              className={`md:w-2/12 px-2 border-solid border-1 border-blackOpacity  hover:bg-secondary h-auto rounded-r-lg ${
+              className={`md:w-2/12 px-2 border-solid border md:border-0 border-black p-4 md:p-0 hover:bg-secondary h-auto rounded-r-lg break-words ${
                 state.form.type === 'dessert' ? 'bg-secondary' : 'bg-white'
               }`}
             >
-              <LuCakeSlice size={20} />
+              <LuCakeSlice className="mr-2" size={15} />
               {t('btn-dessert')}
               {/* <Tooltip content={t('btn-dessert')} className="">
               </Tooltip> */}
