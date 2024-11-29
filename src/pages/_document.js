@@ -19,6 +19,7 @@ class MyDocument extends Document {
     return (
       <Html lang={this.props.locale}>
         <Head nonce={nonce}>
+          <meta charSet="UTF-8" />
           <meta httpEquiv="Content-Security-Policy" content={csp} />
         </Head>
         <body>
