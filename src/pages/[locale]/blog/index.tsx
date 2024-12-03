@@ -13,7 +13,9 @@ import Category from '@/components /category/Category';
 import fetcher from '../../../utils/fetcher';
 // import CategoryPage from '../../../components/category/CategoryPage';
 
-export default function Home({ articles, page, ia } : any) {
+export default function Home({
+  articles, page, ia, regimes,
+} : any) {
   return (
     <>
       <Head>
@@ -81,6 +83,15 @@ export default function Home({ articles, page, ia } : any) {
           </Link>
           <Cards cards={ia} />
         </div>
+        {/* --Regimes-bien-etre--*/}
+        <div>
+          <Link href={`/${page.locale}/blog/${regimes[0].category.slug}`}>
+            <h2>
+              {regimes[0].category.name || regimes.category.name}
+            </h2>
+          </Link>
+          <Cards cards={regimes} />
+        </div>
       </section>
     </>
   );
@@ -98,6 +109,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
   const recypeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=recette-du-jour`);
   const iaData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=intelligence-artificiel`);
+  const regimeData = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts&limit=3&category=regimes-bien-etre`);
 
   const page = await fetcher(`${process.env.NEXT_PUBLIC_API_URL}posts/draft/${params.locale}/azeblog11ea`);
 
@@ -117,10 +129,17 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     return translation ? { ...post, ...translation } : post;
   });
 
+  const translatedRegimePosts = regimeData.map((post: any) => {
+    const translation = post.translations?.find(
+      (t: { locale: string }) => t.locale === currentLocale,
+    );
+    return translation ? { ...post, ...translation } : post;
+  });
   return {
     props: {
       articles: translatedPosts,
       ia: translatedIaPosts,
+      regimes: translatedRegimePosts,
       page,
       messages: (await import(`../../../../messages/${locale}.json`)).default,
     },
